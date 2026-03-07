@@ -1,0 +1,23 @@
+gradle-wrapper.jar
+/.gradle
+/captures/
+/gradlew
+/gradlew.bat
+/local.properties
+GeneratedPluginRegistrant.java
+.cxx/
+
+# Remember to never publicly share your keystore.
+# See https://flutter.dev/to/reference-keystore
+key.properties
+**/*.keystore
+**/*.jks
+
+# Git LFS metadata should remain trackable
+!.gitattributes
+!.lfsconfig
+
+# Ignore local LFS/cache artifacts
+**/.lfs-cache/
+**/.git/lfs/
+*.lfs.tmp
