@@ -1,11 +1,13 @@
 import React, { useState, useRef } from 'react';
 import { useBlindSight } from '../context/BlindSightContext';
 import SpeakingIndicator from '../components/SpeakingIndicator';
+import RouteMap from '../components/RouteMap';
+import useNavigation from '../hooks/useNavigation';
 import './AssistantScreen.css';
 
 // Tool IDs must match the server's mcp_request handler in server/main.py
 const TOOLS = [
-  { id: 'navigate',     name: 'Navigation', desc: 'Turn-by-turn walking directions', icon: '🧭', color: 'cyan',   placeholder: 'from India Gate to Red Fort' },
+  { id: 'navigate',     name: 'Navigation', desc: 'Turn-by-turn walking directions', icon: '🧭', color: 'cyan',   placeholder: 'Destination, e.g. Red Fort' },
   { id: 'weather',      name: 'Weather',    desc: 'Current conditions & forecast',   icon: '🌤', color: 'blue',   placeholder: 'e.g. New Delhi' },
   { id: 'headlines',    name: 'Headlines',  desc: 'Top news by country',             icon: '📰', color: 'amber',  placeholder: 'Country code, e.g. in' },
   { id: 'emergency',    name: 'Emergency',  desc: 'Local emergency numbers',         icon: '🆘', color: 'red',    placeholder: 'e.g. Delhi, India' },
@@ -31,7 +33,11 @@ function ToolGrid({ activeTool, onSelect }) {
   );
 }
 
-function ResultCard({ result, loading, speaking }) {
+function ResultCard({ result, loading, speaking, userLocation }) {
+  // Navigation checkpoint tracker — only active when we have a nav result
+  const navSteps = (result?.steps && Array.isArray(result.steps)) ? result.steps : null;
+  const { activeStep, arrived, distToNext } = useNavigation(navSteps, userLocation);
+
   if (loading) {
     return (
       <div className="result-card loading">
@@ -53,6 +59,58 @@ function ResultCard({ result, loading, speaking }) {
       </div>
     );
   }
+
+  // Navigation result
+  if (navSteps) {
+    return (
+      <div className="result-card" style={{ animation: 'slide-up 0.25s ease' }}>
+        <div className="result-label">NAVIGATION</div>
+        <div className="result-summary">{result.summary}</div>
+
+        {/* Active step banner */}
+        {!arrived ? (
+          <div className="nav-active-banner">
+            <span className="nav-active-icon">🔊</span>
+            <div className="nav-active-body">
+              <span className="nav-active-instruction">{navSteps[activeStep]?.instruction}</span>
+              {distToNext !== null && (
+                <span className="nav-active-dist">{distToNext}m to next turn</span>
+              )}
+            </div>
+          </div>
+        ) : (
+          <div className="nav-arrived-banner">🏁 You have arrived!</div>
+        )}
+
+        <RouteMap
+          origin={result.origin}
+          destination={result.destination}
+          steps={navSteps}
+          geometry={result.geometry}
+          activeStep={activeStep}
+        />
+
+        <div className="nav-steps">
+          {navSteps.map((step, i) => (
+            <div
+              key={i}
+              className={`nav-step ${i === activeStep ? 'active' : ''} ${i < activeStep ? 'done' : ''}`}
+            >
+              <span className="nav-step-num">
+                {i < activeStep ? '✓' : i + 1}
+              </span>
+              <div className="nav-step-body">
+                <span className="nav-step-instruction">{step.instruction}</span>
+                <span className="nav-step-meta">{step.distance} · {step.duration}</span>
+              </div>
+            </div>
+          ))}
+        </div>
+        {speaking && <SpeakingIndicator />}
+      </div>
+    );
+  }
+
   const displayText = result.spoken_summary || result.result || result.message || JSON.stringify(result, null, 2);
   return (
     <div className="result-card" style={{ animation: 'slide-up 0.25s ease' }}>
@@ -64,16 +122,29 @@ function ResultCard({ result, loading, speaking }) {
 }
 
 export default function AssistantScreen() {
-  const { activeTool, setActiveTool, callMCPTool, mcpResult, mcpLoading, speaking } = useBlindSight();
+  const { activeTool, setActiveTool, callMCPTool, mcpResult, mcpLoading, speaking, userLocation } = useBlindSight();
   const [query, setQuery] = useState('');
   const [listening, setListening] = useState(false);
   const recognitionRef = useRef(null);
 
   const tool = TOOLS.find(t => t.id === activeTool) || TOOLS[0];
+  const isNavigate = activeTool === 'navigate';
 
   const handleSend = () => {
     if (!query.trim()) return;
-    callMCPTool(activeTool, query.trim());
+    if (isNavigate) {
+      // Pass "lat,lng to destination" so server knows origin is GPS
+      const origin = userLocation
+        ? `${userLocation.lat},${userLocation.lng}`
+        : null;
+      if (!origin) {
+        alert('Waiting for GPS location. Please allow location access and try again.');
+        return;
+      }
+      callMCPTool('navigate', `${origin} to ${query.trim()}`);
+    } else {
+      callMCPTool(activeTool, query.trim());
+    }
   };
 
   const handleKeyDown = (e) => {
@@ -125,10 +196,23 @@ export default function AssistantScreen() {
           <span className="input-tool-name">{tool.icon} {tool.name}</span>
           <span className="input-hint">Enter key sends</span>
         </div>
+
+        {/* GPS origin badge — only shown for navigation */}
+        {isNavigate && (
+          <div className={`gps-origin-badge ${userLocation ? 'active' : 'waiting'}`}>
+            <span>{userLocation ? '📍' : '⏳'}</span>
+            <span>
+              {userLocation
+                ? `From: ${userLocation.lat.toFixed(5)}, ${userLocation.lng.toFixed(5)} (±${Math.round(userLocation.accuracy)}m)`
+                : 'Waiting for GPS location…'}
+            </span>
+          </div>
+        )}
+
         <textarea
           className="asst-input"
           rows={2}
-          placeholder={tool.placeholder}
+          placeholder={isNavigate ? 'Enter destination, e.g. Red Fort, Delhi' : tool.placeholder}
           value={query}
           onChange={e => setQuery(e.target.value)}
           onKeyDown={handleKeyDown}
@@ -137,13 +221,17 @@ export default function AssistantScreen() {
           <button className={`mic-btn ${listening ? 'active' : ''}`} onClick={handleVoice} aria-label="Voice input">
             🎙
           </button>
-          <button className="send-btn" onClick={handleSend} disabled={!query.trim() || mcpLoading}>
+          <button
+            className="send-btn"
+            onClick={handleSend}
+            disabled={!query.trim() || mcpLoading || (isNavigate && !userLocation)}
+          >
             {mcpLoading ? 'Sending…' : 'Send →'}
           </button>
         </div>
       </div>
 
-      <ResultCard result={mcpResult} loading={mcpLoading} speaking={speaking} />
+      <ResultCard result={mcpResult} loading={mcpLoading} speaking={speaking} userLocation={userLocation} />
     </div>
   );
 }

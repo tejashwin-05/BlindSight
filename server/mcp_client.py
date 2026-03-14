@@ -101,11 +101,19 @@ class MCPClient:
                 'spoken_summary': 'Please provide both origin and destination.'
             }
         
-        return await navigate_to_destination(
+        result = await navigate_to_destination(
             origin=origin,
             destination=destination,
             profile=profile
         )
+
+        # Build spoken summary from steps
+        steps_text = ". ".join(
+            f"Step {i+1}: {s['instruction']}, {s['distance']}"
+            for i, s in enumerate(result.get('steps', [])[:5])  # first 5 steps for TTS
+        )
+        result['spoken_summary'] = f"{result.get('summary', '')}. {steps_text}"
+        return result
     
     async def _get_emergency(self, params: dict) -> dict:
         """Get emergency information"""

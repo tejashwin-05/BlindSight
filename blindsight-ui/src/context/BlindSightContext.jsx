@@ -15,8 +15,9 @@ export function BlindSightProvider({ children }) {
   const [wsStatus,         setWsStatus]        = useState('disconnected');
   const [hazard,           setHazard]           = useState(null);
   const [alertLog,         setAlertLog]         = useState([]);
-  const [frameData,        setFrameData]        = useState(null);  // base64 JPEG from server
+  const [frameData,        setFrameData]        = useState(null);
   const [heatmap,          setHeatmap]          = useState({ left: 'safe', centerL: 'safe', centerR: 'safe', right: 'safe' });
+  const [userLocation,     setUserLocation]     = useState(null);  // { lat, lng, accuracy }
   const [sceneDescription, setSceneDescription] = useState('');
   const [sceneLoading,     setSceneLoading]     = useState(false);
   const [mcpResult,        setMcpResult]        = useState(null);
@@ -37,6 +38,17 @@ export function BlindSightProvider({ children }) {
   // Keep a ref to settings so handlers always read the latest value
   const settingsRef = useRef(settings);
   useEffect(() => { settingsRef.current = settings; }, [settings]);
+
+  // ── GPS location watcher ──────────────────────────────────────
+  useEffect(() => {
+    if (!navigator.geolocation) return;
+    const watchId = navigator.geolocation.watchPosition(
+      (pos) => setUserLocation({ lat: pos.coords.latitude, lng: pos.coords.longitude, accuracy: pos.coords.accuracy }),
+      (err) => console.warn('[GPS]', err.message),
+      { enableHighAccuracy: true, maximumAge: 10000, timeout: 15000 }
+    );
+    return () => navigator.geolocation.clearWatch(watchId);
+  }, []);
 
   // ── TTS ──────────────────────────────────────────────────────
   const speak = useCallback((text) => {
@@ -228,6 +240,7 @@ export function BlindSightProvider({ children }) {
   return (
     <BlindSightContext.Provider value={{
       wsStatus, hazard, alertLog, heatmap, frameData,
+      userLocation,
       sceneDescription, sceneLoading, requestScene,
       mcpResult, mcpLoading, callMCPTool,
       speaking, activeTool, setActiveTool,

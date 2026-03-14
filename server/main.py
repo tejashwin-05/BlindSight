@@ -297,13 +297,13 @@ async def ws_handler(websocket):
                 should_call_mcp = True  # Flag to control whether to call MCP
                 
                 if tool_name == "navigate":
-                    # Input format: "from X to Y" or just "Y" (destination only)
+                    # Input format: "from X to Y" or "X to Y" or just destination
                     if " to " in tool_input:
-                        parts = tool_input.split(" to ")
-                        if parts[0].startswith("from "):
-                            params['origin'] = parts[0].replace("from ", "").strip()
-                        else:
-                            params['origin'] = parts[0].strip()
+                        parts = tool_input.split(" to ", 1)
+                        origin_part = parts[0].strip()
+                        if origin_part.lower().startswith("from "):
+                            origin_part = origin_part[5:].strip()
+                        params['origin'] = origin_part
                         params['destination'] = parts[1].strip()
                     else:
                         # Only destination provided - send error
@@ -312,10 +312,10 @@ async def ws_handler(websocket):
                             "type": "mcp_response",
                             "tool": tool_name,
                             "result": {
-                                "error": "Please provide both origin and destination in format: from [origin] to [destination]",
-                                "spoken_summary": "Please provide both starting point and destination. For example: from India Gate to Red Fort"
+                                "error": "Please provide both origin and destination. Example: India Gate to Red Fort",
+                                "spoken_summary": "Please provide both starting point and destination. For example: India Gate to Red Fort"
                             },
-                            "spoken_summary": "Please provide both starting point and destination. For example: from India Gate to Red Fort"
+                            "spoken_summary": "Please provide both starting point and destination. For example: India Gate to Red Fort"
                         }
                         await websocket.send(json.dumps(error_response))
                         
