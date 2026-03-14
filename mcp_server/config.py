@@ -5,6 +5,16 @@ Set environment variables or edit defaults below.
 """
 
 import os
+from pathlib import Path
+from dotenv import load_dotenv
+
+# Load .env file from mcp_server directory
+env_path = Path(__file__).parent / '.env'
+if env_path.exists():
+    load_dotenv(env_path)
+    print(f"[Config] Loaded environment from {env_path}")
+else:
+    print(f"[Config] No .env file found at {env_path}")
 
 # ─── Server ──────────────────────────────────────────────────────
 MCP_HOST = os.getenv("MCP_HOST", "0.0.0.0")

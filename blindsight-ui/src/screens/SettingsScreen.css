@@ -1,0 +1,92 @@
+.settings-screen {
+  flex: 1; overflow-y: auto;
+  display: flex; flex-direction: column;
+  gap: 12px; padding: 12px 14px 32px;
+}
+
+.settings-header { flex-shrink: 0; }
+.settings-section-label { font-family: var(--font-mono); font-size: 9px; letter-spacing: 2px; color: var(--text2); }
+
+.connection-card {
+  padding: 13px 14px; border-radius: 14px;
+  border: 1px solid var(--border); background: var(--bg2);
+  display: flex; align-items: center;
+  justify-content: space-between; gap: 10px; flex-shrink: 0;
+}
+.conn-left { display: flex; gap: 10px; align-items: center; flex: 1; min-width: 0; }
+.conn-dot  { width: 8px; height: 8px; border-radius: 50%; flex-shrink: 0; animation: pulse-dot 2s infinite; }
+.conn-dot.connected    { background: var(--cyan); }
+.conn-dot.connecting   { background: var(--amber); }
+.conn-dot.disconnected { background: var(--red); }
+.conn-title { font-size: 13px; font-weight: 500; color: var(--text); margin-bottom: 2px; }
+.conn-sub   { font-size: 11px; color: var(--text2); white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+.conn-badge { font-family: var(--font-mono); font-size: 9px; letter-spacing: 1px; padding: 3px 8px; border-radius: 99px; flex-shrink: 0; }
+.connection-card.connected    .conn-badge { color: var(--cyan-l);  background: var(--cyan-dim);  border: 1px solid var(--cyan-border); }
+.connection-card.connecting   .conn-badge { color: var(--amber-l); background: var(--amber-dim); border: 1px solid var(--amber-border); }
+.connection-card.disconnected .conn-badge { color: var(--red-l);   background: var(--red-dim);   border: 1px solid var(--red-border); }
+
+.settings-block { flex-shrink: 0; }
+.group-title { font-family: var(--font-mono); font-size: 9px; letter-spacing: 1.5px; color: var(--text2); margin-bottom: 7px; }
+.settings-group { background: var(--bg2); border: 1px solid var(--border); border-radius: 14px; overflow: hidden; }
+
+.setting-row {
+  display: flex; align-items: center;
+  justify-content: space-between; gap: 12px;
+  padding: 13px 14px; border-bottom: 1px solid var(--border);
+}
+.setting-row:last-child { border-bottom: none; }
+.setting-left  { flex: 1; min-width: 0; }
+.setting-label { font-size: 13px; color: var(--text); margin-bottom: 2px; }
+.setting-sub   { font-size: 11px; color: var(--text2); line-height: 1.35; }
+.setting-right { flex-shrink: 0; }
+
+.toggle { width: 42px; height: 24px; border-radius: 12px; border: none; position: relative; cursor: pointer; transition: background 0.2s; padding: 0; }
+.toggle.on  { background: var(--cyan); }
+.toggle.off { background: var(--muted); }
+.toggle-thumb { position: absolute; width: 18px; height: 18px; border-radius: 50%; background: #fff; top: 3px; transition: left 0.15s; }
+.toggle.on  .toggle-thumb { left: 21px; }
+.toggle.off .toggle-thumb { left: 3px; }
+
+.stepper { display: flex; align-items: center; gap: 8px; }
+.stepper button {
+  width: 26px; height: 26px; border-radius: 6px;
+  border: 1px solid var(--border2); background: var(--bg3);
+  color: var(--text); font-size: 16px;
+  display: flex; align-items: center; justify-content: center;
+  cursor: pointer; line-height: 1;
+}
+.stepper button:hover { border-color: var(--cyan); }
+.stepper span { font-family: var(--font-mono); font-size: 12px; color: var(--cyan-l); min-width: 44px; text-align: center; }
+
+.val-badge { font-family: var(--font-mono); font-size: 10px; padding: 3px 9px; border-radius: 99px; letter-spacing: 0.5px; }
+.val-badge.cyan { color: var(--cyan-l); background: var(--cyan-dim); border: 1px solid var(--cyan-border); }
+
+.guardian-card { background: var(--red-dim); border: 1px solid var(--red-border); border-radius: 14px; overflow: hidden; flex-shrink: 0; }
+.guardian-header { display: flex; justify-content: space-between; align-items: center; padding: 12px 14px 0; margin-bottom: 10px; }
+.guardian-title  { font-family: var(--font-mono); font-size: 9px; letter-spacing: 1.5px; color: var(--red-l); }
+.guardian-badge  { font-family: var(--font-mono); font-size: 9px; color: var(--red-l); border: 1px solid var(--red-border); padding: 2px 7px; border-radius: 99px; }
+.guardian-body   { padding: 0 14px; margin-bottom: 4px; }
+.guardian-info-row { display: flex; align-items: center; justify-content: space-between; gap: 10px; }
+.guardian-contact  { font-size: 15px; font-weight: 500; color: var(--text); margin-bottom: 3px; font-family: var(--font-mono); }
+.guardian-sub      { font-size: 11px; color: var(--text2); line-height: 1.4; }
+.g-edit-btn { font-family: var(--font-mono); font-size: 10px; color: var(--red-l); border: 1px solid var(--red-border); background: transparent; padding: 4px 10px; border-radius: 6px; cursor: pointer; flex-shrink: 0; }
+.guardian-edit { display: flex; flex-direction: column; gap: 8px; }
+.guardian-input { background: var(--bg); border: 1px solid var(--red-border); border-radius: 8px; padding: 8px 12px; color: var(--text); font-size: 14px; font-family: var(--font-mono); outline: none; width: 100%; }
+.guardian-edit-btns { display: flex; gap: 8px; }
+.g-save   { flex: 1; padding: 8px; border-radius: 8px; font-size: 13px; cursor: pointer; background: var(--red); color: #fff; border: none; font-family: var(--font-body); }
+.g-cancel { flex: 1; padding: 8px; border-radius: 8px; font-size: 13px; cursor: pointer; background: transparent; border: 1px solid var(--border2); color: var(--text2); font-family: var(--font-body); }
+.guardian-card .setting-row { border-top: 1px solid var(--red-border); border-bottom: none; background: transparent; }
+
+.calib-row { display: flex; align-items: center; justify-content: space-between; gap: 12px; padding: 13px 14px; }
+.calib-btn {
+  background: var(--bg3); border: 1px solid var(--border2);
+  border-radius: 8px; padding: 8px 16px;
+  color: var(--cyan-l); font-size: 13px;
+  font-family: var(--font-body); cursor: pointer;
+  flex-shrink: 0; font-weight: 500; transition: border-color 0.15s;
+}
+.calib-btn:hover { border-color: var(--cyan); }
+
+.about-block { display: flex; flex-direction: column; align-items: center; gap: 4px; padding: 16px 0 8px; flex-shrink: 0; }
+.about-name  { font-family: var(--font-mono); font-size: 13px; color: var(--text2); letter-spacing: 2px; }
+.about-ver   { font-size: 11px; color: var(--muted); font-family: var(--font-mono); }

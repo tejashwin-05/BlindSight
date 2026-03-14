@@ -1,5 +1,5 @@
 """
-EcoSight Phase 1 Streamlit Dashboard
+BlindSight Phase 1 Streamlit Dashboard
 Replaces OpenCV judge window with a web UI:
 - live annotated camera feed
 - active hazard card
@@ -26,6 +26,7 @@ import config
 from camera import CameraManager
 from debounce import HazardDebouncer
 from phase1_reflex import ReflexLayer
+from phase1_freespace import FreeSpaceEstimator
 from phase2_context import ContextLayer
 
 
@@ -135,6 +136,7 @@ def _init_state() -> None:
     simple_defaults: dict[str, Any] = {
         "running": False,
         "camera_opened": False,
+        "camera_index": 0,                      # added: camera device index
         "last_detections": [],
         "latest_frame": None,
         "stream_frame_counter": 0,
@@ -185,15 +187,20 @@ def _start_backend() -> None:
 
     script_dir = os.path.dirname(os.path.abspath(__file__))
     main_py = os.path.join(script_dir, "main.py")
-    backend = subprocess.Popen(
-        [sys.executable, main_py],
-        cwd=script_dir,
-        env=env,
-        stdout=subprocess.DEVNULL,
-        stderr=subprocess.DEVNULL,
-    )
-    st.session_state["backend_proc"] = backend
-    st.session_state["backend_running"] = True
+    try:
+        backend = subprocess.Popen(
+            [sys.executable, main_py],
+            cwd=script_dir,
+            env=env,
+            stdout=subprocess.DEVNULL,
+            stderr=subprocess.DEVNULL,
+        )
+        st.session_state["backend_proc"] = backend
+        st.session_state["backend_running"] = True
+        st.session_state["last_error"] = ""   # clear any previous error
+    except Exception as e:
+        st.session_state["last_error"] = f"Failed to start backend: {e}"
+        st.session_state["backend_running"] = False
 
 
 def _stop_backend() -> None:
@@ -260,6 +267,75 @@ def _draw_frame(frame: np.ndarray, detections: list[dict], path_detections: list
     cv2.rectangle(vis, (lx1, ly), (lx2, h - 1), (0, 255, 0), 2)
 
     return vis
+
+
+def _build_freespace_heatmap(frame_shape: tuple[int, int, int], detections: list[dict]) -> np.ndarray:
+    """
+    Build a pixel-level free-space heatmap overlay.
+    Green = safe/empty space, Red = occupied/hazard zone.
+    Returns an RGB image of the same size as the frame.
+    """
+    h, w = frame_shape[0], frame_shape[1]
+    y_min = int(h * config.GUIDANCE_LOWER_FRAME_START_RATIO)
+
+    # Start with a full green canvas (safe)
+    heatmap = np.zeros((h, w, 3), dtype=np.uint8)
+    heatmap[:, :] = (0, 180, 0)  # green = free
+
+    # Upper region (above path zone) — neutral grey
+    heatmap[:y_min, :] = (60, 60, 60)
+
+    # Paint hazard boxes red with a soft radial falloff
+    for det in detections:
+        x1, y1, x2, y2 = det["box"]
+        x1, y1 = max(0, x1), max(0, y1)
+        x2, y2 = min(w - 1, x2), min(h - 1, y2)
+
+        # Core box — full red
+        heatmap[y1:y2, x1:x2] = (200, 0, 0)
+
+        # Soft danger margin around the box
+        margin = 20
+        mx1, my1 = max(0, x1 - margin), max(y_min, y1 - margin)
+        mx2, my2 = min(w - 1, x2 + margin), min(h - 1, y2 + margin)
+        for py in range(my1, my2):
+            for px in range(mx1, mx2):
+                if y1 <= py <= y2 and x1 <= px <= x2:
+                    continue  # already red
+                # blend orange into the margin
+                existing = heatmap[py, px]
+                if not np.array_equal(existing, np.array([200, 0, 0])):
+                    heatmap[py, px] = (
+                        min(255, int(existing[0] * 0.4 + 220 * 0.6)),
+                        min(255, int(existing[1] * 0.4 + 120 * 0.6)),
+                        0,
+                    )
+
+    # Draw lane dividers
+    lx_left = int(w * config.LEFT_ZONE_END)
+    lx_right = int(w * config.RIGHT_ZONE_START)
+    cv2.line(heatmap, (lx_left, y_min), (lx_left, h - 1), (255, 255, 255), 1)
+    cv2.line(heatmap, (lx_right, y_min), (lx_right, h - 1), (255, 255, 255), 1)
+
+    # Lane safety scores
+    freespace = FreeSpaceEstimator("heuristic")
+    scores = freespace.lane_scores(frame_shape, detections)
+    lane_labels = {
+        "left":   (int(w * 0.10), int(h * 0.92)),
+        "center": (int(w * 0.42), int(h * 0.92)),
+        "right":  (int(w * 0.72), int(h * 0.92)),
+    }
+    for lane, pos in lane_labels.items():
+        score = scores.get(lane, 1.0)
+        pct = int(score * 100)
+        color = (0, 220, 0) if score >= 0.6 else (220, 180, 0) if score >= 0.3 else (220, 30, 30)
+        cv2.putText(heatmap, f"{lane} {pct}%", pos, cv2.FONT_HERSHEY_SIMPLEX, 0.55, color, 2)
+
+    # Legend
+    cv2.putText(heatmap, "Free-Space Heatmap", (8, 22), cv2.FONT_HERSHEY_SIMPLEX, 0.6, (255, 255, 255), 2)
+    cv2.putText(heatmap, "GREEN=safe  ORANGE=caution  RED=hazard", (8, 44), cv2.FONT_HERSHEY_SIMPLEX, 0.42, (200, 200, 200), 1)
+
+    return heatmap
 
 
 def _frame_to_data_uri(frame_rgb: np.ndarray, quality: int = 65) -> str:
@@ -404,11 +480,13 @@ def _build_message(target: dict) -> str:
 
 
 def main() -> None:
-    st.set_page_config(page_title="EcoSight Phase 1", layout="wide")
+    st.set_page_config(page_title="BlindSight", layout="wide")
     _init_state()
-    _start_backend()
 
-    st.title("EcoSight — Phase 1 Reflex Dashboard")
+    # Do NOT start backend automatically – let user control it
+    # _start_backend()   <--- removed
+
+    st.title("BlindSight Dashboard")
 
     left, right = st.columns([3, 2])
     with right:
@@ -416,6 +494,18 @@ def main() -> None:
         tts_enabled = st.toggle("Enable Browser TTS", value=True)
         auto_refresh_ms = st.slider("Refresh interval (ms)", min_value=80, max_value=500, value=220, step=20)
         infer_every_n = st.slider("Run detection every N processed frames", min_value=1, max_value=4, value=2, step=1)
+
+        # Camera index selection
+        cam_index = st.number_input("Camera index", min_value=0, max_value=10, value=st.session_state["camera_index"], step=1)
+        if cam_index != st.session_state["camera_index"]:
+            st.session_state["camera_index"] = cam_index
+            # If camera is already opened, we need to reopen with new index
+            if st.session_state["camera_opened"]:
+                st.session_state["camera"].release()
+                st.session_state["camera_opened"] = False
+                st.session_state["running"] = False
+                st.warning("Camera index changed. Please click Start again.")
+
         st.caption(f"Backend main.py: {'Running' if st.session_state.get('backend_running') else 'Stopped'}")
 
         backend_col1, backend_col2 = st.columns(2)
@@ -429,11 +519,19 @@ def main() -> None:
         btn_col1, btn_col2 = st.columns(2)
         with btn_col1:
             if st.button("Start"):
-                if not st.session_state["camera_opened"]:
-                    st.session_state["camera"].open()
-                    st.session_state["camera_opened"] = True
-                st.session_state["running"] = True
-                st.session_state["last_error"] = ""
+                # Attempt to open camera with error handling
+                try:
+                    if not st.session_state["camera_opened"]:
+                        # Set camera index before opening
+                        st.session_state["camera"].set_index(st.session_state["camera_index"])
+                        st.session_state["camera"].open()
+                        st.session_state["camera_opened"] = True
+                    st.session_state["running"] = True
+                    st.session_state["last_error"] = ""
+                except Exception as e:
+                    st.session_state["last_error"] = f"Failed to open camera: {e}"
+                    st.session_state["camera_opened"] = False
+                    st.session_state["running"] = False
 
         with btn_col2:
             if st.button("Stop"):
@@ -460,6 +558,8 @@ def main() -> None:
 
     with left:
         frame_box = st.empty()
+        st.caption("Free-Space Heatmap")
+        heatmap_box = st.empty()
 
     if not st.session_state["running"]:
         frame_box.info("Click Start to run live camera stream.")
@@ -468,12 +568,33 @@ def main() -> None:
         return
 
     try:
-        should_process, frame = st.session_state["camera"].read()
+        # Read frame with error handling
+        try:
+            result = st.session_state["camera"].read()
+            if result is None:
+                st.session_state["last_error"] = "Camera returned no frame"
+                time.sleep(auto_refresh_ms / 1000.0)
+                st.rerun()
+                return
+            # Expecting a tuple (should_process, frame)
+            if isinstance(result, tuple) and len(result) == 2:
+                should_process, frame = result
+            else:
+                # Fallback if read() returns only frame
+                frame = result
+                should_process = True
+        except Exception as e:
+            st.session_state["last_error"] = f"Camera read error: {e}"
+            time.sleep(auto_refresh_ms / 1000.0)
+            st.rerun()
+            return
+
         if frame is None:
             st.session_state["last_error"] = "Camera frame not available"
             time.sleep(auto_refresh_ms / 1000.0)
             st.rerun()
             return
+
         st.session_state["latest_frame"] = frame.copy()
 
         if st.session_state.get("phase2_request", False):
@@ -533,6 +654,15 @@ def main() -> None:
             )
         else:
             frame_box.warning("Frame encode failed")
+
+        # Free-space heatmap
+        heatmap = _build_freespace_heatmap(frame.shape, detections)
+        heatmap_uri = _frame_to_data_uri(heatmap, quality=80)
+        if heatmap_uri:
+            heatmap_box.markdown(
+                f"<img src=\"{heatmap_uri}\" style=\"width:100%;height:auto;border-radius:8px;\"/>",
+                unsafe_allow_html=True,
+            )
 
         if active_target:
             current_hazard_box.success(

@@ -1,0 +1,37 @@
+[
+  {
+    "test": "Delhi - India Gate to Red Fort",
+    "status": "SUCCESS",
+    "distance": "7.3 kilometres",
+    "duration": "1 hour 27 minutes",
+    "steps": 50
+  },
+  {
+    "test": "Mumbai - Gateway of India to Marine Drive",
+    "status": "SUCCESS",
+    "distance": "3.3 kilometres",
+    "duration": "39 minutes",
+    "steps": 18
+  },
+  {
+    "test": "Bangalore - MG Road to Cubbon Park",
+    "status": "SUCCESS",
+    "distance": "1.1 kilometres",
+    "duration": "13 minutes",
+    "steps": 9
+  },
+  {
+    "test": "Hyderabad - Charminar to Golconda Fort",
+    "status": "SUCCESS",
+    "distance": "12.0 kilometres",
+    "duration": "2 hours 23 minutes",
+    "steps": 99
+  },
+  {
+    "test": "Chennai - Marina Beach to Kapaleeshwarar Temple",
+    "status": "SUCCESS",
+    "distance": "31.0 kilometres",
+    "duration": "6 hours 12 minutes",
+    "steps": 183
+  }
+]

@@ -10,6 +10,7 @@ PHASE 1 — Hazard Alert (server → client)
     "direction":     "left" | "center" | "right" | null,
     "distance":      float | null,     // metres (e.g. 1.5)
     "confidence":    float | null,     // 0.0 – 1.0
+    "guidance":      str | null,       // "move slightly left", etc.
     "total_hazards": int               // number of hazards in this frame
 }
 
@@ -40,6 +41,7 @@ def build_phase1_payload(
     distance: float | None,
     confidence: float | None,
     total_hazards: int,
+    guidance: str | None = None,
 ) -> dict:
     """Build a validated Phase 1 hazard payload."""
     return {
@@ -48,6 +50,7 @@ def build_phase1_payload(
         "direction": direction,
         "distance": distance,
         "confidence": confidence,
+        "guidance": guidance,
         "total_hazards": total_hazards,
     }
 
@@ -67,3 +70,16 @@ def build_phase2_payload(
 
 def build_pong() -> dict:
     return {"type": "pong"}
+
+
+def build_frame_payload(frame_bgr) -> dict | None:
+    """
+    Encode an annotated BGR frame as a base64 JPEG for streaming to the browser.
+    Returns None if encoding fails.
+    """
+    import cv2, base64
+    ok, buf = cv2.imencode(".jpg", frame_bgr, [int(cv2.IMWRITE_JPEG_QUALITY), 55])
+    if not ok:
+        return None
+    b64 = base64.b64encode(buf.tobytes()).decode("ascii")
+    return {"type": "frame", "data": f"data:image/jpeg;base64,{b64}"}

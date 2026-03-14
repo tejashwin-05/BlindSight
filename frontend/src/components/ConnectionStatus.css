@@ -1,0 +1,181 @@
+.connection-status {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 0.75rem;
+  width: 100%;
+}
+
+.status-card,
+.phase-card {
+  background: white;
+  padding: 1rem;
+  border-radius: 16px;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s;
+  -webkit-tap-highlight-color: transparent;
+}
+
+.status-card:active,
+.phase-card:active {
+  transform: scale(0.98);
+}
+
+.status-indicator {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+.status-dot {
+  position: relative;
+  width: 14px;
+  height: 14px;
+  border-radius: 50%;
+  flex-shrink: 0;
+}
+
+.status-dot.connected {
+  background: #38ef7d;
+  box-shadow: 0 0 10px rgba(56, 239, 125, 0.6);
+}
+
+.status-dot.disconnected {
+  background: #eb3349;
+  box-shadow: 0 0 10px rgba(235, 51, 73, 0.6);
+}
+
+.dot-pulse {
+  position: absolute;
+  top: -3px;
+  left: -3px;
+  right: -3px;
+  bottom: -3px;
+  border-radius: 50%;
+  border: 2px solid currentColor;
+  animation: pulse 2s ease-out infinite;
+}
+
+.status-dot.connected .dot-pulse {
+  color: #38ef7d;
+}
+
+.status-dot.disconnected .dot-pulse {
+  color: #eb3349;
+}
+
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+    opacity: 1;
+  }
+  100% {
+    transform: scale(1.8);
+    opacity: 0;
+  }
+}
+
+.status-info,
+.phase-info {
+  display: flex;
+  flex-direction: column;
+  gap: 0.2rem;
+  flex: 1;
+  min-width: 0;
+}
+
+.status-label,
+.phase-label {
+  font-size: 0.7rem;
+  color: #999;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  font-weight: 600;
+}
+
+.status-value {
+  font-size: 0.85rem;
+  color: #333;
+  font-weight: 600;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.phase-card {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+.phase-icon {
+  font-size: 2rem;
+  flex-shrink: 0;
+  animation: iconBounce 2s ease-in-out infinite;
+}
+
+@keyframes iconBounce {
+  0%, 100% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.1);
+  }
+}
+
+.phase-badge {
+  display: inline-block;
+  padding: 0.35rem 0.7rem;
+  border-radius: 10px;
+  font-size: 0.75rem;
+  font-weight: 700;
+  letter-spacing: 0.3px;
+}
+
+.phase-badge.phase-1 {
+  background: linear-gradient(135deg, rgba(102, 126, 234, 0.15), rgba(118, 75, 162, 0.15));
+  color: #667eea;
+  border: 2px solid rgba(102, 126, 234, 0.3);
+}
+
+.phase-badge.phase-2 {
+  background: linear-gradient(135deg, rgba(242, 153, 74, 0.15), rgba(242, 201, 76, 0.15));
+  color: #f2994a;
+  border: 2px solid rgba(242, 153, 74, 0.3);
+}
+
+.phase-description {
+  font-size: 0.75rem;
+  color: #666;
+  font-style: italic;
+}
+
+/* Tablet - 2 columns */
+@media (min-width: 600px) {
+  .connection-status {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+  }
+  
+  .status-card,
+  .phase-card {
+    padding: 1.25rem;
+  }
+  
+  .status-value {
+    font-size: 0.9rem;
+  }
+}
+
+/* Desktop */
+@media (min-width: 1024px) {
+  .connection-status {
+    max-width: 900px;
+    margin: 0 auto;
+  }
+  
+  .status-card:hover,
+  .phase-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15);
+  }
+}

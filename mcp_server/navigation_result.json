@@ -1,0 +1,6526 @@
+{
+  "summary": "Walk from Times Square, Friendship, NY, USA to Bethpage, NY, USA. Total distance: 602.3 kilometres. Estimated time: 119 hours 42 minutes.",
+  "steps": [
+    {
+      "instruction": "Head east on Times Square",
+      "distance": "3.0 kilometres",
+      "duration": "35 minutes",
+      "type": 11,
+      "name": "Times Square"
+    },
+    {
+      "instruction": "Turn right onto Wells Road",
+      "distance": "486 metres",
+      "duration": "5 minutes",
+      "type": 1,
+      "name": "Wells Road"
+    },
+    {
+      "instruction": "Turn sharp left onto Town Line Road",
+      "distance": "1.9 kilometres",
+      "duration": "23 minutes",
+      "type": 2,
+      "name": "Town Line Road"
+    },
+    {
+      "instruction": "Turn right onto East Hill Road",
+      "distance": "2.4 kilometres",
+      "duration": "29 minutes",
+      "type": 1,
+      "name": "East Hill Road"
+    },
+    {
+      "instruction": "Turn left onto Culver Road",
+      "distance": "1.8 kilometres",
+      "duration": "22 minutes",
+      "type": 0,
+      "name": "Culver Road"
+    },
+    {
+      "instruction": "Turn right onto Hazzard Road",
+      "distance": "1.2 kilometres",
+      "duration": "14 minutes",
+      "type": 1,
+      "name": "Hazzard Road"
+    },
+    {
+      "instruction": "Turn left onto Snowball Hollow Road",
+      "distance": "63 metres",
+      "duration": "less than a minute",
+      "type": 0,
+      "name": "Snowball Hollow Road"
+    },
+    {
+      "instruction": "Turn right onto Peterson Hill Road",
+      "distance": "2.0 kilometres",
+      "duration": "24 minutes",
+      "type": 1,
+      "name": "Peterson Hill Road"
+    },
+    {
+      "instruction": "Turn sharp left onto Comfort Hollow Road",
+      "distance": "367 metres",
+      "duration": "4 minutes",
+      "type": 2,
+      "name": "Comfort Hollow Road"
+    },
+    {
+      "instruction": "Turn right onto Wolf Spring Road",
+      "distance": "2.0 kilometres",
+      "duration": "24 minutes",
+      "type": 1,
+      "name": "Wolf Spring Road"
+    },
+    {
+      "instruction": "Turn left onto Wolf Spring Road",
+      "distance": "1.8 kilometres",
+      "duration": "22 minutes",
+      "type": 0,
+      "name": "Wolf Spring Road"
+    },
+    {
+      "instruction": "Turn left onto Bolivar Road, NY 417",
+      "distance": "1.0 kilometres",
+      "duration": "12 minutes",
+      "type": 0,
+      "name": "Bolivar Road, NY 417"
+    },
+    {
+      "instruction": "Turn right onto Yeager Hill Road",
+      "distance": "8.7 kilometres",
+      "duration": "1 hour 44 minutes",
+      "type": 1,
+      "name": "Yeager Hill Road"
+    },
+    {
+      "instruction": "Continue straight onto Pine Street",
+      "distance": "179 metres",
+      "duration": "2 minutes",
+      "type": 6,
+      "name": "Pine Street"
+    },
+    {
+      "instruction": "Turn slight right onto Pine Street",
+      "distance": "346 metres",
+      "duration": "4 minutes",
+      "type": 5,
+      "name": "Pine Street"
+    },
+    {
+      "instruction": "Turn left onto Pleasant Street",
+      "distance": "269 metres",
+      "duration": "3 minutes",
+      "type": 0,
+      "name": "Pleasant Street"
+    },
+    {
+      "instruction": "Turn right onto West State Street",
+      "distance": "909 metres",
+      "duration": "10 minutes",
+      "type": 1,
+      "name": "West State Street"
+    },
+    {
+      "instruction": "Turn right onto South Broad Street",
+      "distance": "1.5 kilometres",
+      "duration": "17 minutes",
+      "type": 1,
+      "name": "South Broad Street"
+    },
+    {
+      "instruction": "Turn sharp right onto Andover Road, NY 417",
+      "distance": "76 metres",
+      "duration": "less than a minute",
+      "type": 3,
+      "name": "Andover Road, NY 417"
+    },
+    {
+      "instruction": "Turn sharp left onto East Dyke Street",
+      "distance": "2.2 kilometres",
+      "duration": "26 minutes",
+      "type": 2,
+      "name": "East Dyke Street"
+    },
+    {
+      "instruction": "Continue straight onto Trapping Brook Road",
+      "distance": "12.5 kilometres",
+      "duration": "2 hours 30 minutes",
+      "type": 6,
+      "name": "Trapping Brook Road"
+    },
+    {
+      "instruction": "Turn right onto Davis Hill Road",
+      "distance": "1.9 kilometres",
+      "duration": "22 minutes",
+      "type": 1,
+      "name": "Davis Hill Road"
+    },
+    {
+      "instruction": "Turn left onto Crandall Road",
+      "distance": "3.2 kilometres",
+      "duration": "37 minutes",
+      "type": 0,
+      "name": "Crandall Road"
+    },
+    {
+      "instruction": "Continue straight onto Town Line Road",
+      "distance": "5.6 kilometres",
+      "duration": "1 hour 7 minutes",
+      "type": 6,
+      "name": "Town Line Road"
+    },
+    {
+      "instruction": "Turn right onto State Highway 248, NY 248",
+      "distance": "1.2 kilometres",
+      "duration": "13 minutes",
+      "type": 1,
+      "name": "State Highway 248, NY 248"
+    },
+    {
+      "instruction": "Turn left onto Loomis Road",
+      "distance": "3.7 kilometres",
+      "duration": "44 minutes",
+      "type": 0,
+      "name": "Loomis Road"
+    },
+    {
+      "instruction": "Turn left onto Leonard Road",
+      "distance": "743 metres",
+      "duration": "8 minutes",
+      "type": 0,
+      "name": "Leonard Road"
+    },
+    {
+      "instruction": "Turn left onto Leonard Road",
+      "distance": "563 metres",
+      "duration": "6 minutes",
+      "type": 0,
+      "name": "Leonard Road"
+    },
+    {
+      "instruction": "Turn right onto Gunn Road",
+      "distance": "3.6 kilometres",
+      "duration": "43 minutes",
+      "type": 1,
+      "name": "Gunn Road"
+    },
+    {
+      "instruction": "Turn left onto Coover Hollow Road",
+      "distance": "369 metres",
+      "duration": "4 minutes",
+      "type": 0,
+      "name": "Coover Hollow Road"
+    },
+    {
+      "instruction": "Turn right onto Prutsman Road",
+      "distance": "2.4 kilometres",
+      "duration": "28 minutes",
+      "type": 1,
+      "name": "Prutsman Road"
+    },
+    {
+      "instruction": "Turn right onto State Highway 36, NY 36",
+      "distance": "33 metres",
+      "duration": "less than a minute",
+      "type": 1,
+      "name": "State Highway 36, NY 36"
+    },
+    {
+      "instruction": "Turn left",
+      "distance": "128 metres",
+      "duration": "1 minute",
+      "type": 0,
+      "name": "-"
+    },
+    {
+      "instruction": "Turn left onto Mc Mindes Road",
+      "distance": "1.9 kilometres",
+      "duration": "23 minutes",
+      "type": 0,
+      "name": "Mc Mindes Road"
+    },
+    {
+      "instruction": "Keep left onto Rude Road",
+      "distance": "2.1 kilometres",
+      "duration": "24 minutes",
+      "type": 12,
+      "name": "Rude Road"
+    },
+    {
+      "instruction": "Continue straight onto County Route 82, CR 82",
+      "distance": "968 metres",
+      "duration": "11 minutes",
+      "type": 6,
+      "name": "County Route 82, CR 82"
+    },
+    {
+      "instruction": "Turn right onto Upper Welty Road",
+      "distance": "1.5 kilometres",
+      "duration": "17 minutes",
+      "type": 1,
+      "name": "Upper Welty Road"
+    },
+    {
+      "instruction": "Turn left onto Paul Road",
+      "distance": "262 metres",
+      "duration": "3 minutes",
+      "type": 0,
+      "name": "Paul Road"
+    },
+    {
+      "instruction": "Turn right onto Stiles Road",
+      "distance": "1.2 kilometres",
+      "duration": "14 minutes",
+      "type": 1,
+      "name": "Stiles Road"
+    },
+    {
+      "instruction": "Turn left onto Olmsted Road",
+      "distance": "1.8 kilometres",
+      "duration": "21 minutes",
+      "type": 0,
+      "name": "Olmsted Road"
+    },
+    {
+      "instruction": "Keep right onto Husted Road",
+      "distance": "1.6 kilometres",
+      "duration": "18 minutes",
+      "type": 13,
+      "name": "Husted Road"
+    },
+    {
+      "instruction": "Turn left onto County Route 103",
+      "distance": "1.2 kilometres",
+      "duration": "14 minutes",
+      "type": 0,
+      "name": "County Route 103"
+    },
+    {
+      "instruction": "Turn sharp right onto Olin Road",
+      "distance": "2.2 kilometres",
+      "duration": "26 minutes",
+      "type": 3,
+      "name": "Olin Road"
+    },
+    {
+      "instruction": "Turn left onto County Route 99, CR 99",
+      "distance": "387 metres",
+      "duration": "4 minutes",
+      "type": 0,
+      "name": "County Route 99, CR 99"
+    },
+    {
+      "instruction": "Turn right onto Allen Road",
+      "distance": "3.0 kilometres",
+      "duration": "35 minutes",
+      "type": 1,
+      "name": "Allen Road"
+    },
+    {
+      "instruction": "Continue straight onto Durkin Hill Road",
+      "distance": "252 metres",
+      "duration": "3 minutes",
+      "type": 6,
+      "name": "Durkin Hill Road"
+    },
+    {
+      "instruction": "Turn right onto Mead Road",
+      "distance": "2.3 kilometres",
+      "duration": "27 minutes",
+      "type": 1,
+      "name": "Mead Road"
+    },
+    {
+      "instruction": "Turn left onto Symonds Hill Road",
+      "distance": "2.9 kilometres",
+      "duration": "34 minutes",
+      "type": 0,
+      "name": "Symonds Hill Road"
+    },
+    {
+      "instruction": "Turn right",
+      "distance": "1.5 kilometres",
+      "duration": "17 minutes",
+      "type": 1,
+      "name": "-"
+    },
+    {
+      "instruction": "Turn sharp right onto County Route 100, CR 100",
+      "distance": "1.2 kilometres",
+      "duration": "13 minutes",
+      "type": 3,
+      "name": "County Route 100, CR 100"
+    },
+    {
+      "instruction": "Turn sharp left onto Brennan Road",
+      "distance": "2.4 kilometres",
+      "duration": "28 minutes",
+      "type": 2,
+      "name": "Brennan Road"
+    },
+    {
+      "instruction": "Keep left onto Brennan Road",
+      "distance": "1.1 kilometres",
+      "duration": "13 minutes",
+      "type": 12,
+      "name": "Brennan Road"
+    },
+    {
+      "instruction": "Turn right onto County Route 85, CR 85",
+      "distance": "10 metres",
+      "duration": "less than a minute",
+      "type": 1,
+      "name": "County Route 85, CR 85"
+    },
+    {
+      "instruction": "Turn left onto Mack Road",
+      "distance": "2.7 kilometres",
+      "duration": "32 minutes",
+      "type": 0,
+      "name": "Mack Road"
+    },
+    {
+      "instruction": "Turn left onto Mack Road",
+      "distance": "2.5 kilometres",
+      "duration": "30 minutes",
+      "type": 0,
+      "name": "Mack Road"
+    },
+    {
+      "instruction": "Turn sharp right onto County Route 86",
+      "distance": "343 metres",
+      "duration": "4 minutes",
+      "type": 3,
+      "name": "County Route 86"
+    },
+    {
+      "instruction": "Keep left onto Bottum Hill Road",
+      "distance": "947 metres",
+      "duration": "11 minutes",
+      "type": 12,
+      "name": "Bottum Hill Road"
+    },
+    {
+      "instruction": "Turn left onto East Hill Church Road",
+      "distance": "90 metres",
+      "duration": "1 minute",
+      "type": 0,
+      "name": "East Hill Church Road"
+    },
+    {
+      "instruction": "Turn sharp right onto Niles Cross Road",
+      "distance": "3.4 kilometres",
+      "duration": "40 minutes",
+      "type": 3,
+      "name": "Niles Cross Road"
+    },
+    {
+      "instruction": "Turn left onto Casson Road",
+      "distance": "7.2 kilometres",
+      "duration": "1 hour 26 minutes",
+      "type": 0,
+      "name": "Casson Road"
+    },
+    {
+      "instruction": "Continue straight onto Morgan Creek Road, CR 73",
+      "distance": "785 metres",
+      "duration": "9 minutes",
+      "type": 6,
+      "name": "Morgan Creek Road, CR 73"
+    },
+    {
+      "instruction": "Turn sharp right onto River Road, CR 116",
+      "distance": "1.5 kilometres",
+      "duration": "18 minutes",
+      "type": 3,
+      "name": "River Road, CR 116"
+    },
+    {
+      "instruction": "Turn left onto Steamtown Road",
+      "distance": "2.2 kilometres",
+      "duration": "26 minutes",
+      "type": 0,
+      "name": "Steamtown Road"
+    },
+    {
+      "instruction": "Turn sharp right onto Felker Road",
+      "distance": "329 metres",
+      "duration": "3 minutes",
+      "type": 3,
+      "name": "Felker Road"
+    },
+    {
+      "instruction": "Turn right onto Felker Road",
+      "distance": "1.9 kilometres",
+      "duration": "22 minutes",
+      "type": 1,
+      "name": "Felker Road"
+    },
+    {
+      "instruction": "Turn left onto Lindley Lawrenceville Road, SR 1015",
+      "distance": "227 metres",
+      "duration": "2 minutes",
+      "type": 0,
+      "name": "Lindley Lawrenceville Road, SR 1015"
+    },
+    {
+      "instruction": "Keep left onto Depot Hill Road",
+      "distance": "1.4 kilometres",
+      "duration": "16 minutes",
+      "type": 12,
+      "name": "Depot Hill Road"
+    },
+    {
+      "instruction": "Continue straight onto Douds Road",
+      "distance": "3.8 kilometres",
+      "duration": "45 minutes",
+      "type": 6,
+      "name": "Douds Road"
+    },
+    {
+      "instruction": "Keep right onto Cram Cross Road",
+      "distance": "621 metres",
+      "duration": "7 minutes",
+      "type": 13,
+      "name": "Cram Cross Road"
+    },
+    {
+      "instruction": "Keep left onto Cram Cross Road",
+      "distance": "12 metres",
+      "duration": "less than a minute",
+      "type": 12,
+      "name": "Cram Cross Road"
+    },
+    {
+      "instruction": "Continue straight onto Buckwheat Hollow Road",
+      "distance": "1.2 kilometres",
+      "duration": "14 minutes",
+      "type": 6,
+      "name": "Buckwheat Hollow Road"
+    },
+    {
+      "instruction": "Turn right onto McCarthy Road",
+      "distance": "8.8 kilometres",
+      "duration": "1 hour 46 minutes",
+      "type": 1,
+      "name": "McCarthy Road"
+    },
+    {
+      "instruction": "Continue straight onto North Road",
+      "distance": "1.2 kilometres",
+      "duration": "14 minutes",
+      "type": 6,
+      "name": "North Road"
+    },
+    {
+      "instruction": "Turn left onto Back Street",
+      "distance": "543 metres",
+      "duration": "6 minutes",
+      "type": 0,
+      "name": "Back Street"
+    },
+    {
+      "instruction": "Turn right onto Bly Road",
+      "distance": "6.1 kilometres",
+      "duration": "1 hour 12 minutes",
+      "type": 1,
+      "name": "Bly Road"
+    },
+    {
+      "instruction": "Turn sharp right onto PA 549",
+      "distance": "75 metres",
+      "duration": "less than a minute",
+      "type": 3,
+      "name": "PA 549"
+    },
+    {
+      "instruction": "Keep left onto Baker Road",
+      "distance": "3.8 kilometres",
+      "duration": "45 minutes",
+      "type": 12,
+      "name": "Baker Road"
+    },
+    {
+      "instruction": "Turn right onto Judson Hill Road",
+      "distance": "3.1 kilometres",
+      "duration": "36 minutes",
+      "type": 1,
+      "name": "Judson Hill Road"
+    },
+    {
+      "instruction": "Continue straight onto Judson Hill Road",
+      "distance": "36 metres",
+      "duration": "less than a minute",
+      "type": 6,
+      "name": "Judson Hill Road"
+    },
+    {
+      "instruction": "Continue straight onto Hickory Road",
+      "distance": "440 metres",
+      "duration": "5 minutes",
+      "type": 6,
+      "name": "Hickory Road"
+    },
+    {
+      "instruction": "Turn right onto Beaman Road",
+      "distance": "2.1 kilometres",
+      "duration": "25 minutes",
+      "type": 1,
+      "name": "Beaman Road"
+    },
+    {
+      "instruction": "Turn sharp left onto Soper Hollow Road",
+      "distance": "876 metres",
+      "duration": "10 minutes",
+      "type": 2,
+      "name": "Soper Hollow Road"
+    },
+    {
+      "instruction": "Turn right onto Baptist Hill Road",
+      "distance": "874 metres",
+      "duration": "10 minutes",
+      "type": 1,
+      "name": "Baptist Hill Road"
+    },
+    {
+      "instruction": "Turn left onto Fairbanks Road",
+      "distance": "5.9 kilometres",
+      "duration": "1 hour 11 minutes",
+      "type": 0,
+      "name": "Fairbanks Road"
+    },
+    {
+      "instruction": "Turn right onto PA 14",
+      "distance": "484 metres",
+      "duration": "5 minutes",
+      "type": 1,
+      "name": "PA 14"
+    },
+    {
+      "instruction": "Turn sharp left onto Laurel Lake Road",
+      "distance": "1.6 kilometres",
+      "duration": "19 minutes",
+      "type": 2,
+      "name": "Laurel Lake Road"
+    },
+    {
+      "instruction": "Keep right onto Laurel Lake Road",
+      "distance": "4.0 kilometres",
+      "duration": "48 minutes",
+      "type": 13,
+      "name": "Laurel Lake Road"
+    },
+    {
+      "instruction": "Keep right onto Brace Road",
+      "distance": "35 metres",
+      "duration": "less than a minute",
+      "type": 13,
+      "name": "Brace Road"
+    },
+    {
+      "instruction": "Turn slight right onto Kingsley Road",
+      "distance": "1.1 kilometres",
+      "duration": "12 minutes",
+      "type": 5,
+      "name": "Kingsley Road"
+    },
+    {
+      "instruction": "Turn sharp left onto Springfield Road",
+      "distance": "786 metres",
+      "duration": "9 minutes",
+      "type": 2,
+      "name": "Springfield Road"
+    },
+    {
+      "instruction": "Turn right onto Jenkins Road",
+      "distance": "1.8 kilometres",
+      "duration": "21 minutes",
+      "type": 1,
+      "name": "Jenkins Road"
+    },
+    {
+      "instruction": "Turn left onto Beardslee Road",
+      "distance": "1.3 kilometres",
+      "duration": "15 minutes",
+      "type": 0,
+      "name": "Beardslee Road"
+    },
+    {
+      "instruction": "Turn right onto T698",
+      "distance": "1.3 kilometres",
+      "duration": "15 minutes",
+      "type": 1,
+      "name": "T698"
+    },
+    {
+      "instruction": "Turn left onto Keir Hill Road",
+      "distance": "933 metres",
+      "duration": "11 minutes",
+      "type": 0,
+      "name": "Keir Hill Road"
+    },
+    {
+      "instruction": "Turn right onto Wetona Road",
+      "distance": "255 metres",
+      "duration": "3 minutes",
+      "type": 1,
+      "name": "Wetona Road"
+    },
+    {
+      "instruction": "Keep right onto Wetona Road",
+      "distance": "3.3 kilometres",
+      "duration": "39 minutes",
+      "type": 13,
+      "name": "Wetona Road"
+    },
+    {
+      "instruction": "Turn slight right onto Pisgah State Park Road",
+      "distance": "499 metres",
+      "duration": "5 minutes",
+      "type": 5,
+      "name": "Pisgah State Park Road"
+    },
+    {
+      "instruction": "Turn left",
+      "distance": "76 metres",
+      "duration": "less than a minute",
+      "type": 0,
+      "name": "-"
+    },
+    {
+      "instruction": "Turn left",
+      "distance": "162 metres",
+      "duration": "1 minute",
+      "type": 0,
+      "name": "-"
+    },
+    {
+      "instruction": "Turn right",
+      "distance": "26 metres",
+      "duration": "less than a minute",
+      "type": 1,
+      "name": "-"
+    },
+    {
+      "instruction": "Keep right",
+      "distance": "116 metres",
+      "duration": "1 minute",
+      "type": 13,
+      "name": "-"
+    },
+    {
+      "instruction": "Turn left",
+      "distance": "595 metres",
+      "duration": "7 minutes",
+      "type": 0,
+      "name": "-"
+    },
+    {
+      "instruction": "Turn right",
+      "distance": "24 metres",
+      "duration": "less than a minute",
+      "type": 1,
+      "name": "-"
+    },
+    {
+      "instruction": "Turn left",
+      "distance": "519 metres",
+      "duration": "6 minutes",
+      "type": 0,
+      "name": "-"
+    },
+    {
+      "instruction": "Keep right onto Oh! Susanna Trail",
+      "distance": "215 metres",
+      "duration": "2 minutes",
+      "type": 13,
+      "name": "Oh! Susanna Trail"
+    },
+    {
+      "instruction": "Turn left onto Goshawk Trail",
+      "distance": "1.1 kilometres",
+      "duration": "13 minutes",
+      "type": 0,
+      "name": "Goshawk Trail"
+    },
+    {
+      "instruction": "Turn left onto Steam Hollow Road",
+      "distance": "3.1 kilometres",
+      "duration": "37 minutes",
+      "type": 0,
+      "name": "Steam Hollow Road"
+    },
+    {
+      "instruction": "Turn right onto Roosevelt Highway, US 6",
+      "distance": "472 metres",
+      "duration": "5 minutes",
+      "type": 1,
+      "name": "Roosevelt Highway, US 6"
+    },
+    {
+      "instruction": "Turn left onto Carman's Road",
+      "distance": "307 metres",
+      "duration": "3 minutes",
+      "type": 0,
+      "name": "Carman's Road"
+    },
+    {
+      "instruction": "Continue straight onto Hanks Road",
+      "distance": "3.0 kilometres",
+      "duration": "35 minutes",
+      "type": 6,
+      "name": "Hanks Road"
+    },
+    {
+      "instruction": "Turn right onto South Berwick Turnpike",
+      "distance": "401 metres",
+      "duration": "4 minutes",
+      "type": 1,
+      "name": "South Berwick Turnpike"
+    },
+    {
+      "instruction": "Keep right onto Brownback Road",
+      "distance": "2.2 kilometres",
+      "duration": "26 minutes",
+      "type": 13,
+      "name": "Brownback Road"
+    },
+    {
+      "instruction": "Turn sharp left onto Fairview Road",
+      "distance": "1.3 kilometres",
+      "duration": "15 minutes",
+      "type": 2,
+      "name": "Fairview Road"
+    },
+    {
+      "instruction": "Turn sharp right onto Bailey Road",
+      "distance": "1.5 kilometres",
+      "duration": "18 minutes",
+      "type": 3,
+      "name": "Bailey Road"
+    },
+    {
+      "instruction": "Turn left onto East Road",
+      "distance": "1.7 kilometres",
+      "duration": "20 minutes",
+      "type": 0,
+      "name": "East Road"
+    },
+    {
+      "instruction": "Turn right onto Franklindale Road",
+      "distance": "2.9 kilometres",
+      "duration": "35 minutes",
+      "type": 1,
+      "name": "Franklindale Road"
+    },
+    {
+      "instruction": "Turn left onto Mc Neal Road, T360",
+      "distance": "1.0 kilometres",
+      "duration": "12 minutes",
+      "type": 0,
+      "name": "Mc Neal Road, T360"
+    },
+    {
+      "instruction": "Turn right onto Borden Road",
+      "distance": "1.8 kilometres",
+      "duration": "21 minutes",
+      "type": 1,
+      "name": "Borden Road"
+    },
+    {
+      "instruction": "Turn sharp left onto Manahan Road",
+      "distance": "1.7 kilometres",
+      "duration": "20 minutes",
+      "type": 2,
+      "name": "Manahan Road"
+    },
+    {
+      "instruction": "Turn right onto Dunn Hill Road",
+      "distance": "2.9 kilometres",
+      "duration": "34 minutes",
+      "type": 1,
+      "name": "Dunn Hill Road"
+    },
+    {
+      "instruction": "Turn right onto PA 414",
+      "distance": "564 metres",
+      "duration": "6 minutes",
+      "type": 1,
+      "name": "PA 414"
+    },
+    {
+      "instruction": "Turn left onto T407",
+      "distance": "223 metres",
+      "duration": "2 minutes",
+      "type": 0,
+      "name": "T407"
+    },
+    {
+      "instruction": "Turn left onto Main Street",
+      "distance": "353 metres",
+      "duration": "4 minutes",
+      "type": 0,
+      "name": "Main Street"
+    },
+    {
+      "instruction": "Turn sharp right onto Weston Road",
+      "distance": "2.8 kilometres",
+      "duration": "33 minutes",
+      "type": 3,
+      "name": "Weston Road"
+    },
+    {
+      "instruction": "Turn left onto Millstone Road",
+      "distance": "3.8 kilometres",
+      "duration": "45 minutes",
+      "type": 0,
+      "name": "Millstone Road"
+    },
+    {
+      "instruction": "Keep left onto Deep Hollow Road",
+      "distance": "6.4 kilometres",
+      "duration": "1 hour 17 minutes",
+      "type": 12,
+      "name": "Deep Hollow Road"
+    },
+    {
+      "instruction": "Continue straight onto T344",
+      "distance": "1.7 kilometres",
+      "duration": "20 minutes",
+      "type": 6,
+      "name": "T344"
+    },
+    {
+      "instruction": "Keep left onto T348",
+      "distance": "1.4 kilometres",
+      "duration": "16 minutes",
+      "type": 12,
+      "name": "T348"
+    },
+    {
+      "instruction": "Turn slight right onto Overton Road",
+      "distance": "110 metres",
+      "duration": "1 minute",
+      "type": 5,
+      "name": "Overton Road"
+    },
+    {
+      "instruction": "Keep left onto Beebe Road",
+      "distance": "1.3 kilometres",
+      "duration": "15 minutes",
+      "type": 12,
+      "name": "Beebe Road"
+    },
+    {
+      "instruction": "Turn left onto Burke Road",
+      "distance": "4.0 kilometres",
+      "duration": "47 minutes",
+      "type": 0,
+      "name": "Burke Road"
+    },
+    {
+      "instruction": "Keep left",
+      "distance": "2.0 kilometres",
+      "duration": "23 minutes",
+      "type": 12,
+      "name": "-"
+    },
+    {
+      "instruction": "Turn left onto Sr4018",
+      "distance": "1.4 kilometres",
+      "duration": "17 minutes",
+      "type": 0,
+      "name": "Sr4018"
+    },
+    {
+      "instruction": "Turn left onto Sr4018",
+      "distance": "1.2 kilometres",
+      "duration": "14 minutes",
+      "type": 0,
+      "name": "Sr4018"
+    },
+    {
+      "instruction": "Turn left onto Sr4018",
+      "distance": "2.3 kilometres",
+      "duration": "27 minutes",
+      "type": 0,
+      "name": "Sr4018"
+    },
+    {
+      "instruction": "Keep left onto Overton Road",
+      "distance": "142 metres",
+      "duration": "1 minute",
+      "type": 12,
+      "name": "Overton Road"
+    },
+    {
+      "instruction": "Turn right onto Dibbling Alley",
+      "distance": "135 metres",
+      "duration": "1 minute",
+      "type": 1,
+      "name": "Dibbling Alley"
+    },
+    {
+      "instruction": "Turn left onto Center Street",
+      "distance": "68 metres",
+      "duration": "less than a minute",
+      "type": 0,
+      "name": "Center Street"
+    },
+    {
+      "instruction": "Turn right onto Main Street",
+      "distance": "127 metres",
+      "duration": "1 minute",
+      "type": 1,
+      "name": "Main Street"
+    },
+    {
+      "instruction": "Turn left onto Railroad Street",
+      "distance": "150 metres",
+      "duration": "1 minute",
+      "type": 0,
+      "name": "Railroad Street"
+    },
+    {
+      "instruction": "Turn right onto Headley Avenue",
+      "distance": "374 metres",
+      "duration": "4 minutes",
+      "type": 1,
+      "name": "Headley Avenue"
+    },
+    {
+      "instruction": "Turn right onto Carpenter Street, PA 87",
+      "distance": "107 metres",
+      "duration": "1 minute",
+      "type": 1,
+      "name": "Carpenter Street, PA 87"
+    },
+    {
+      "instruction": "Turn left onto Bernice Road, PA 487",
+      "distance": "117 metres",
+      "duration": "1 minute",
+      "type": 0,
+      "name": "Bernice Road, PA 487"
+    },
+    {
+      "instruction": "Turn left onto East Cherry Street",
+      "distance": "714 metres",
+      "duration": "8 minutes",
+      "type": 0,
+      "name": "East Cherry Street"
+    },
+    {
+      "instruction": "Turn left onto North Road",
+      "distance": "1.3 kilometres",
+      "duration": "15 minutes",
+      "type": 0,
+      "name": "North Road"
+    },
+    {
+      "instruction": "Turn right",
+      "distance": "313 metres",
+      "duration": "3 minutes",
+      "type": 1,
+      "name": "-"
+    },
+    {
+      "instruction": "Turn right onto Dutch Mountain Road",
+      "distance": "2.5 kilometres",
+      "duration": "29 minutes",
+      "type": 1,
+      "name": "Dutch Mountain Road"
+    },
+    {
+      "instruction": "Keep left onto Dutch Mountain Road",
+      "distance": "1.4 kilometres",
+      "duration": "16 minutes",
+      "type": 12,
+      "name": "Dutch Mountain Road"
+    },
+    {
+      "instruction": "Keep right onto Dutch Mountain Road",
+      "distance": "2.4 kilometres",
+      "duration": "29 minutes",
+      "type": 13,
+      "name": "Dutch Mountain Road"
+    },
+    {
+      "instruction": "Keep left onto Dutch Mountain Road",
+      "distance": "6.7 kilometres",
+      "duration": "1 hour 20 minutes",
+      "type": 12,
+      "name": "Dutch Mountain Road"
+    },
+    {
+      "instruction": "Turn left onto Sr1001",
+      "distance": "1.2 kilometres",
+      "duration": "14 minutes",
+      "type": 0,
+      "name": "Sr1001"
+    },
+    {
+      "instruction": "Turn right onto T365",
+      "distance": "401 metres",
+      "duration": "4 minutes",
+      "type": 1,
+      "name": "T365"
+    },
+    {
+      "instruction": "Turn slight right onto Lake John Road",
+      "distance": "4.3 kilometres",
+      "duration": "51 minutes",
+      "type": 5,
+      "name": "Lake John Road"
+    },
+    {
+      "instruction": "Turn slight left onto Rouse Pond Road",
+      "distance": "1.7 kilometres",
+      "duration": "20 minutes",
+      "type": 4,
+      "name": "Rouse Pond Road"
+    },
+    {
+      "instruction": "Turn sharp left onto Route 487, PA 487",
+      "distance": "3.4 kilometres",
+      "duration": "41 minutes",
+      "type": 2,
+      "name": "Route 487, PA 487"
+    },
+    {
+      "instruction": "Turn left onto Mountain Springs Road",
+      "distance": "4.6 kilometres",
+      "duration": "54 minutes",
+      "type": 0,
+      "name": "Mountain Springs Road"
+    },
+    {
+      "instruction": "Continue straight onto Fish Commission Road",
+      "distance": "2.5 kilometres",
+      "duration": "29 minutes",
+      "type": 6,
+      "name": "Fish Commission Road"
+    },
+    {
+      "instruction": "Continue straight onto Fish Commission Road",
+      "distance": "744 metres",
+      "duration": "8 minutes",
+      "type": 6,
+      "name": "Fish Commission Road"
+    },
+    {
+      "instruction": "Turn slight right onto Fish Commission Road",
+      "distance": "155 metres",
+      "duration": "1 minute",
+      "type": 5,
+      "name": "Fish Commission Road"
+    },
+    {
+      "instruction": "Turn sharp left",
+      "distance": "1.4 kilometres",
+      "duration": "16 minutes",
+      "type": 2,
+      "name": "-"
+    },
+    {
+      "instruction": "Turn slight left",
+      "distance": "3.7 kilometres",
+      "duration": "43 minutes",
+      "type": 4,
+      "name": "-"
+    },
+    {
+      "instruction": "Keep left",
+      "distance": "2.0 kilometres",
+      "duration": "24 minutes",
+      "type": 12,
+      "name": "-"
+    },
+    {
+      "instruction": "Turn left onto PA 118",
+      "distance": "2.6 kilometres",
+      "duration": "31 minutes",
+      "type": 0,
+      "name": "PA 118"
+    },
+    {
+      "instruction": "Keep left onto Old State Road",
+      "distance": "1.7 kilometres",
+      "duration": "20 minutes",
+      "type": 12,
+      "name": "Old State Road"
+    },
+    {
+      "instruction": "Turn left onto Kreller Road",
+      "distance": "2.6 kilometres",
+      "duration": "31 minutes",
+      "type": 0,
+      "name": "Kreller Road"
+    },
+    {
+      "instruction": "Keep left onto Bronson Road",
+      "distance": "114 metres",
+      "duration": "1 minute",
+      "type": 12,
+      "name": "Bronson Road"
+    },
+    {
+      "instruction": "Turn slight left onto T575",
+      "distance": "399 metres",
+      "duration": "4 minutes",
+      "type": 4,
+      "name": "T575"
+    },
+    {
+      "instruction": "Turn right onto Whitesell Road",
+      "distance": "451 metres",
+      "duration": "5 minutes",
+      "type": 1,
+      "name": "Whitesell Road"
+    },
+    {
+      "instruction": "Keep right onto Lamoreaux Road",
+      "distance": "1.0 kilometres",
+      "duration": "12 minutes",
+      "type": 13,
+      "name": "Lamoreaux Road"
+    },
+    {
+      "instruction": "Turn left onto Sweet Valley Road",
+      "distance": "361 metres",
+      "duration": "4 minutes",
+      "type": 0,
+      "name": "Sweet Valley Road"
+    },
+    {
+      "instruction": "Turn left",
+      "distance": "141 metres",
+      "duration": "1 minute",
+      "type": 0,
+      "name": "-"
+    },
+    {
+      "instruction": "Turn left onto Sweet Valley Road",
+      "distance": "107 metres",
+      "duration": "1 minute",
+      "type": 0,
+      "name": "Sweet Valley Road"
+    },
+    {
+      "instruction": "Turn right onto Cemetery Road",
+      "distance": "4.1 kilometres",
+      "duration": "48 minutes",
+      "type": 1,
+      "name": "Cemetery Road"
+    },
+    {
+      "instruction": "Continue straight onto Cassie Green Road",
+      "distance": "3.2 kilometres",
+      "duration": "38 minutes",
+      "type": 6,
+      "name": "Cassie Green Road"
+    },
+    {
+      "instruction": "Turn right onto Fedor Road",
+      "distance": "541 metres",
+      "duration": "6 minutes",
+      "type": 1,
+      "name": "Fedor Road"
+    },
+    {
+      "instruction": "Turn left onto Jackson Road",
+      "distance": "2.9 kilometres",
+      "duration": "35 minutes",
+      "type": 0,
+      "name": "Jackson Road"
+    },
+    {
+      "instruction": "Turn right onto Follies Road",
+      "distance": "1.0 kilometres",
+      "duration": "12 minutes",
+      "type": 1,
+      "name": "Follies Road"
+    },
+    {
+      "instruction": "Turn right onto Pine Tree Road, T-716",
+      "distance": "2.3 kilometres",
+      "duration": "27 minutes",
+      "type": 1,
+      "name": "Pine Tree Road, T-716"
+    },
+    {
+      "instruction": "Turn right onto Chase Road",
+      "distance": "100 metres",
+      "duration": "1 minute",
+      "type": 1,
+      "name": "Chase Road"
+    },
+    {
+      "instruction": "Keep left",
+      "distance": "33 metres",
+      "duration": "less than a minute",
+      "type": 12,
+      "name": "-"
+    },
+    {
+      "instruction": "Turn slight left onto Mountain Road, T-599A",
+      "distance": "2.2 kilometres",
+      "duration": "26 minutes",
+      "type": 4,
+      "name": "Mountain Road, T-599A"
+    },
+    {
+      "instruction": "Turn left onto Weavertown Road",
+      "distance": "453 metres",
+      "duration": "5 minutes",
+      "type": 0,
+      "name": "Weavertown Road"
+    },
+    {
+      "instruction": "Turn right onto Oak Tree Road",
+      "distance": "190 metres",
+      "duration": "2 minutes",
+      "type": 1,
+      "name": "Oak Tree Road"
+    },
+    {
+      "instruction": "Turn left onto Towers Road",
+      "distance": "163 metres",
+      "duration": "1 minute",
+      "type": 0,
+      "name": "Towers Road"
+    },
+    {
+      "instruction": "Turn sharp left onto Hillcrest Road",
+      "distance": "660 metres",
+      "duration": "7 minutes",
+      "type": 2,
+      "name": "Hillcrest Road"
+    },
+    {
+      "instruction": "Turn left",
+      "distance": "408 metres",
+      "duration": "4 minutes",
+      "type": 0,
+      "name": "-"
+    },
+    {
+      "instruction": "Turn left",
+      "distance": "456 metres",
+      "duration": "5 minutes",
+      "type": 0,
+      "name": "-"
+    },
+    {
+      "instruction": "Turn left",
+      "distance": "23 metres",
+      "duration": "less than a minute",
+      "type": 0,
+      "name": "-"
+    },
+    {
+      "instruction": "Turn slight right",
+      "distance": "272 metres",
+      "duration": "3 minutes",
+      "type": 5,
+      "name": "-"
+    },
+    {
+      "instruction": "Keep left",
+      "distance": "63 metres",
+      "duration": "less than a minute",
+      "type": 12,
+      "name": "-"
+    },
+    {
+      "instruction": "Keep left",
+      "distance": "625 metres",
+      "duration": "7 minutes",
+      "type": 12,
+      "name": "-"
+    },
+    {
+      "instruction": "Turn left onto West State Street",
+      "distance": "50 metres",
+      "duration": "less than a minute",
+      "type": 0,
+      "name": "West State Street"
+    },
+    {
+      "instruction": "Turn right onto Carver Street",
+      "distance": "595 metres",
+      "duration": "7 minutes",
+      "type": 1,
+      "name": "Carver Street"
+    },
+    {
+      "instruction": "Turn right onto Washington Avenue",
+      "distance": "19 metres",
+      "duration": "less than a minute",
+      "type": 1,
+      "name": "Washington Avenue"
+    },
+    {
+      "instruction": "Turn left onto Carver Street",
+      "distance": "80 metres",
+      "duration": "less than a minute",
+      "type": 0,
+      "name": "Carver Street"
+    },
+    {
+      "instruction": "Turn slight right onto Vine Street",
+      "distance": "371 metres",
+      "duration": "4 minutes",
+      "type": 5,
+      "name": "Vine Street"
+    },
+    {
+      "instruction": "Turn sharp left onto Palmer Street",
+      "distance": "127 metres",
+      "duration": "1 minute",
+      "type": 2,
+      "name": "Palmer Street"
+    },
+    {
+      "instruction": "Turn right onto Jeanette Street",
+      "distance": "162 metres",
+      "duration": "1 minute",
+      "type": 1,
+      "name": "Jeanette Street"
+    },
+    {
+      "instruction": "Turn left onto East Main Street, US 11",
+      "distance": "193 metres",
+      "duration": "2 minutes",
+      "type": 0,
+      "name": "East Main Street, US 11"
+    },
+    {
+      "instruction": "Keep right onto East Main Street, US 11",
+      "distance": "84 metres",
+      "duration": "1 minute",
+      "type": 13,
+      "name": "East Main Street, US 11"
+    },
+    {
+      "instruction": "Turn right onto Carey Avenue",
+      "distance": "1.0 kilometres",
+      "duration": "12 minutes",
+      "type": 1,
+      "name": "Carey Avenue"
+    },
+    {
+      "instruction": "Turn left onto Goeringer Avenue",
+      "distance": "509 metres",
+      "duration": "6 minutes",
+      "type": 0,
+      "name": "Goeringer Avenue"
+    },
+    {
+      "instruction": "Turn right onto Claymont Avenue",
+      "distance": "152 metres",
+      "duration": "1 minute",
+      "type": 1,
+      "name": "Claymont Avenue"
+    },
+    {
+      "instruction": "Turn left onto Plymouth Avenue",
+      "distance": "46 metres",
+      "duration": "less than a minute",
+      "type": 0,
+      "name": "Plymouth Avenue"
+    },
+    {
+      "instruction": "Turn right onto Simpson Street",
+      "distance": "371 metres",
+      "duration": "4 minutes",
+      "type": 1,
+      "name": "Simpson Street"
+    },
+    {
+      "instruction": "Turn right onto Carey Avenue",
+      "distance": "15 metres",
+      "duration": "less than a minute",
+      "type": 1,
+      "name": "Carey Avenue"
+    },
+    {
+      "instruction": "Turn left",
+      "distance": "63 metres",
+      "duration": "less than a minute",
+      "type": 0,
+      "name": "-"
+    },
+    {
+      "instruction": "Turn left onto West Division Street",
+      "distance": "657 metres",
+      "duration": "7 minutes",
+      "type": 0,
+      "name": "West Division Street"
+    },
+    {
+      "instruction": "Turn left onto South Franklin Street",
+      "distance": "123 metres",
+      "duration": "1 minute",
+      "type": 0,
+      "name": "South Franklin Street"
+    },
+    {
+      "instruction": "Turn right onto Gregory Street",
+      "distance": "243 metres",
+      "duration": "2 minutes",
+      "type": 1,
+      "name": "Gregory Street"
+    },
+    {
+      "instruction": "Turn left onto South Main Street",
+      "distance": "52 metres",
+      "duration": "less than a minute",
+      "type": 0,
+      "name": "South Main Street"
+    },
+    {
+      "instruction": "Turn right onto East Division Street",
+      "distance": "1.4 kilometres",
+      "duration": "16 minutes",
+      "type": 1,
+      "name": "East Division Street"
+    },
+    {
+      "instruction": "Turn right onto Green Street",
+      "distance": "362 metres",
+      "duration": "4 minutes",
+      "type": 1,
+      "name": "Green Street"
+    },
+    {
+      "instruction": "Turn left onto Manhattan Street",
+      "distance": "109 metres",
+      "duration": "1 minute",
+      "type": 0,
+      "name": "Manhattan Street"
+    },
+    {
+      "instruction": "Turn right onto Brown Street",
+      "distance": "117 metres",
+      "duration": "1 minute",
+      "type": 1,
+      "name": "Brown Street"
+    },
+    {
+      "instruction": "Turn left onto West Hartford Street",
+      "distance": "24 metres",
+      "duration": "less than a minute",
+      "type": 0,
+      "name": "West Hartford Street"
+    },
+    {
+      "instruction": "Turn right onto Brown Street",
+      "distance": "211 metres",
+      "duration": "2 minutes",
+      "type": 1,
+      "name": "Brown Street"
+    },
+    {
+      "instruction": "Turn left onto Cemetery Street",
+      "distance": "338 metres",
+      "duration": "4 minutes",
+      "type": 0,
+      "name": "Cemetery Street"
+    },
+    {
+      "instruction": "Turn slight left onto Cemetery Street",
+      "distance": "52 metres",
+      "duration": "less than a minute",
+      "type": 4,
+      "name": "Cemetery Street"
+    },
+    {
+      "instruction": "Turn sharp right onto South Main Street",
+      "distance": "190 metres",
+      "duration": "2 minutes",
+      "type": 3,
+      "name": "South Main Street"
+    },
+    {
+      "instruction": "Turn left onto Hazleton Street",
+      "distance": "1.0 kilometres",
+      "duration": "12 minutes",
+      "type": 0,
+      "name": "Hazleton Street"
+    },
+    {
+      "instruction": "Turn right onto PA 309",
+      "distance": "612 metres",
+      "duration": "7 minutes",
+      "type": 1,
+      "name": "PA 309"
+    },
+    {
+      "instruction": "Turn right onto Prospect Street",
+      "distance": "26 metres",
+      "duration": "less than a minute",
+      "type": 1,
+      "name": "Prospect Street"
+    },
+    {
+      "instruction": "Turn left",
+      "distance": "86 metres",
+      "duration": "1 minute",
+      "type": 0,
+      "name": "-"
+    },
+    {
+      "instruction": "Turn sharp right onto PA 309",
+      "distance": "170 metres",
+      "duration": "2 minutes",
+      "type": 3,
+      "name": "PA 309"
+    },
+    {
+      "instruction": "Keep right",
+      "distance": "355 metres",
+      "duration": "4 minutes",
+      "type": 13,
+      "name": "-"
+    },
+    {
+      "instruction": "Keep right",
+      "distance": "773 metres",
+      "duration": "9 minutes",
+      "type": 13,
+      "name": "-"
+    },
+    {
+      "instruction": "Keep right",
+      "distance": "2.8 kilometres",
+      "duration": "33 minutes",
+      "type": 13,
+      "name": "-"
+    },
+    {
+      "instruction": "Turn slight left onto Township Highway 433",
+      "distance": "26 metres",
+      "duration": "less than a minute",
+      "type": 4,
+      "name": "Township Highway 433"
+    },
+    {
+      "instruction": "Turn left onto Brown Street",
+      "distance": "194 metres",
+      "duration": "2 minutes",
+      "type": 0,
+      "name": "Brown Street"
+    },
+    {
+      "instruction": "Turn right onto North Mountain Boulevard, PA 309",
+      "distance": "691 metres",
+      "duration": "8 minutes",
+      "type": 1,
+      "name": "North Mountain Boulevard, PA 309"
+    },
+    {
+      "instruction": "Keep left onto North Main Street",
+      "distance": "237 metres",
+      "duration": "2 minutes",
+      "type": 12,
+      "name": "North Main Street"
+    },
+    {
+      "instruction": "Keep right onto North Main Street",
+      "distance": "1.2 kilometres",
+      "duration": "14 minutes",
+      "type": 13,
+      "name": "North Main Street"
+    },
+    {
+      "instruction": "Turn left onto County Road 24",
+      "distance": "1.8 kilometres",
+      "duration": "21 minutes",
+      "type": 0,
+      "name": "County Road 24"
+    },
+    {
+      "instruction": "Turn right onto Woodlawn Avenue, PA 437",
+      "distance": "49 metres",
+      "duration": "less than a minute",
+      "type": 1,
+      "name": "Woodlawn Avenue, PA 437"
+    },
+    {
+      "instruction": "Turn left",
+      "distance": "838 metres",
+      "duration": "10 minutes",
+      "type": 0,
+      "name": "-"
+    },
+    {
+      "instruction": "Turn slight right onto Oak Lane",
+      "distance": "4 metres",
+      "duration": "less than a minute",
+      "type": 5,
+      "name": "Oak Lane"
+    },
+    {
+      "instruction": "Turn slight left onto Lake Road",
+      "distance": "4.0 kilometres",
+      "duration": "48 minutes",
+      "type": 4,
+      "name": "Lake Road"
+    },
+    {
+      "instruction": "Turn left",
+      "distance": "1.2 kilometres",
+      "duration": "14 minutes",
+      "type": 0,
+      "name": "-"
+    },
+    {
+      "instruction": "Keep right",
+      "distance": "638 metres",
+      "duration": "7 minutes",
+      "type": 13,
+      "name": "-"
+    },
+    {
+      "instruction": "Turn sharp right",
+      "distance": "64 metres",
+      "duration": "less than a minute",
+      "type": 3,
+      "name": "-"
+    },
+    {
+      "instruction": "Turn left onto D&L Trail",
+      "distance": "332 metres",
+      "duration": "3 minutes",
+      "type": 0,
+      "name": "D&L Trail"
+    },
+    {
+      "instruction": "Turn left",
+      "distance": "389 metres",
+      "duration": "4 minutes",
+      "type": 0,
+      "name": "-"
+    },
+    {
+      "instruction": "Turn right",
+      "distance": "2.0 kilometres",
+      "duration": "24 minutes",
+      "type": 1,
+      "name": "-"
+    },
+    {
+      "instruction": "Turn right onto Hollenback Road",
+      "distance": "4.0 kilometres",
+      "duration": "48 minutes",
+      "type": 1,
+      "name": "Hollenback Road"
+    },
+    {
+      "instruction": "Turn slight right onto Middleburg Road",
+      "distance": "1.4 kilometres",
+      "duration": "17 minutes",
+      "type": 5,
+      "name": "Middleburg Road"
+    },
+    {
+      "instruction": "Turn left onto Ice Lake Road",
+      "distance": "243 metres",
+      "duration": "2 minutes",
+      "type": 0,
+      "name": "Ice Lake Road"
+    },
+    {
+      "instruction": "Keep right onto Ice Lake Road",
+      "distance": "201 metres",
+      "duration": "2 minutes",
+      "type": 13,
+      "name": "Ice Lake Road"
+    },
+    {
+      "instruction": "Keep right onto Ice Lake Road",
+      "distance": "152 metres",
+      "duration": "1 minute",
+      "type": 13,
+      "name": "Ice Lake Road"
+    },
+    {
+      "instruction": "Turn slight left onto D&L Trail",
+      "distance": "2.3 kilometres",
+      "duration": "27 minutes",
+      "type": 4,
+      "name": "D&L Trail"
+    },
+    {
+      "instruction": "Turn slight right onto Susquehanna Street",
+      "distance": "18 metres",
+      "duration": "less than a minute",
+      "type": 5,
+      "name": "Susquehanna Street"
+    },
+    {
+      "instruction": "Turn left",
+      "distance": "142 metres",
+      "duration": "1 minute",
+      "type": 0,
+      "name": "-"
+    },
+    {
+      "instruction": "Turn left",
+      "distance": "10 metres",
+      "duration": "less than a minute",
+      "type": 0,
+      "name": "-"
+    },
+    {
+      "instruction": "Turn right",
+      "distance": "55 metres",
+      "duration": "less than a minute",
+      "type": 1,
+      "name": "-"
+    },
+    {
+      "instruction": "Turn right",
+      "distance": "36 metres",
+      "duration": "less than a minute",
+      "type": 1,
+      "name": "-"
+    },
+    {
+      "instruction": "Turn left onto Berwick Street, PA 940",
+      "distance": "292 metres",
+      "duration": "3 minutes",
+      "type": 0,
+      "name": "Berwick Street, PA 940"
+    },
+    {
+      "instruction": "Turn sharp right onto South River Street",
+      "distance": "10 metres",
+      "duration": "less than a minute",
+      "type": 3,
+      "name": "South River Street"
+    },
+    {
+      "instruction": "Turn left onto Bridge Street",
+      "distance": "95 metres",
+      "duration": "1 minute",
+      "type": 0,
+      "name": "Bridge Street"
+    },
+    {
+      "instruction": "Turn left onto Vine Street",
+      "distance": "107 metres",
+      "duration": "1 minute",
+      "type": 0,
+      "name": "Vine Street"
+    },
+    {
+      "instruction": "Turn right onto Washington Street",
+      "distance": "76 metres",
+      "duration": "less than a minute",
+      "type": 1,
+      "name": "Washington Street"
+    },
+    {
+      "instruction": "Turn left onto Centre Street",
+      "distance": "160 metres",
+      "duration": "1 minute",
+      "type": 0,
+      "name": "Centre Street"
+    },
+    {
+      "instruction": "Turn right onto State Street, PA 940",
+      "distance": "3.3 kilometres",
+      "duration": "40 minutes",
+      "type": 1,
+      "name": "State Street, PA 940"
+    },
+    {
+      "instruction": "Turn left onto Red Oak Drive",
+      "distance": "77 metres",
+      "duration": "less than a minute",
+      "type": 0,
+      "name": "Red Oak Drive"
+    },
+    {
+      "instruction": "Turn right onto Keystone Commons",
+      "distance": "163 metres",
+      "duration": "1 minute",
+      "type": 1,
+      "name": "Keystone Commons"
+    },
+    {
+      "instruction": "Turn right onto Golden Oak Drive",
+      "distance": "78 metres",
+      "duration": "less than a minute",
+      "type": 1,
+      "name": "Golden Oak Drive"
+    },
+    {
+      "instruction": "Turn left onto PA 940",
+      "distance": "748 metres",
+      "duration": "8 minutes",
+      "type": 0,
+      "name": "PA 940"
+    },
+    {
+      "instruction": "Keep right onto Meckes Lane",
+      "distance": "442 metres",
+      "duration": "5 minutes",
+      "type": 13,
+      "name": "Meckes Lane"
+    },
+    {
+      "instruction": "Keep right onto Stage Trail",
+      "distance": "2.6 kilometres",
+      "duration": "30 minutes",
+      "type": 13,
+      "name": "Stage Trail"
+    },
+    {
+      "instruction": "Keep left onto Stage Trail",
+      "distance": "512 metres",
+      "duration": "6 minutes",
+      "type": 12,
+      "name": "Stage Trail"
+    },
+    {
+      "instruction": "Continue straight onto Group Camp Road",
+      "distance": "707 metres",
+      "duration": "8 minutes",
+      "type": 6,
+      "name": "Group Camp Road"
+    },
+    {
+      "instruction": "Turn right onto Boulder Field Road",
+      "distance": "49 metres",
+      "duration": "less than a minute",
+      "type": 1,
+      "name": "Boulder Field Road"
+    },
+    {
+      "instruction": "Turn left onto Stage Trail",
+      "distance": "368 metres",
+      "duration": "4 minutes",
+      "type": 0,
+      "name": "Stage Trail"
+    },
+    {
+      "instruction": "Continue straight onto Stage Trail",
+      "distance": "1.4 kilometres",
+      "duration": "16 minutes",
+      "type": 6,
+      "name": "Stage Trail"
+    },
+    {
+      "instruction": "Turn left onto Return Road",
+      "distance": "1.8 kilometres",
+      "duration": "21 minutes",
+      "type": 0,
+      "name": "Return Road"
+    },
+    {
+      "instruction": "Keep right onto Stage Trail",
+      "distance": "5.8 kilometres",
+      "duration": "1 hour 9 minutes",
+      "type": 13,
+      "name": "Stage Trail"
+    },
+    {
+      "instruction": "Turn right onto Henning Road",
+      "distance": "753 metres",
+      "duration": "9 minutes",
+      "type": 1,
+      "name": "Henning Road"
+    },
+    {
+      "instruction": "Turn left onto Teddyuscung Trail",
+      "distance": "157 metres",
+      "duration": "1 minute",
+      "type": 0,
+      "name": "Teddyuscung Trail"
+    },
+    {
+      "instruction": "Turn right onto Kipling Lane",
+      "distance": "581 metres",
+      "duration": "6 minutes",
+      "type": 1,
+      "name": "Kipling Lane"
+    },
+    {
+      "instruction": "Turn right onto Thomas Lane",
+      "distance": "313 metres",
+      "duration": "3 minutes",
+      "type": 1,
+      "name": "Thomas Lane"
+    },
+    {
+      "instruction": "Turn left onto Scott Lane",
+      "distance": "136 metres",
+      "duration": "1 minute",
+      "type": 0,
+      "name": "Scott Lane"
+    },
+    {
+      "instruction": "Turn right onto Keats Lane",
+      "distance": "855 metres",
+      "duration": "10 minutes",
+      "type": 1,
+      "name": "Keats Lane"
+    },
+    {
+      "instruction": "Turn right onto Bishop Circle",
+      "distance": "382 metres",
+      "duration": "4 minutes",
+      "type": 1,
+      "name": "Bishop Circle"
+    },
+    {
+      "instruction": "Turn left onto Penn Forest Trail",
+      "distance": "147 metres",
+      "duration": "1 minute",
+      "type": 0,
+      "name": "Penn Forest Trail"
+    },
+    {
+      "instruction": "Turn right onto Towamensing Trail",
+      "distance": "621 metres",
+      "duration": "7 minutes",
+      "type": 1,
+      "name": "Towamensing Trail"
+    },
+    {
+      "instruction": "Turn right onto Young Circle",
+      "distance": "230 metres",
+      "duration": "2 minutes",
+      "type": 1,
+      "name": "Young Circle"
+    },
+    {
+      "instruction": "Turn left onto Hunt Road",
+      "distance": "133 metres",
+      "duration": "1 minute",
+      "type": 0,
+      "name": "Hunt Road"
+    },
+    {
+      "instruction": "Turn right onto Nathan Way",
+      "distance": "125 metres",
+      "duration": "1 minute",
+      "type": 1,
+      "name": "Nathan Way"
+    },
+    {
+      "instruction": "Turn left onto Jeffers Way",
+      "distance": "667 metres",
+      "duration": "8 minutes",
+      "type": 0,
+      "name": "Jeffers Way"
+    },
+    {
+      "instruction": "Continue straight onto Nash Trail",
+      "distance": "164 metres",
+      "duration": "1 minute",
+      "type": 6,
+      "name": "Nash Trail"
+    },
+    {
+      "instruction": "Turn right onto Lang Way",
+      "distance": "319 metres",
+      "duration": "3 minutes",
+      "type": 1,
+      "name": "Lang Way"
+    },
+    {
+      "instruction": "Turn left onto Stony Mountain Road",
+      "distance": "350 metres",
+      "duration": "4 minutes",
+      "type": 0,
+      "name": "Stony Mountain Road"
+    },
+    {
+      "instruction": "Turn left onto Meckesville Road",
+      "distance": "290 metres",
+      "duration": "3 minutes",
+      "type": 0,
+      "name": "Meckesville Road"
+    },
+    {
+      "instruction": "Turn right onto Algonquin Trail",
+      "distance": "105 metres",
+      "duration": "1 minute",
+      "type": 1,
+      "name": "Algonquin Trail"
+    },
+    {
+      "instruction": "Turn left onto Piute Trail",
+      "distance": "104 metres",
+      "duration": "1 minute",
+      "type": 0,
+      "name": "Piute Trail"
+    },
+    {
+      "instruction": "Turn right onto Pautuxent Trail",
+      "distance": "681 metres",
+      "duration": "8 minutes",
+      "type": 1,
+      "name": "Pautuxent Trail"
+    },
+    {
+      "instruction": "Turn left onto Lakawanna Trail",
+      "distance": "48 metres",
+      "duration": "less than a minute",
+      "type": 0,
+      "name": "Lakawanna Trail"
+    },
+    {
+      "instruction": "Turn right onto Wampum Terrace",
+      "distance": "97 metres",
+      "duration": "1 minute",
+      "type": 1,
+      "name": "Wampum Terrace"
+    },
+    {
+      "instruction": "Turn right onto Mattawa Trail",
+      "distance": "56 metres",
+      "duration": "less than a minute",
+      "type": 1,
+      "name": "Mattawa Trail"
+    },
+    {
+      "instruction": "Turn left onto Chippewa Trail",
+      "distance": "1.2 kilometres",
+      "duration": "13 minutes",
+      "type": 0,
+      "name": "Chippewa Trail"
+    },
+    {
+      "instruction": "Keep right onto Chippewa Trail",
+      "distance": "672 metres",
+      "duration": "8 minutes",
+      "type": 13,
+      "name": "Chippewa Trail"
+    },
+    {
+      "instruction": "Turn right",
+      "distance": "112 metres",
+      "duration": "1 minute",
+      "type": 1,
+      "name": "-"
+    },
+    {
+      "instruction": "Turn right onto PA 534",
+      "distance": "1.7 kilometres",
+      "duration": "20 minutes",
+      "type": 1,
+      "name": "PA 534"
+    },
+    {
+      "instruction": "Turn right onto Stony Ridge Drive",
+      "distance": "269 metres",
+      "duration": "3 minutes",
+      "type": 1,
+      "name": "Stony Ridge Drive"
+    },
+    {
+      "instruction": "Turn left onto Tioga Drive",
+      "distance": "517 metres",
+      "duration": "6 minutes",
+      "type": 0,
+      "name": "Tioga Drive"
+    },
+    {
+      "instruction": "Turn slight left onto Tioga Drive",
+      "distance": "31 metres",
+      "duration": "less than a minute",
+      "type": 4,
+      "name": "Tioga Drive"
+    },
+    {
+      "instruction": "Turn sharp right onto Dotters Corner Road",
+      "distance": "625 metres",
+      "duration": "7 minutes",
+      "type": 3,
+      "name": "Dotters Corner Road"
+    },
+    {
+      "instruction": "Turn left onto Ginko Lane",
+      "distance": "82 metres",
+      "duration": "less than a minute",
+      "type": 0,
+      "name": "Ginko Lane"
+    },
+    {
+      "instruction": "Turn right onto Willow Creek Drive",
+      "distance": "647 metres",
+      "duration": "7 minutes",
+      "type": 1,
+      "name": "Willow Creek Drive"
+    },
+    {
+      "instruction": "Turn sharp right onto Huntington Road",
+      "distance": "276 metres",
+      "duration": "3 minutes",
+      "type": 3,
+      "name": "Huntington Road"
+    },
+    {
+      "instruction": "Turn left onto Acorn Drive",
+      "distance": "261 metres",
+      "duration": "3 minutes",
+      "type": 0,
+      "name": "Acorn Drive"
+    },
+    {
+      "instruction": "Turn right onto Scenic Drive, PA 534",
+      "distance": "26 metres",
+      "duration": "less than a minute",
+      "type": 1,
+      "name": "Scenic Drive, PA 534"
+    },
+    {
+      "instruction": "Turn left onto Kestel Drive",
+      "distance": "161 metres",
+      "duration": "1 minute",
+      "type": 0,
+      "name": "Kestel Drive"
+    },
+    {
+      "instruction": "Turn right onto Ash Lane",
+      "distance": "465 metres",
+      "duration": "5 minutes",
+      "type": 1,
+      "name": "Ash Lane"
+    },
+    {
+      "instruction": "Turn left onto Upper Middle Creek Road",
+      "distance": "845 metres",
+      "duration": "10 minutes",
+      "type": 0,
+      "name": "Upper Middle Creek Road"
+    },
+    {
+      "instruction": "Keep right onto Upper Middle Creek Road",
+      "distance": "2.9 kilometres",
+      "duration": "35 minutes",
+      "type": 13,
+      "name": "Upper Middle Creek Road"
+    },
+    {
+      "instruction": "Turn left onto Haney Road",
+      "distance": "75 metres",
+      "duration": "less than a minute",
+      "type": 0,
+      "name": "Haney Road"
+    },
+    {
+      "instruction": "Turn left onto Pheasant Drive",
+      "distance": "267 metres",
+      "duration": "3 minutes",
+      "type": 0,
+      "name": "Pheasant Drive"
+    },
+    {
+      "instruction": "Turn right onto Willow Path",
+      "distance": "193 metres",
+      "duration": "2 minutes",
+      "type": 1,
+      "name": "Willow Path"
+    },
+    {
+      "instruction": "Turn right onto Skyway Drive",
+      "distance": "799 metres",
+      "duration": "9 minutes",
+      "type": 1,
+      "name": "Skyway Drive"
+    },
+    {
+      "instruction": "Turn right onto Turkey Ridge Drive",
+      "distance": "339 metres",
+      "duration": "4 minutes",
+      "type": 1,
+      "name": "Turkey Ridge Drive"
+    },
+    {
+      "instruction": "Turn left onto Haney Road",
+      "distance": "1.4 kilometres",
+      "duration": "16 minutes",
+      "type": 0,
+      "name": "Haney Road"
+    },
+    {
+      "instruction": "Turn right onto Laurel Lane",
+      "distance": "621 metres",
+      "duration": "7 minutes",
+      "type": 1,
+      "name": "Laurel Lane"
+    },
+    {
+      "instruction": "Turn right onto Long Mountain Road",
+      "distance": "747 metres",
+      "duration": "8 minutes",
+      "type": 1,
+      "name": "Long Mountain Road"
+    },
+    {
+      "instruction": "Turn left onto Glenwood Road",
+      "distance": "130 metres",
+      "duration": "1 minute",
+      "type": 0,
+      "name": "Glenwood Road"
+    },
+    {
+      "instruction": "Turn right onto Leisure Lane",
+      "distance": "641 metres",
+      "duration": "7 minutes",
+      "type": 1,
+      "name": "Leisure Lane"
+    },
+    {
+      "instruction": "Turn left onto Kresge Farm Road",
+      "distance": "1.3 kilometres",
+      "duration": "16 minutes",
+      "type": 0,
+      "name": "Kresge Farm Road"
+    },
+    {
+      "instruction": "Turn right onto Gilbert Road",
+      "distance": "42 metres",
+      "duration": "less than a minute",
+      "type": 1,
+      "name": "Gilbert Road"
+    },
+    {
+      "instruction": "Turn left onto Altemose Drive",
+      "distance": "1.3 kilometres",
+      "duration": "15 minutes",
+      "type": 0,
+      "name": "Altemose Drive"
+    },
+    {
+      "instruction": "Turn right onto Weir Lake Road",
+      "distance": "166 metres",
+      "duration": "1 minute",
+      "type": 1,
+      "name": "Weir Lake Road"
+    },
+    {
+      "instruction": "Keep right",
+      "distance": "117 metres",
+      "duration": "1 minute",
+      "type": 13,
+      "name": "-"
+    },
+    {
+      "instruction": "Turn slight right onto Kinsley Drive",
+      "distance": "5 metres",
+      "duration": "less than a minute",
+      "type": 5,
+      "name": "Kinsley Drive"
+    },
+    {
+      "instruction": "Turn left",
+      "distance": "17 metres",
+      "duration": "less than a minute",
+      "type": 0,
+      "name": "-"
+    },
+    {
+      "instruction": "Turn left",
+      "distance": "36 metres",
+      "duration": "less than a minute",
+      "type": 0,
+      "name": "-"
+    },
+    {
+      "instruction": "Turn right",
+      "distance": "164 metres",
+      "duration": "1 minute",
+      "type": 1,
+      "name": "-"
+    },
+    {
+      "instruction": "Turn left onto Receiving Lane",
+      "distance": "42 metres",
+      "duration": "less than a minute",
+      "type": 0,
+      "name": "Receiving Lane"
+    },
+    {
+      "instruction": "Turn right onto Weir Lake Road",
+      "distance": "121 metres",
+      "duration": "1 minute",
+      "type": 1,
+      "name": "Weir Lake Road"
+    },
+    {
+      "instruction": "Turn left",
+      "distance": "114 metres",
+      "duration": "1 minute",
+      "type": 0,
+      "name": "-"
+    },
+    {
+      "instruction": "Keep left",
+      "distance": "20 metres",
+      "duration": "less than a minute",
+      "type": 12,
+      "name": "-"
+    },
+    {
+      "instruction": "Turn sharp right onto US 209",
+      "distance": "10 metres",
+      "duration": "less than a minute",
+      "type": 3,
+      "name": "US 209"
+    },
+    {
+      "instruction": "Keep left",
+      "distance": "30 metres",
+      "duration": "less than a minute",
+      "type": 12,
+      "name": "-"
+    },
+    {
+      "instruction": "Turn slight left",
+      "distance": "125 metres",
+      "duration": "1 minute",
+      "type": 4,
+      "name": "-"
+    },
+    {
+      "instruction": "Keep left",
+      "distance": "70 metres",
+      "duration": "less than a minute",
+      "type": 12,
+      "name": "-"
+    },
+    {
+      "instruction": "Turn left onto Weir Lake Road",
+      "distance": "1.1 kilometres",
+      "duration": "13 minutes",
+      "type": 0,
+      "name": "Weir Lake Road"
+    },
+    {
+      "instruction": "Turn sharp left onto Frantz Road",
+      "distance": "2.2 kilometres",
+      "duration": "26 minutes",
+      "type": 2,
+      "name": "Frantz Road"
+    },
+    {
+      "instruction": "Turn right onto Pennell Road",
+      "distance": "1.3 kilometres",
+      "duration": "15 minutes",
+      "type": 1,
+      "name": "Pennell Road"
+    },
+    {
+      "instruction": "Turn slight right onto Pennell Road",
+      "distance": "1.3 kilometres",
+      "duration": "15 minutes",
+      "type": 5,
+      "name": "Pennell Road"
+    },
+    {
+      "instruction": "Turn right onto Meixsell Valley Road",
+      "distance": "108 metres",
+      "duration": "1 minute",
+      "type": 1,
+      "name": "Meixsell Valley Road"
+    },
+    {
+      "instruction": "Turn sharp left",
+      "distance": "210 metres",
+      "duration": "2 minutes",
+      "type": 2,
+      "name": "-"
+    },
+    {
+      "instruction": "Turn left onto Rolling Hills Road",
+      "distance": "522 metres",
+      "duration": "6 minutes",
+      "type": 0,
+      "name": "Rolling Hills Road"
+    },
+    {
+      "instruction": "Continue straight onto Rolling Hills Road",
+      "distance": "419 metres",
+      "duration": "5 minutes",
+      "type": 6,
+      "name": "Rolling Hills Road"
+    },
+    {
+      "instruction": "Keep right onto Rolling Hills Road",
+      "distance": "1.4 kilometres",
+      "duration": "17 minutes",
+      "type": 13,
+      "name": "Rolling Hills Road"
+    },
+    {
+      "instruction": "Turn left onto Rolling Hills Road",
+      "distance": "987 metres",
+      "duration": "11 minutes",
+      "type": 0,
+      "name": "Rolling Hills Road"
+    },
+    {
+      "instruction": "Turn left onto Kunkletown Road",
+      "distance": "14 metres",
+      "duration": "less than a minute",
+      "type": 0,
+      "name": "Kunkletown Road"
+    },
+    {
+      "instruction": "Turn sharp right onto Rolling Hills Road",
+      "distance": "369 metres",
+      "duration": "4 minutes",
+      "type": 3,
+      "name": "Rolling Hills Road"
+    },
+    {
+      "instruction": "Turn left onto Mount Eaton Road",
+      "distance": "1.5 kilometres",
+      "duration": "18 minutes",
+      "type": 0,
+      "name": "Mount Eaton Road"
+    },
+    {
+      "instruction": "Turn sharp left",
+      "distance": "5 metres",
+      "duration": "less than a minute",
+      "type": 2,
+      "name": "-"
+    },
+    {
+      "instruction": "Turn right",
+      "distance": "201 metres",
+      "duration": "2 minutes",
+      "type": 1,
+      "name": "-"
+    },
+    {
+      "instruction": "Turn right onto Faulstick Road",
+      "distance": "19 metres",
+      "duration": "less than a minute",
+      "type": 1,
+      "name": "Faulstick Road"
+    },
+    {
+      "instruction": "Turn left onto Mount Eaton Road",
+      "distance": "521 metres",
+      "duration": "6 minutes",
+      "type": 0,
+      "name": "Mount Eaton Road"
+    },
+    {
+      "instruction": "Turn sharp right onto Spruce Road",
+      "distance": "1.2 kilometres",
+      "duration": "14 minutes",
+      "type": 3,
+      "name": "Spruce Road"
+    },
+    {
+      "instruction": "Turn left onto Mountain Road",
+      "distance": "2.0 kilometres",
+      "duration": "24 minutes",
+      "type": 0,
+      "name": "Mountain Road"
+    },
+    {
+      "instruction": "Turn right onto Old Route 115",
+      "distance": "360 metres",
+      "duration": "4 minutes",
+      "type": 1,
+      "name": "Old Route 115"
+    },
+    {
+      "instruction": "Turn right onto Emerson Road",
+      "distance": "206 metres",
+      "duration": "2 minutes",
+      "type": 1,
+      "name": "Emerson Road"
+    },
+    {
+      "instruction": "Turn right onto Old Route 115",
+      "distance": "366 metres",
+      "duration": "4 minutes",
+      "type": 1,
+      "name": "Old Route 115"
+    },
+    {
+      "instruction": "Turn left",
+      "distance": "156 metres",
+      "duration": "1 minute",
+      "type": 0,
+      "name": "-"
+    },
+    {
+      "instruction": "Continue straight onto Broadway (Old Route 115)",
+      "distance": "234 metres",
+      "duration": "2 minutes",
+      "type": 6,
+      "name": "Broadway (Old Route 115)"
+    },
+    {
+      "instruction": "Turn left onto Constitution Avenue",
+      "distance": "3.0 kilometres",
+      "duration": "36 minutes",
+      "type": 0,
+      "name": "Constitution Avenue"
+    },
+    {
+      "instruction": "Turn left onto Walters Avenue",
+      "distance": "74 metres",
+      "duration": "less than a minute",
+      "type": 0,
+      "name": "Walters Avenue"
+    },
+    {
+      "instruction": "Turn right onto West Mountain Avenue",
+      "distance": "826 metres",
+      "duration": "9 minutes",
+      "type": 1,
+      "name": "West Mountain Avenue"
+    },
+    {
+      "instruction": "Turn right onto Ridge Avenue",
+      "distance": "203 metres",
+      "duration": "2 minutes",
+      "type": 1,
+      "name": "Ridge Avenue"
+    },
+    {
+      "instruction": "Turn left onto East Main Street, PA 512",
+      "distance": "48 metres",
+      "duration": "less than a minute",
+      "type": 0,
+      "name": "East Main Street, PA 512"
+    },
+    {
+      "instruction": "Turn right onto South Main Street",
+      "distance": "1.8 kilometres",
+      "duration": "21 minutes",
+      "type": 1,
+      "name": "South Main Street"
+    },
+    {
+      "instruction": "Turn right onto American Bangor Road",
+      "distance": "2.9 kilometres",
+      "duration": "34 minutes",
+      "type": 1,
+      "name": "American Bangor Road"
+    },
+    {
+      "instruction": "Turn sharp left onto Washington Boulevard, PA 191",
+      "distance": "544 metres",
+      "duration": "6 minutes",
+      "type": 2,
+      "name": "Washington Boulevard, PA 191"
+    },
+    {
+      "instruction": "Turn right onto Flicksville Road",
+      "distance": "1.1 kilometres",
+      "duration": "13 minutes",
+      "type": 1,
+      "name": "Flicksville Road"
+    },
+    {
+      "instruction": "Turn right onto Lower South Main Street",
+      "distance": "85 metres",
+      "duration": "1 minute",
+      "type": 1,
+      "name": "Lower South Main Street"
+    },
+    {
+      "instruction": "Turn slight left onto Mount Pleasant Road",
+      "distance": "124 metres",
+      "duration": "1 minute",
+      "type": 4,
+      "name": "Mount Pleasant Road"
+    },
+    {
+      "instruction": "Continue straight onto Mount Pleasant Road",
+      "distance": "1.1 kilometres",
+      "duration": "13 minutes",
+      "type": 6,
+      "name": "Mount Pleasant Road"
+    },
+    {
+      "instruction": "Turn right onto Mount Pleasant Road",
+      "distance": "486 metres",
+      "duration": "5 minutes",
+      "type": 1,
+      "name": "Mount Pleasant Road"
+    },
+    {
+      "instruction": "Turn left onto Heinsohn Hill Road",
+      "distance": "2.1 kilometres",
+      "duration": "25 minutes",
+      "type": 0,
+      "name": "Heinsohn Hill Road"
+    },
+    {
+      "instruction": "Turn right onto Jacktown Road",
+      "distance": "70 metres",
+      "duration": "less than a minute",
+      "type": 1,
+      "name": "Jacktown Road"
+    },
+    {
+      "instruction": "Turn left onto Hester Road",
+      "distance": "1.7 kilometres",
+      "duration": "20 minutes",
+      "type": 0,
+      "name": "Hester Road"
+    },
+    {
+      "instruction": "Turn left onto North Delaware Drive, PA 611",
+      "distance": "95 metres",
+      "duration": "1 minute",
+      "type": 0,
+      "name": "North Delaware Drive, PA 611"
+    },
+    {
+      "instruction": "Turn right onto Ott's Drive",
+      "distance": "2.0 kilometres",
+      "duration": "23 minutes",
+      "type": 1,
+      "name": "Ott's Drive"
+    },
+    {
+      "instruction": "Continue straight onto Deer Run Road",
+      "distance": "941 metres",
+      "duration": "11 minutes",
+      "type": 6,
+      "name": "Deer Run Road"
+    },
+    {
+      "instruction": "Turn right onto Riverton Road, T805",
+      "distance": "1.2 kilometres",
+      "duration": "14 minutes",
+      "type": 1,
+      "name": "Riverton Road, T805"
+    },
+    {
+      "instruction": "Keep left onto Riverton Road, T805",
+      "distance": "653 metres",
+      "duration": "7 minutes",
+      "type": 12,
+      "name": "Riverton Road, T805"
+    },
+    {
+      "instruction": "Keep right onto Riverton Road, T805",
+      "distance": "1.7 kilometres",
+      "duration": "20 minutes",
+      "type": 13,
+      "name": "Riverton Road, T805"
+    },
+    {
+      "instruction": "Turn left",
+      "distance": "267 metres",
+      "duration": "3 minutes",
+      "type": 0,
+      "name": "-"
+    },
+    {
+      "instruction": "Turn left onto Water Street, CR 620 Spur",
+      "distance": "373 metres",
+      "duration": "4 minutes",
+      "type": 0,
+      "name": "Water Street, CR 620 Spur"
+    },
+    {
+      "instruction": "Turn right",
+      "distance": "23 metres",
+      "duration": "less than a minute",
+      "type": 1,
+      "name": "-"
+    },
+    {
+      "instruction": "Turn left",
+      "distance": "35 metres",
+      "duration": "less than a minute",
+      "type": 0,
+      "name": "-"
+    },
+    {
+      "instruction": "Turn right",
+      "distance": "54 metres",
+      "duration": "less than a minute",
+      "type": 1,
+      "name": "-"
+    },
+    {
+      "instruction": "Turn sharp left onto South Water Street",
+      "distance": "30 metres",
+      "duration": "less than a minute",
+      "type": 2,
+      "name": "South Water Street"
+    },
+    {
+      "instruction": "Turn left onto South Water Street",
+      "distance": "10 metres",
+      "duration": "less than a minute",
+      "type": 0,
+      "name": "South Water Street"
+    },
+    {
+      "instruction": "Turn right",
+      "distance": "393 metres",
+      "duration": "4 minutes",
+      "type": 1,
+      "name": "-"
+    },
+    {
+      "instruction": "Turn left onto Race Street",
+      "distance": "977 metres",
+      "duration": "11 minutes",
+      "type": 0,
+      "name": "Race Street"
+    },
+    {
+      "instruction": "Continue straight onto Race Street",
+      "distance": "419 metres",
+      "duration": "5 minutes",
+      "type": 6,
+      "name": "Race Street"
+    },
+    {
+      "instruction": "Turn right onto Orchard Street",
+      "distance": "353 metres",
+      "duration": "4 minutes",
+      "type": 1,
+      "name": "Orchard Street"
+    },
+    {
+      "instruction": "Turn left onto Pequest Drive",
+      "distance": "3.0 kilometres",
+      "duration": "36 minutes",
+      "type": 0,
+      "name": "Pequest Drive"
+    },
+    {
+      "instruction": "Turn left onto South Bridgeville Road, CR 519",
+      "distance": "169 metres",
+      "duration": "2 minutes",
+      "type": 0,
+      "name": "South Bridgeville Road, CR 519"
+    },
+    {
+      "instruction": "Turn right onto Titman Road, CR 619",
+      "distance": "692 metres",
+      "duration": "8 minutes",
+      "type": 1,
+      "name": "Titman Road, CR 619"
+    },
+    {
+      "instruction": "Turn slight right onto US 46",
+      "distance": "716 metres",
+      "duration": "8 minutes",
+      "type": 5,
+      "name": "US 46"
+    },
+    {
+      "instruction": "Turn left onto Hoyt Lane",
+      "distance": "320 metres",
+      "duration": "3 minutes",
+      "type": 0,
+      "name": "Hoyt Lane"
+    },
+    {
+      "instruction": "Turn right onto Green Pond Road, CR 617",
+      "distance": "2 metres",
+      "duration": "less than a minute",
+      "type": 1,
+      "name": "Green Pond Road, CR 617"
+    },
+    {
+      "instruction": "Turn left",
+      "distance": "28 metres",
+      "duration": "less than a minute",
+      "type": 0,
+      "name": "-"
+    },
+    {
+      "instruction": "Turn right",
+      "distance": "174 metres",
+      "duration": "2 minutes",
+      "type": 1,
+      "name": "-"
+    },
+    {
+      "instruction": "Turn right onto Green Pond Road, CR 617",
+      "distance": "43 metres",
+      "duration": "less than a minute",
+      "type": 1,
+      "name": "Green Pond Road, CR 617"
+    },
+    {
+      "instruction": "Keep left onto Green Pond Road",
+      "distance": "64 metres",
+      "duration": "less than a minute",
+      "type": 12,
+      "name": "Green Pond Road"
+    },
+    {
+      "instruction": "Keep right onto Green Pond Road",
+      "distance": "100 metres",
+      "duration": "1 minute",
+      "type": 13,
+      "name": "Green Pond Road"
+    },
+    {
+      "instruction": "Turn slight left onto Green Pond Road, CR 617",
+      "distance": "64 metres",
+      "duration": "less than a minute",
+      "type": 4,
+      "name": "Green Pond Road, CR 617"
+    },
+    {
+      "instruction": "Turn right onto Beechwood Road",
+      "distance": "2.1 kilometres",
+      "duration": "24 minutes",
+      "type": 1,
+      "name": "Beechwood Road"
+    },
+    {
+      "instruction": "Turn sharp right onto Free Union Road",
+      "distance": "378 metres",
+      "duration": "4 minutes",
+      "type": 3,
+      "name": "Free Union Road"
+    },
+    {
+      "instruction": "Turn left onto US 46",
+      "distance": "794 metres",
+      "duration": "9 minutes",
+      "type": 0,
+      "name": "US 46"
+    },
+    {
+      "instruction": "Turn right onto Pequest Furnace Road",
+      "distance": "52 metres",
+      "duration": "less than a minute",
+      "type": 1,
+      "name": "Pequest Furnace Road"
+    },
+    {
+      "instruction": "Turn left onto Pequest WMA Trail",
+      "distance": "2.3 kilometres",
+      "duration": "27 minutes",
+      "type": 0,
+      "name": "Pequest WMA Trail"
+    },
+    {
+      "instruction": "Turn right",
+      "distance": "9 metres",
+      "duration": "less than a minute",
+      "type": 1,
+      "name": "-"
+    },
+    {
+      "instruction": "Turn slight right onto Pequest Trout Hatchery",
+      "distance": "738 metres",
+      "duration": "8 minutes",
+      "type": 5,
+      "name": "Pequest Trout Hatchery"
+    },
+    {
+      "instruction": "Keep right",
+      "distance": "115 metres",
+      "duration": "1 minute",
+      "type": 13,
+      "name": "-"
+    },
+    {
+      "instruction": "Turn left",
+      "distance": "78 metres",
+      "duration": "less than a minute",
+      "type": 0,
+      "name": "-"
+    },
+    {
+      "instruction": "Turn right onto Pequest Trout Hatchery",
+      "distance": "24 metres",
+      "duration": "less than a minute",
+      "type": 1,
+      "name": "Pequest Trout Hatchery"
+    },
+    {
+      "instruction": "Turn left",
+      "distance": "250 metres",
+      "duration": "3 minutes",
+      "type": 0,
+      "name": "-"
+    },
+    {
+      "instruction": "Turn left onto Pequest Road",
+      "distance": "154 metres",
+      "duration": "1 minute",
+      "type": 0,
+      "name": "Pequest Road"
+    },
+    {
+      "instruction": "Turn right onto Jane's Chapel Road",
+      "distance": "701 metres",
+      "duration": "8 minutes",
+      "type": 1,
+      "name": "Jane's Chapel Road"
+    },
+    {
+      "instruction": "Keep left onto Jane's Chapel Road",
+      "distance": "3.4 kilometres",
+      "duration": "40 minutes",
+      "type": 12,
+      "name": "Jane's Chapel Road"
+    },
+    {
+      "instruction": "Turn right onto Mt Bethel Road",
+      "distance": "394 metres",
+      "duration": "4 minutes",
+      "type": 1,
+      "name": "Mt Bethel Road"
+    },
+    {
+      "instruction": "Continue straight onto Mount Bethel Road",
+      "distance": "869 metres",
+      "duration": "10 minutes",
+      "type": 6,
+      "name": "Mount Bethel Road"
+    },
+    {
+      "instruction": "Turn sharp left onto Snyder Road",
+      "distance": "1.8 kilometres",
+      "duration": "21 minutes",
+      "type": 2,
+      "name": "Snyder Road"
+    },
+    {
+      "instruction": "Turn right onto Rockport Road, CR 629",
+      "distance": "63 metres",
+      "duration": "less than a minute",
+      "type": 1,
+      "name": "Rockport Road, CR 629"
+    },
+    {
+      "instruction": "Turn left onto Thomas Road",
+      "distance": "1.5 kilometres",
+      "duration": "18 minutes",
+      "type": 0,
+      "name": "Thomas Road"
+    },
+    {
+      "instruction": "Turn sharp left onto Watters Road",
+      "distance": "131 metres",
+      "duration": "1 minute",
+      "type": 2,
+      "name": "Watters Road"
+    },
+    {
+      "instruction": "Continue straight onto Heiser Road",
+      "distance": "548 metres",
+      "duration": "6 minutes",
+      "type": 6,
+      "name": "Heiser Road"
+    },
+    {
+      "instruction": "Turn sharp left",
+      "distance": "5 metres",
+      "duration": "less than a minute",
+      "type": 2,
+      "name": "-"
+    },
+    {
+      "instruction": "Turn right",
+      "distance": "699 metres",
+      "duration": "8 minutes",
+      "type": 1,
+      "name": "-"
+    },
+    {
+      "instruction": "Turn left onto NJ 57",
+      "distance": "326 metres",
+      "duration": "3 minutes",
+      "type": 0,
+      "name": "NJ 57"
+    },
+    {
+      "instruction": "Turn right onto Stephensburg Road",
+      "distance": "2.5 kilometres",
+      "duration": "30 minutes",
+      "type": 1,
+      "name": "Stephensburg Road"
+    },
+    {
+      "instruction": "Turn right onto Stephensburg Road",
+      "distance": "2.6 kilometres",
+      "duration": "31 minutes",
+      "type": 1,
+      "name": "Stephensburg Road"
+    },
+    {
+      "instruction": "Turn left onto Hollow Brook Road",
+      "distance": "470 metres",
+      "duration": "5 minutes",
+      "type": 0,
+      "name": "Hollow Brook Road"
+    },
+    {
+      "instruction": "Keep right onto Hollow Brook Road",
+      "distance": "528 metres",
+      "duration": "6 minutes",
+      "type": 13,
+      "name": "Hollow Brook Road"
+    },
+    {
+      "instruction": "Continue straight onto Hollow Brook Road",
+      "distance": "231 metres",
+      "duration": "2 minutes",
+      "type": 6,
+      "name": "Hollow Brook Road"
+    },
+    {
+      "instruction": "Continue straight onto Hollow Brook Road",
+      "distance": "814 metres",
+      "duration": "9 minutes",
+      "type": 6,
+      "name": "Hollow Brook Road"
+    },
+    {
+      "instruction": "Keep left onto Hollow Brook Road",
+      "distance": "372 metres",
+      "duration": "4 minutes",
+      "type": 12,
+      "name": "Hollow Brook Road"
+    },
+    {
+      "instruction": "Turn left onto Maple Lane",
+      "distance": "263 metres",
+      "duration": "3 minutes",
+      "type": 0,
+      "name": "Maple Lane"
+    },
+    {
+      "instruction": "Turn left onto Trimmer Road",
+      "distance": "1.9 kilometres",
+      "duration": "22 minutes",
+      "type": 0,
+      "name": "Trimmer Road"
+    },
+    {
+      "instruction": "Turn slight left onto West Valley Brook Road",
+      "distance": "660 metres",
+      "duration": "7 minutes",
+      "type": 4,
+      "name": "West Valley Brook Road"
+    },
+    {
+      "instruction": "Keep right onto West Valley Brook Road",
+      "distance": "4.4 kilometres",
+      "duration": "52 minutes",
+      "type": 13,
+      "name": "West Valley Brook Road"
+    },
+    {
+      "instruction": "Turn right onto West Fox Hill Road",
+      "distance": "1.3 kilometres",
+      "duration": "16 minutes",
+      "type": 1,
+      "name": "West Fox Hill Road"
+    },
+    {
+      "instruction": "Turn sharp right onto Parker Road",
+      "distance": "309 metres",
+      "duration": "3 minutes",
+      "type": 3,
+      "name": "Parker Road"
+    },
+    {
+      "instruction": "Turn left onto Green Hills Road",
+      "distance": "627 metres",
+      "duration": "7 minutes",
+      "type": 0,
+      "name": "Green Hills Road"
+    },
+    {
+      "instruction": "Turn left onto Apgar Road",
+      "distance": "479 metres",
+      "duration": "5 minutes",
+      "type": 0,
+      "name": "Apgar Road"
+    },
+    {
+      "instruction": "Turn right onto Old Farmers Road",
+      "distance": "450 metres",
+      "duration": "5 minutes",
+      "type": 1,
+      "name": "Old Farmers Road"
+    },
+    {
+      "instruction": "Keep left onto Old Farmers Road",
+      "distance": "59 metres",
+      "duration": "less than a minute",
+      "type": 12,
+      "name": "Old Farmers Road"
+    },
+    {
+      "instruction": "Continue straight onto Hacklebarney Road",
+      "distance": "2.2 kilometres",
+      "duration": "26 minutes",
+      "type": 6,
+      "name": "Hacklebarney Road"
+    },
+    {
+      "instruction": "Turn right onto Hacklebarney Road",
+      "distance": "1.3 kilometres",
+      "duration": "15 minutes",
+      "type": 1,
+      "name": "Hacklebarney Road"
+    },
+    {
+      "instruction": "Continue straight onto Pottersville Road",
+      "distance": "207 metres",
+      "duration": "2 minutes",
+      "type": 6,
+      "name": "Pottersville Road"
+    },
+    {
+      "instruction": "Turn sharp left onto Lamerson Road",
+      "distance": "4.0 kilometres",
+      "duration": "47 minutes",
+      "type": 2,
+      "name": "Lamerson Road"
+    },
+    {
+      "instruction": "Keep right onto Fox Chase Road",
+      "distance": "2.2 kilometres",
+      "duration": "26 minutes",
+      "type": 13,
+      "name": "Fox Chase Road"
+    },
+    {
+      "instruction": "Turn right",
+      "distance": "717 metres",
+      "duration": "8 minutes",
+      "type": 1,
+      "name": "-"
+    },
+    {
+      "instruction": "Turn left",
+      "distance": "1.3 kilometres",
+      "duration": "16 minutes",
+      "type": 0,
+      "name": "-"
+    },
+    {
+      "instruction": "Turn left onto Mt Paul Place",
+      "distance": "149 metres",
+      "duration": "1 minute",
+      "type": 0,
+      "name": "Mt Paul Place"
+    },
+    {
+      "instruction": "Turn right onto Main Street, CR 510",
+      "distance": "1.1 kilometres",
+      "duration": "12 minutes",
+      "type": 1,
+      "name": "Main Street, CR 510"
+    },
+    {
+      "instruction": "Turn left onto Patriots' Path",
+      "distance": "890 metres",
+      "duration": "10 minutes",
+      "type": 0,
+      "name": "Patriots' Path"
+    },
+    {
+      "instruction": "Keep right onto Patriots' Path",
+      "distance": "375 metres",
+      "duration": "4 minutes",
+      "type": 13,
+      "name": "Patriots' Path"
+    },
+    {
+      "instruction": "Turn left onto Patriots' Path Connector Trail",
+      "distance": "428 metres",
+      "duration": "5 minutes",
+      "type": 0,
+      "name": "Patriots' Path Connector Trail"
+    },
+    {
+      "instruction": "Turn left",
+      "distance": "60 metres",
+      "duration": "less than a minute",
+      "type": 0,
+      "name": "-"
+    },
+    {
+      "instruction": "Turn slight left",
+      "distance": "116 metres",
+      "duration": "1 minute",
+      "type": 4,
+      "name": "-"
+    },
+    {
+      "instruction": "Keep right",
+      "distance": "53 metres",
+      "duration": "less than a minute",
+      "type": 13,
+      "name": "-"
+    },
+    {
+      "instruction": "Turn right onto Mountainside Road",
+      "distance": "3.1 kilometres",
+      "duration": "37 minutes",
+      "type": 1,
+      "name": "Mountainside Road"
+    },
+    {
+      "instruction": "Turn right onto Cold Hill Road",
+      "distance": "182 metres",
+      "duration": "2 minutes",
+      "type": 1,
+      "name": "Cold Hill Road"
+    },
+    {
+      "instruction": "Turn left onto West Main Street",
+      "distance": "2.6 kilometres",
+      "duration": "30 minutes",
+      "type": 0,
+      "name": "West Main Street"
+    },
+    {
+      "instruction": "Turn sharp left onto Tingley Road",
+      "distance": "473 metres",
+      "duration": "5 minutes",
+      "type": 2,
+      "name": "Tingley Road"
+    },
+    {
+      "instruction": "Turn right onto Washington Valley Road",
+      "distance": "2.5 kilometres",
+      "duration": "30 minutes",
+      "type": 1,
+      "name": "Washington Valley Road"
+    },
+    {
+      "instruction": "Turn slight right onto Washington Valley Road",
+      "distance": "713 metres",
+      "duration": "8 minutes",
+      "type": 5,
+      "name": "Washington Valley Road"
+    },
+    {
+      "instruction": "Turn left onto Patriots' Path",
+      "distance": "1.2 kilometres",
+      "duration": "14 minutes",
+      "type": 0,
+      "name": "Patriots' Path"
+    },
+    {
+      "instruction": "Turn right",
+      "distance": "586 metres",
+      "duration": "7 minutes",
+      "type": 1,
+      "name": "-"
+    },
+    {
+      "instruction": "Turn right",
+      "distance": "739 metres",
+      "duration": "8 minutes",
+      "type": 1,
+      "name": "-"
+    },
+    {
+      "instruction": "Turn left onto Sussex Avenue, CR 617",
+      "distance": "30 metres",
+      "duration": "less than a minute",
+      "type": 0,
+      "name": "Sussex Avenue, CR 617"
+    },
+    {
+      "instruction": "Turn sharp right",
+      "distance": "17 metres",
+      "duration": "less than a minute",
+      "type": 3,
+      "name": "-"
+    },
+    {
+      "instruction": "Turn sharp left",
+      "distance": "67 metres",
+      "duration": "less than a minute",
+      "type": 2,
+      "name": "-"
+    },
+    {
+      "instruction": "Keep left",
+      "distance": "15 metres",
+      "duration": "less than a minute",
+      "type": 12,
+      "name": "-"
+    },
+    {
+      "instruction": "Turn slight left",
+      "distance": "794 metres",
+      "duration": "9 minutes",
+      "type": 4,
+      "name": "-"
+    },
+    {
+      "instruction": "Turn slight left",
+      "distance": "2 metres",
+      "duration": "less than a minute",
+      "type": 4,
+      "name": "-"
+    },
+    {
+      "instruction": "Turn slight right",
+      "distance": "851 metres",
+      "duration": "10 minutes",
+      "type": 5,
+      "name": "-"
+    },
+    {
+      "instruction": "Turn left",
+      "distance": "17 metres",
+      "duration": "less than a minute",
+      "type": 0,
+      "name": "-"
+    },
+    {
+      "instruction": "Turn right",
+      "distance": "269 metres",
+      "duration": "3 minutes",
+      "type": 1,
+      "name": "-"
+    },
+    {
+      "instruction": "Turn right",
+      "distance": "9 metres",
+      "duration": "less than a minute",
+      "type": 1,
+      "name": "-"
+    },
+    {
+      "instruction": "Turn left",
+      "distance": "889 metres",
+      "duration": "10 minutes",
+      "type": 0,
+      "name": "-"
+    },
+    {
+      "instruction": "Turn right",
+      "distance": "16 metres",
+      "duration": "less than a minute",
+      "type": 1,
+      "name": "-"
+    },
+    {
+      "instruction": "Turn left",
+      "distance": "242 metres",
+      "duration": "2 minutes",
+      "type": 0,
+      "name": "-"
+    },
+    {
+      "instruction": "Keep left",
+      "distance": "149 metres",
+      "duration": "1 minute",
+      "type": 12,
+      "name": "-"
+    },
+    {
+      "instruction": "Turn right onto Traction Line Recreation Trail",
+      "distance": "4.3 kilometres",
+      "duration": "52 minutes",
+      "type": 1,
+      "name": "Traction Line Recreation Trail"
+    },
+    {
+      "instruction": "Turn slight right",
+      "distance": "4 metres",
+      "duration": "less than a minute",
+      "type": 5,
+      "name": "-"
+    },
+    {
+      "instruction": "Turn left onto Danforth Road",
+      "distance": "18 metres",
+      "duration": "less than a minute",
+      "type": 0,
+      "name": "Danforth Road"
+    },
+    {
+      "instruction": "Turn sharp right onto Beech Avenue",
+      "distance": "388 metres",
+      "duration": "4 minutes",
+      "type": 3,
+      "name": "Beech Avenue"
+    },
+    {
+      "instruction": "Turn right onto Rosewood Drive",
+      "distance": "55 metres",
+      "duration": "less than a minute",
+      "type": 1,
+      "name": "Rosewood Drive"
+    },
+    {
+      "instruction": "Turn right onto Crestwood Drive",
+      "distance": "349 metres",
+      "duration": "4 minutes",
+      "type": 1,
+      "name": "Crestwood Drive"
+    },
+    {
+      "instruction": "Turn left onto Park Avenue, CR 623",
+      "distance": "24 metres",
+      "duration": "less than a minute",
+      "type": 0,
+      "name": "Park Avenue, CR 623"
+    },
+    {
+      "instruction": "Turn sharp right",
+      "distance": "8 metres",
+      "duration": "less than a minute",
+      "type": 3,
+      "name": "-"
+    },
+    {
+      "instruction": "Turn right",
+      "distance": "890 metres",
+      "duration": "10 minutes",
+      "type": 1,
+      "name": "-"
+    },
+    {
+      "instruction": "Turn left",
+      "distance": "1 metres",
+      "duration": "less than a minute",
+      "type": 0,
+      "name": "-"
+    },
+    {
+      "instruction": "Turn right",
+      "distance": "659 metres",
+      "duration": "7 minutes",
+      "type": 1,
+      "name": "-"
+    },
+    {
+      "instruction": "Turn right",
+      "distance": "16 metres",
+      "duration": "less than a minute",
+      "type": 1,
+      "name": "-"
+    },
+    {
+      "instruction": "Turn left",
+      "distance": "2.5 kilometres",
+      "duration": "29 minutes",
+      "type": 0,
+      "name": "-"
+    },
+    {
+      "instruction": "Keep left",
+      "distance": "265 metres",
+      "duration": "3 minutes",
+      "type": 12,
+      "name": "-"
+    },
+    {
+      "instruction": "Turn right",
+      "distance": "574 metres",
+      "duration": "6 minutes",
+      "type": 1,
+      "name": "-"
+    },
+    {
+      "instruction": "Turn left",
+      "distance": "16 metres",
+      "duration": "less than a minute",
+      "type": 0,
+      "name": "-"
+    },
+    {
+      "instruction": "Turn right",
+      "distance": "191 metres",
+      "duration": "2 minutes",
+      "type": 1,
+      "name": "-"
+    },
+    {
+      "instruction": "Turn left",
+      "distance": "292 metres",
+      "duration": "3 minutes",
+      "type": 0,
+      "name": "-"
+    },
+    {
+      "instruction": "Keep right",
+      "distance": "21 metres",
+      "duration": "less than a minute",
+      "type": 13,
+      "name": "-"
+    },
+    {
+      "instruction": "Turn slight right",
+      "distance": "278 metres",
+      "duration": "3 minutes",
+      "type": 5,
+      "name": "-"
+    },
+    {
+      "instruction": "Turn right onto Hillside Avenue",
+      "distance": "7 metres",
+      "duration": "less than a minute",
+      "type": 1,
+      "name": "Hillside Avenue"
+    },
+    {
+      "instruction": "Turn left onto Watchung Avenue, CR 646",
+      "distance": "613 metres",
+      "duration": "7 minutes",
+      "type": 0,
+      "name": "Watchung Avenue, CR 646"
+    },
+    {
+      "instruction": "Turn left",
+      "distance": "8 metres",
+      "duration": "less than a minute",
+      "type": 0,
+      "name": "-"
+    },
+    {
+      "instruction": "Turn right",
+      "distance": "198 metres",
+      "duration": "2 minutes",
+      "type": 1,
+      "name": "-"
+    },
+    {
+      "instruction": "Turn right",
+      "distance": "19 metres",
+      "duration": "less than a minute",
+      "type": 1,
+      "name": "-"
+    },
+    {
+      "instruction": "Turn left",
+      "distance": "12 metres",
+      "duration": "less than a minute",
+      "type": 0,
+      "name": "-"
+    },
+    {
+      "instruction": "Turn right",
+      "distance": "1.5 kilometres",
+      "duration": "18 minutes",
+      "type": 1,
+      "name": "-"
+    },
+    {
+      "instruction": "Turn right",
+      "distance": "375 metres",
+      "duration": "4 minutes",
+      "type": 1,
+      "name": "-"
+    },
+    {
+      "instruction": "Turn left",
+      "distance": "92 metres",
+      "duration": "1 minute",
+      "type": 0,
+      "name": "-"
+    },
+    {
+      "instruction": "Turn left",
+      "distance": "359 metres",
+      "duration": "4 minutes",
+      "type": 0,
+      "name": "-"
+    },
+    {
+      "instruction": "Turn right",
+      "distance": "2 metres",
+      "duration": "less than a minute",
+      "type": 1,
+      "name": "-"
+    },
+    {
+      "instruction": "Turn left",
+      "distance": "457 metres",
+      "duration": "5 minutes",
+      "type": 0,
+      "name": "-"
+    },
+    {
+      "instruction": "Turn right",
+      "distance": "35 metres",
+      "duration": "less than a minute",
+      "type": 1,
+      "name": "-"
+    },
+    {
+      "instruction": "Turn right",
+      "distance": "783 metres",
+      "duration": "9 minutes",
+      "type": 1,
+      "name": "-"
+    },
+    {
+      "instruction": "Keep right",
+      "distance": "78 metres",
+      "duration": "less than a minute",
+      "type": 13,
+      "name": "-"
+    },
+    {
+      "instruction": "Turn left onto Springfield Avenue",
+      "distance": "24 metres",
+      "duration": "less than a minute",
+      "type": 0,
+      "name": "Springfield Avenue"
+    },
+    {
+      "instruction": "Turn left",
+      "distance": "150 metres",
+      "duration": "1 minute",
+      "type": 0,
+      "name": "-"
+    },
+    {
+      "instruction": "Turn slight left",
+      "distance": "395 metres",
+      "duration": "4 minutes",
+      "type": 4,
+      "name": "-"
+    },
+    {
+      "instruction": "Turn left",
+      "distance": "64 metres",
+      "duration": "less than a minute",
+      "type": 0,
+      "name": "-"
+    },
+    {
+      "instruction": "Turn left",
+      "distance": "6 metres",
+      "duration": "less than a minute",
+      "type": 0,
+      "name": "-"
+    },
+    {
+      "instruction": "Turn right",
+      "distance": "513 metres",
+      "duration": "6 minutes",
+      "type": 1,
+      "name": "-"
+    },
+    {
+      "instruction": "Turn slight left",
+      "distance": "49 metres",
+      "duration": "less than a minute",
+      "type": 4,
+      "name": "-"
+    },
+    {
+      "instruction": "Turn left",
+      "distance": "8 metres",
+      "duration": "less than a minute",
+      "type": 0,
+      "name": "-"
+    },
+    {
+      "instruction": "Turn right onto Morris Turnpike, NJ 124, CR 527",
+      "distance": "4 metres",
+      "duration": "less than a minute",
+      "type": 1,
+      "name": "Morris Turnpike, NJ 124, CR 527"
+    },
+    {
+      "instruction": "Turn left",
+      "distance": "8 metres",
+      "duration": "less than a minute",
+      "type": 0,
+      "name": "-"
+    },
+    {
+      "instruction": "Turn right",
+      "distance": "205 metres",
+      "duration": "2 minutes",
+      "type": 1,
+      "name": "-"
+    },
+    {
+      "instruction": "Turn left",
+      "distance": "768 metres",
+      "duration": "9 minutes",
+      "type": 0,
+      "name": "-"
+    },
+    {
+      "instruction": "Turn slight right",
+      "distance": "542 metres",
+      "duration": "6 minutes",
+      "type": 5,
+      "name": "-"
+    },
+    {
+      "instruction": "Keep right",
+      "distance": "94 metres",
+      "duration": "1 minute",
+      "type": 13,
+      "name": "-"
+    },
+    {
+      "instruction": "Turn right",
+      "distance": "142 metres",
+      "duration": "1 minute",
+      "type": 1,
+      "name": "-"
+    },
+    {
+      "instruction": "Turn right",
+      "distance": "1 metres",
+      "duration": "less than a minute",
+      "type": 1,
+      "name": "-"
+    },
+    {
+      "instruction": "Turn left",
+      "distance": "70 metres",
+      "duration": "less than a minute",
+      "type": 0,
+      "name": "-"
+    },
+    {
+      "instruction": "Turn slight right",
+      "distance": "2 metres",
+      "duration": "less than a minute",
+      "type": 5,
+      "name": "-"
+    },
+    {
+      "instruction": "Turn slight left",
+      "distance": "12 metres",
+      "duration": "less than a minute",
+      "type": 4,
+      "name": "-"
+    },
+    {
+      "instruction": "Turn right",
+      "distance": "180 metres",
+      "duration": "2 minutes",
+      "type": 1,
+      "name": "-"
+    },
+    {
+      "instruction": "Turn right",
+      "distance": "3 metres",
+      "duration": "less than a minute",
+      "type": 1,
+      "name": "-"
+    },
+    {
+      "instruction": "Turn left",
+      "distance": "511 metres",
+      "duration": "6 minutes",
+      "type": 0,
+      "name": "-"
+    },
+    {
+      "instruction": "Turn right",
+      "distance": "34 metres",
+      "duration": "less than a minute",
+      "type": 1,
+      "name": "-"
+    },
+    {
+      "instruction": "Turn right",
+      "distance": "317 metres",
+      "duration": "3 minutes",
+      "type": 1,
+      "name": "-"
+    },
+    {
+      "instruction": "Turn right",
+      "distance": "1.4 kilometres",
+      "duration": "16 minutes",
+      "type": 1,
+      "name": "-"
+    },
+    {
+      "instruction": "Keep left",
+      "distance": "352 metres",
+      "duration": "4 minutes",
+      "type": 12,
+      "name": "-"
+    },
+    {
+      "instruction": "Turn right",
+      "distance": "5 metres",
+      "duration": "less than a minute",
+      "type": 1,
+      "name": "-"
+    },
+    {
+      "instruction": "Turn left onto Valley Street, CR 638",
+      "distance": "3 metres",
+      "duration": "less than a minute",
+      "type": 0,
+      "name": "Valley Street, CR 638"
+    },
+    {
+      "instruction": "Turn right onto South Pierson Road",
+      "distance": "444 metres",
+      "duration": "5 minutes",
+      "type": 1,
+      "name": "South Pierson Road"
+    },
+    {
+      "instruction": "Turn left onto Indiana Street",
+      "distance": "180 metres",
+      "duration": "2 minutes",
+      "type": 0,
+      "name": "Indiana Street"
+    },
+    {
+      "instruction": "Turn left",
+      "distance": "6 metres",
+      "duration": "less than a minute",
+      "type": 0,
+      "name": "-"
+    },
+    {
+      "instruction": "Turn right",
+      "distance": "40 metres",
+      "duration": "less than a minute",
+      "type": 1,
+      "name": "-"
+    },
+    {
+      "instruction": "Turn left",
+      "distance": "351 metres",
+      "duration": "4 minutes",
+      "type": 0,
+      "name": "-"
+    },
+    {
+      "instruction": "Turn left",
+      "distance": "0 metres",
+      "duration": "less than a minute",
+      "type": 0,
+      "name": "-"
+    },
+    {
+      "instruction": "Turn right",
+      "distance": "181 metres",
+      "duration": "2 minutes",
+      "type": 1,
+      "name": "-"
+    },
+    {
+      "instruction": "Turn slight left",
+      "distance": "1 metres",
+      "duration": "less than a minute",
+      "type": 4,
+      "name": "-"
+    },
+    {
+      "instruction": "Keep right",
+      "distance": "189 metres",
+      "duration": "2 minutes",
+      "type": 13,
+      "name": "-"
+    },
+    {
+      "instruction": "Turn left onto Wellesley Street",
+      "distance": "9 metres",
+      "duration": "less than a minute",
+      "type": 0,
+      "name": "Wellesley Street"
+    },
+    {
+      "instruction": "Turn right onto Springfield Avenue, NJ 124",
+      "distance": "11 metres",
+      "duration": "less than a minute",
+      "type": 1,
+      "name": "Springfield Avenue, NJ 124"
+    },
+    {
+      "instruction": "Turn left onto Wellesley Road",
+      "distance": "85 metres",
+      "duration": "1 minute",
+      "type": 0,
+      "name": "Wellesley Road"
+    },
+    {
+      "instruction": "Turn right onto Amherst Court",
+      "distance": "152 metres",
+      "duration": "1 minute",
+      "type": 1,
+      "name": "Amherst Court"
+    },
+    {
+      "instruction": "Turn left onto Tuscan Street",
+      "distance": "16 metres",
+      "duration": "less than a minute",
+      "type": 0,
+      "name": "Tuscan Street"
+    },
+    {
+      "instruction": "Turn sharp right",
+      "distance": "60 metres",
+      "duration": "less than a minute",
+      "type": 3,
+      "name": "-"
+    },
+    {
+      "instruction": "Turn left",
+      "distance": "5 metres",
+      "duration": "less than a minute",
+      "type": 0,
+      "name": "-"
+    },
+    {
+      "instruction": "Turn right onto Tuscan Road",
+      "distance": "194 metres",
+      "duration": "2 minutes",
+      "type": 1,
+      "name": "Tuscan Road"
+    },
+    {
+      "instruction": "Turn left",
+      "distance": "4 metres",
+      "duration": "less than a minute",
+      "type": 0,
+      "name": "-"
+    },
+    {
+      "instruction": "Turn right",
+      "distance": "214 metres",
+      "duration": "2 minutes",
+      "type": 1,
+      "name": "-"
+    },
+    {
+      "instruction": "Turn right",
+      "distance": "18 metres",
+      "duration": "less than a minute",
+      "type": 1,
+      "name": "-"
+    },
+    {
+      "instruction": "Turn left",
+      "distance": "167 metres",
+      "duration": "2 minutes",
+      "type": 0,
+      "name": "-"
+    },
+    {
+      "instruction": "Keep right",
+      "distance": "20 metres",
+      "duration": "less than a minute",
+      "type": 13,
+      "name": "-"
+    },
+    {
+      "instruction": "Keep right",
+      "distance": "1.3 kilometres",
+      "duration": "15 minutes",
+      "type": 13,
+      "name": "-"
+    },
+    {
+      "instruction": "Keep right",
+      "distance": "20 metres",
+      "duration": "less than a minute",
+      "type": 13,
+      "name": "-"
+    },
+    {
+      "instruction": "Turn right",
+      "distance": "229 metres",
+      "duration": "2 minutes",
+      "type": 1,
+      "name": "-"
+    },
+    {
+      "instruction": "Keep left",
+      "distance": "668 metres",
+      "duration": "8 minutes",
+      "type": 12,
+      "name": "-"
+    },
+    {
+      "instruction": "Turn right",
+      "distance": "85 metres",
+      "duration": "1 minute",
+      "type": 1,
+      "name": "-"
+    },
+    {
+      "instruction": "Turn right",
+      "distance": "299 metres",
+      "duration": "3 minutes",
+      "type": 1,
+      "name": "-"
+    },
+    {
+      "instruction": "Keep right",
+      "distance": "265 metres",
+      "duration": "3 minutes",
+      "type": 13,
+      "name": "-"
+    },
+    {
+      "instruction": "Keep right",
+      "distance": "84 metres",
+      "duration": "1 minute",
+      "type": 13,
+      "name": "-"
+    },
+    {
+      "instruction": "Turn slight right",
+      "distance": "27 metres",
+      "duration": "less than a minute",
+      "type": 5,
+      "name": "-"
+    },
+    {
+      "instruction": "Keep right",
+      "distance": "412 metres",
+      "duration": "4 minutes",
+      "type": 13,
+      "name": "-"
+    },
+    {
+      "instruction": "Turn right",
+      "distance": "821 metres",
+      "duration": "9 minutes",
+      "type": 1,
+      "name": "-"
+    },
+    {
+      "instruction": "Keep right",
+      "distance": "294 metres",
+      "duration": "3 minutes",
+      "type": 13,
+      "name": "-"
+    },
+    {
+      "instruction": "Keep left",
+      "distance": "655 metres",
+      "duration": "7 minutes",
+      "type": 12,
+      "name": "-"
+    },
+    {
+      "instruction": "Turn right",
+      "distance": "1 metres",
+      "duration": "less than a minute",
+      "type": 1,
+      "name": "-"
+    },
+    {
+      "instruction": "Turn left",
+      "distance": "677 metres",
+      "duration": "8 minutes",
+      "type": 0,
+      "name": "-"
+    },
+    {
+      "instruction": "Keep right",
+      "distance": "237 metres",
+      "duration": "2 minutes",
+      "type": 13,
+      "name": "-"
+    },
+    {
+      "instruction": "Keep left",
+      "distance": "478 metres",
+      "duration": "5 minutes",
+      "type": 12,
+      "name": "-"
+    },
+    {
+      "instruction": "Keep right",
+      "distance": "57 metres",
+      "duration": "less than a minute",
+      "type": 13,
+      "name": "-"
+    },
+    {
+      "instruction": "Keep left",
+      "distance": "19 metres",
+      "duration": "less than a minute",
+      "type": 12,
+      "name": "-"
+    },
+    {
+      "instruction": "Keep left",
+      "distance": "602 metres",
+      "duration": "7 minutes",
+      "type": 12,
+      "name": "-"
+    },
+    {
+      "instruction": "Turn slight right",
+      "distance": "32 metres",
+      "duration": "less than a minute",
+      "type": 5,
+      "name": "-"
+    },
+    {
+      "instruction": "Turn right",
+      "distance": "223 metres",
+      "duration": "2 minutes",
+      "type": 1,
+      "name": "-"
+    },
+    {
+      "instruction": "Turn left",
+      "distance": "1 metres",
+      "duration": "less than a minute",
+      "type": 0,
+      "name": "-"
+    },
+    {
+      "instruction": "Turn right",
+      "distance": "466 metres",
+      "duration": "5 minutes",
+      "type": 1,
+      "name": "-"
+    },
+    {
+      "instruction": "Turn left",
+      "distance": "30 metres",
+      "duration": "less than a minute",
+      "type": 0,
+      "name": "-"
+    },
+    {
+      "instruction": "Turn right",
+      "distance": "271 metres",
+      "duration": "3 minutes",
+      "type": 1,
+      "name": "-"
+    },
+    {
+      "instruction": "Turn left",
+      "distance": "31 metres",
+      "duration": "less than a minute",
+      "type": 0,
+      "name": "-"
+    },
+    {
+      "instruction": "Turn right",
+      "distance": "287 metres",
+      "duration": "3 minutes",
+      "type": 1,
+      "name": "-"
+    },
+    {
+      "instruction": "Turn right",
+      "distance": "170 metres",
+      "duration": "2 minutes",
+      "type": 1,
+      "name": "-"
+    },
+    {
+      "instruction": "Turn left",
+      "distance": "17 metres",
+      "duration": "less than a minute",
+      "type": 0,
+      "name": "-"
+    },
+    {
+      "instruction": "Turn right",
+      "distance": "122 metres",
+      "duration": "1 minute",
+      "type": 1,
+      "name": "-"
+    },
+    {
+      "instruction": "Keep right",
+      "distance": "84 metres",
+      "duration": "1 minute",
+      "type": 13,
+      "name": "-"
+    },
+    {
+      "instruction": "Keep right",
+      "distance": "582 metres",
+      "duration": "6 minutes",
+      "type": 13,
+      "name": "-"
+    },
+    {
+      "instruction": "Turn right",
+      "distance": "5 metres",
+      "duration": "less than a minute",
+      "type": 1,
+      "name": "-"
+    },
+    {
+      "instruction": "Turn left",
+      "distance": "1.1 kilometres",
+      "duration": "12 minutes",
+      "type": 0,
+      "name": "-"
+    },
+    {
+      "instruction": "Keep right",
+      "distance": "97 metres",
+      "duration": "1 minute",
+      "type": 13,
+      "name": "-"
+    },
+    {
+      "instruction": "Keep right",
+      "distance": "332 metres",
+      "duration": "3 minutes",
+      "type": 13,
+      "name": "-"
+    },
+    {
+      "instruction": "Turn right",
+      "distance": "24 metres",
+      "duration": "less than a minute",
+      "type": 1,
+      "name": "-"
+    },
+    {
+      "instruction": "Turn left",
+      "distance": "210 metres",
+      "duration": "2 minutes",
+      "type": 0,
+      "name": "-"
+    },
+    {
+      "instruction": "Keep left",
+      "distance": "2.0 kilometres",
+      "duration": "24 minutes",
+      "type": 12,
+      "name": "-"
+    },
+    {
+      "instruction": "Keep right",
+      "distance": "549 metres",
+      "duration": "6 minutes",
+      "type": 13,
+      "name": "-"
+    },
+    {
+      "instruction": "Turn left",
+      "distance": "7 metres",
+      "duration": "less than a minute",
+      "type": 0,
+      "name": "-"
+    },
+    {
+      "instruction": "Turn left",
+      "distance": "1.0 kilometres",
+      "duration": "12 minutes",
+      "type": 0,
+      "name": "-"
+    },
+    {
+      "instruction": "Turn left",
+      "distance": "450 metres",
+      "duration": "5 minutes",
+      "type": 0,
+      "name": "-"
+    },
+    {
+      "instruction": "Turn right",
+      "distance": "131 metres",
+      "duration": "1 minute",
+      "type": 1,
+      "name": "-"
+    },
+    {
+      "instruction": "Keep right",
+      "distance": "38 metres",
+      "duration": "less than a minute",
+      "type": 13,
+      "name": "-"
+    },
+    {
+      "instruction": "Turn left",
+      "distance": "32 metres",
+      "duration": "less than a minute",
+      "type": 0,
+      "name": "-"
+    },
+    {
+      "instruction": "Keep right",
+      "distance": "215 metres",
+      "duration": "2 minutes",
+      "type": 13,
+      "name": "-"
+    },
+    {
+      "instruction": "Keep left",
+      "distance": "56 metres",
+      "duration": "less than a minute",
+      "type": 12,
+      "name": "-"
+    },
+    {
+      "instruction": "Turn left onto Lincoln Park",
+      "distance": "285 metres",
+      "duration": "3 minutes",
+      "type": 0,
+      "name": "Lincoln Park"
+    },
+    {
+      "instruction": "Keep right onto Lincoln Park",
+      "distance": "24 metres",
+      "duration": "less than a minute",
+      "type": 13,
+      "name": "Lincoln Park"
+    },
+    {
+      "instruction": "Enter the roundabout and take the 2nd exit",
+      "distance": "71 metres",
+      "duration": "less than a minute",
+      "type": 7,
+      "name": "-"
+    },
+    {
+      "instruction": "Turn slight right onto Lincoln Park",
+      "distance": "347 metres",
+      "duration": "4 minutes",
+      "type": 5,
+      "name": "Lincoln Park"
+    },
+    {
+      "instruction": "Turn left onto Lincoln Park",
+      "distance": "120 metres",
+      "duration": "1 minute",
+      "type": 0,
+      "name": "Lincoln Park"
+    },
+    {
+      "instruction": "Turn left",
+      "distance": "8 metres",
+      "duration": "less than a minute",
+      "type": 0,
+      "name": "-"
+    },
+    {
+      "instruction": "Turn slight right",
+      "distance": "57 metres",
+      "duration": "less than a minute",
+      "type": 5,
+      "name": "-"
+    },
+    {
+      "instruction": "Turn right",
+      "distance": "20 metres",
+      "duration": "less than a minute",
+      "type": 1,
+      "name": "-"
+    },
+    {
+      "instruction": "Turn left",
+      "distance": "2 metres",
+      "duration": "less than a minute",
+      "type": 0,
+      "name": "-"
+    },
+    {
+      "instruction": "Turn right",
+      "distance": "271 metres",
+      "duration": "3 minutes",
+      "type": 1,
+      "name": "-"
+    },
+    {
+      "instruction": "Turn left",
+      "distance": "69 metres",
+      "duration": "less than a minute",
+      "type": 0,
+      "name": "-"
+    },
+    {
+      "instruction": "Turn right",
+      "distance": "12 metres",
+      "duration": "less than a minute",
+      "type": 1,
+      "name": "-"
+    },
+    {
+      "instruction": "Turn left",
+      "distance": "6 metres",
+      "duration": "less than a minute",
+      "type": 0,
+      "name": "-"
+    },
+    {
+      "instruction": "Turn right onto Jewett Avenue",
+      "distance": "445 metres",
+      "duration": "5 minutes",
+      "type": 1,
+      "name": "Jewett Avenue"
+    },
+    {
+      "instruction": "Turn left",
+      "distance": "17 metres",
+      "duration": "less than a minute",
+      "type": 0,
+      "name": "-"
+    },
+    {
+      "instruction": "Turn right",
+      "distance": "17 metres",
+      "duration": "less than a minute",
+      "type": 1,
+      "name": "-"
+    },
+    {
+      "instruction": "Turn left",
+      "distance": "6 metres",
+      "duration": "less than a minute",
+      "type": 0,
+      "name": "-"
+    },
+    {
+      "instruction": "Turn right onto Fairmount Avenue",
+      "distance": "563 metres",
+      "duration": "6 minutes",
+      "type": 1,
+      "name": "Fairmount Avenue"
+    },
+    {
+      "instruction": "Turn left",
+      "distance": "403 metres",
+      "duration": "4 minutes",
+      "type": 0,
+      "name": "-"
+    },
+    {
+      "instruction": "Turn slight left",
+      "distance": "1 metres",
+      "duration": "less than a minute",
+      "type": 4,
+      "name": "-"
+    },
+    {
+      "instruction": "Turn right",
+      "distance": "212 metres",
+      "duration": "2 minutes",
+      "type": 1,
+      "name": "-"
+    },
+    {
+      "instruction": "Turn slight right",
+      "distance": "156 metres",
+      "duration": "1 minute",
+      "type": 5,
+      "name": "-"
+    },
+    {
+      "instruction": "Turn right",
+      "distance": "2 metres",
+      "duration": "less than a minute",
+      "type": 1,
+      "name": "-"
+    },
+    {
+      "instruction": "Turn left",
+      "distance": "260 metres",
+      "duration": "3 minutes",
+      "type": 0,
+      "name": "-"
+    },
+    {
+      "instruction": "Turn slight left",
+      "distance": "9 metres",
+      "duration": "less than a minute",
+      "type": 4,
+      "name": "-"
+    },
+    {
+      "instruction": "Turn right",
+      "distance": "25 metres",
+      "duration": "less than a minute",
+      "type": 1,
+      "name": "-"
+    },
+    {
+      "instruction": "Turn slight left",
+      "distance": "143 metres",
+      "duration": "1 minute",
+      "type": 4,
+      "name": "-"
+    },
+    {
+      "instruction": "Keep left",
+      "distance": "198 metres",
+      "duration": "2 minutes",
+      "type": 12,
+      "name": "-"
+    },
+    {
+      "instruction": "Turn slight right",
+      "distance": "2 metres",
+      "duration": "less than a minute",
+      "type": 5,
+      "name": "-"
+    },
+    {
+      "instruction": "Turn slight left",
+      "distance": "305 metres",
+      "duration": "3 minutes",
+      "type": 4,
+      "name": "-"
+    },
+    {
+      "instruction": "Turn right",
+      "distance": "17 metres",
+      "duration": "less than a minute",
+      "type": 1,
+      "name": "-"
+    },
+    {
+      "instruction": "Turn left",
+      "distance": "13 metres",
+      "duration": "less than a minute",
+      "type": 0,
+      "name": "-"
+    },
+    {
+      "instruction": "Turn slight left",
+      "distance": "127 metres",
+      "duration": "1 minute",
+      "type": 4,
+      "name": "-"
+    },
+    {
+      "instruction": "Turn right",
+      "distance": "1 metres",
+      "duration": "less than a minute",
+      "type": 1,
+      "name": "-"
+    },
+    {
+      "instruction": "Turn left",
+      "distance": "6 metres",
+      "duration": "less than a minute",
+      "type": 0,
+      "name": "-"
+    },
+    {
+      "instruction": "Turn right onto Warren Street",
+      "distance": "65 metres",
+      "duration": "less than a minute",
+      "type": 1,
+      "name": "Warren Street"
+    },
+    {
+      "instruction": "Turn left",
+      "distance": "6 metres",
+      "duration": "less than a minute",
+      "type": 0,
+      "name": "-"
+    },
+    {
+      "instruction": "Turn right",
+      "distance": "2 metres",
+      "duration": "less than a minute",
+      "type": 1,
+      "name": "-"
+    },
+    {
+      "instruction": "Turn left",
+      "distance": "125 metres",
+      "duration": "1 minute",
+      "type": 0,
+      "name": "-"
+    },
+    {
+      "instruction": "Turn right",
+      "distance": "5 metres",
+      "duration": "less than a minute",
+      "type": 1,
+      "name": "-"
+    },
+    {
+      "instruction": "Turn left onto Sussex Street",
+      "distance": "447 metres",
+      "duration": "5 minutes",
+      "type": 0,
+      "name": "Sussex Street"
+    },
+    {
+      "instruction": "Turn left onto Paulus Hook Pier",
+      "distance": "54 metres",
+      "duration": "less than a minute",
+      "type": 0,
+      "name": "Paulus Hook Pier"
+    },
+    {
+      "instruction": "Turn left",
+      "distance": "27 metres",
+      "duration": "less than a minute",
+      "type": 0,
+      "name": "-"
+    },
+    {
+      "instruction": "Turn left onto Paulus Hook Pier",
+      "distance": "12 metres",
+      "duration": "less than a minute",
+      "type": 0,
+      "name": "Paulus Hook Pier"
+    },
+    {
+      "instruction": "Turn right onto Paulus Hook \u2013 Pier 11 / Wall Street, PH-11",
+      "distance": "3.6 kilometres",
+      "duration": "14 minutes",
+      "type": 1,
+      "name": "Paulus Hook \u2013 Pier 11 / Wall Street, PH-11"
+    },
+    {
+      "instruction": "Turn right onto Pier 11 \u2013 DUMBO/Fulton Ferry",
+      "distance": "911 metres",
+      "duration": "9 minutes",
+      "type": 1,
+      "name": "Pier 11 \u2013 DUMBO/Fulton Ferry"
+    },
+    {
+      "instruction": "Turn sharp left onto DUMBO/Fulton Ferry \u2013 South Williamsburg",
+      "distance": "2.4 kilometres",
+      "duration": "14 minutes",
+      "type": 2,
+      "name": "DUMBO/Fulton Ferry \u2013 South Williamsburg"
+    },
+    {
+      "instruction": "Continue straight",
+      "distance": "50 metres",
+      "duration": "less than a minute",
+      "type": 6,
+      "name": "-"
+    },
+    {
+      "instruction": "Turn right",
+      "distance": "119 metres",
+      "duration": "1 minute",
+      "type": 1,
+      "name": "-"
+    },
+    {
+      "instruction": "Turn right onto Kent Avenue",
+      "distance": "18 metres",
+      "duration": "less than a minute",
+      "type": 1,
+      "name": "Kent Avenue"
+    },
+    {
+      "instruction": "Turn left onto South 10th Street",
+      "distance": "5 metres",
+      "duration": "less than a minute",
+      "type": 0,
+      "name": "South 10th Street"
+    },
+    {
+      "instruction": "Turn right",
+      "distance": "5 metres",
+      "duration": "less than a minute",
+      "type": 1,
+      "name": "-"
+    },
+    {
+      "instruction": "Turn left",
+      "distance": "212 metres",
+      "duration": "2 minutes",
+      "type": 0,
+      "name": "-"
+    },
+    {
+      "instruction": "Turn right",
+      "distance": "1 metres",
+      "duration": "less than a minute",
+      "type": 1,
+      "name": "-"
+    },
+    {
+      "instruction": "Turn slight left",
+      "distance": "136 metres",
+      "duration": "1 minute",
+      "type": 4,
+      "name": "-"
+    },
+    {
+      "instruction": "Turn right",
+      "distance": "34 metres",
+      "duration": "less than a minute",
+      "type": 1,
+      "name": "-"
+    },
+    {
+      "instruction": "Turn left",
+      "distance": "608 metres",
+      "duration": "7 minutes",
+      "type": 0,
+      "name": "-"
+    },
+    {
+      "instruction": "Keep right",
+      "distance": "208 metres",
+      "duration": "2 minutes",
+      "type": 13,
+      "name": "-"
+    },
+    {
+      "instruction": "Keep right",
+      "distance": "4 metres",
+      "duration": "less than a minute",
+      "type": 13,
+      "name": "-"
+    },
+    {
+      "instruction": "Keep right",
+      "distance": "5 metres",
+      "duration": "less than a minute",
+      "type": 13,
+      "name": "-"
+    },
+    {
+      "instruction": "Keep left onto Division Avenue",
+      "distance": "77 metres",
+      "duration": "less than a minute",
+      "type": 12,
+      "name": "Division Avenue"
+    },
+    {
+      "instruction": "Turn slight right",
+      "distance": "16 metres",
+      "duration": "less than a minute",
+      "type": 5,
+      "name": "-"
+    },
+    {
+      "instruction": "Keep right",
+      "distance": "142 metres",
+      "duration": "1 minute",
+      "type": 13,
+      "name": "-"
+    },
+    {
+      "instruction": "Keep right",
+      "distance": "8 metres",
+      "duration": "less than a minute",
+      "type": 13,
+      "name": "-"
+    },
+    {
+      "instruction": "Keep left",
+      "distance": "26 metres",
+      "duration": "less than a minute",
+      "type": 12,
+      "name": "-"
+    },
+    {
+      "instruction": "Turn right",
+      "distance": "74 metres",
+      "duration": "less than a minute",
+      "type": 1,
+      "name": "-"
+    },
+    {
+      "instruction": "Keep right",
+      "distance": "136 metres",
+      "duration": "1 minute",
+      "type": 13,
+      "name": "-"
+    },
+    {
+      "instruction": "Keep right",
+      "distance": "564 metres",
+      "duration": "6 minutes",
+      "type": 13,
+      "name": "-"
+    },
+    {
+      "instruction": "Keep right",
+      "distance": "14 metres",
+      "duration": "less than a minute",
+      "type": 13,
+      "name": "-"
+    },
+    {
+      "instruction": "Keep left",
+      "distance": "4 metres",
+      "duration": "less than a minute",
+      "type": 12,
+      "name": "-"
+    },
+    {
+      "instruction": "Keep left",
+      "distance": "88 metres",
+      "duration": "1 minute",
+      "type": 12,
+      "name": "-"
+    },
+    {
+      "instruction": "Keep right",
+      "distance": "20 metres",
+      "duration": "less than a minute",
+      "type": 13,
+      "name": "-"
+    },
+    {
+      "instruction": "Keep right",
+      "distance": "93 metres",
+      "duration": "1 minute",
+      "type": 13,
+      "name": "-"
+    },
+    {
+      "instruction": "Keep left",
+      "distance": "26 metres",
+      "duration": "less than a minute",
+      "type": 12,
+      "name": "-"
+    },
+    {
+      "instruction": "Keep right",
+      "distance": "550 metres",
+      "duration": "6 minutes",
+      "type": 13,
+      "name": "-"
+    },
+    {
+      "instruction": "Turn left",
+      "distance": "1 metres",
+      "duration": "less than a minute",
+      "type": 0,
+      "name": "-"
+    },
+    {
+      "instruction": "Turn right",
+      "distance": "145 metres",
+      "duration": "1 minute",
+      "type": 1,
+      "name": "-"
+    },
+    {
+      "instruction": "Turn slight left",
+      "distance": "8 metres",
+      "duration": "less than a minute",
+      "type": 4,
+      "name": "-"
+    },
+    {
+      "instruction": "Turn left",
+      "distance": "5 metres",
+      "duration": "less than a minute",
+      "type": 0,
+      "name": "-"
+    },
+    {
+      "instruction": "Keep right",
+      "distance": "90 metres",
+      "duration": "1 minute",
+      "type": 13,
+      "name": "-"
+    },
+    {
+      "instruction": "Keep right",
+      "distance": "8 metres",
+      "duration": "less than a minute",
+      "type": 13,
+      "name": "-"
+    },
+    {
+      "instruction": "Keep right",
+      "distance": "2 metres",
+      "duration": "less than a minute",
+      "type": 13,
+      "name": "-"
+    },
+    {
+      "instruction": "Keep right",
+      "distance": "117 metres",
+      "duration": "1 minute",
+      "type": 13,
+      "name": "-"
+    },
+    {
+      "instruction": "Keep left",
+      "distance": "11 metres",
+      "duration": "less than a minute",
+      "type": 12,
+      "name": "-"
+    },
+    {
+      "instruction": "Keep left",
+      "distance": "96 metres",
+      "duration": "1 minute",
+      "type": 12,
+      "name": "-"
+    },
+    {
+      "instruction": "Keep right",
+      "distance": "3 metres",
+      "duration": "less than a minute",
+      "type": 13,
+      "name": "-"
+    },
+    {
+      "instruction": "Turn right",
+      "distance": "6 metres",
+      "duration": "less than a minute",
+      "type": 1,
+      "name": "-"
+    },
+    {
+      "instruction": "Turn left",
+      "distance": "2 metres",
+      "duration": "less than a minute",
+      "type": 0,
+      "name": "-"
+    },
+    {
+      "instruction": "Keep right",
+      "distance": "7 metres",
+      "duration": "less than a minute",
+      "type": 13,
+      "name": "-"
+    },
+    {
+      "instruction": "Keep right",
+      "distance": "276 metres",
+      "duration": "3 minutes",
+      "type": 13,
+      "name": "-"
+    },
+    {
+      "instruction": "Keep right",
+      "distance": "8 metres",
+      "duration": "less than a minute",
+      "type": 13,
+      "name": "-"
+    },
+    {
+      "instruction": "Keep right",
+      "distance": "9 metres",
+      "duration": "less than a minute",
+      "type": 13,
+      "name": "-"
+    },
+    {
+      "instruction": "Keep right",
+      "distance": "129 metres",
+      "duration": "1 minute",
+      "type": 13,
+      "name": "-"
+    },
+    {
+      "instruction": "Keep right",
+      "distance": "13 metres",
+      "duration": "less than a minute",
+      "type": 13,
+      "name": "-"
+    },
+    {
+      "instruction": "Keep right",
+      "distance": "14 metres",
+      "duration": "less than a minute",
+      "type": 13,
+      "name": "-"
+    },
+    {
+      "instruction": "Keep right",
+      "distance": "27 metres",
+      "duration": "less than a minute",
+      "type": 13,
+      "name": "-"
+    },
+    {
+      "instruction": "Turn slight left",
+      "distance": "2 metres",
+      "duration": "less than a minute",
+      "type": 4,
+      "name": "-"
+    },
+    {
+      "instruction": "Turn right",
+      "distance": "11 metres",
+      "duration": "less than a minute",
+      "type": 1,
+      "name": "-"
+    },
+    {
+      "instruction": "Keep right",
+      "distance": "9 metres",
+      "duration": "less than a minute",
+      "type": 13,
+      "name": "-"
+    },
+    {
+      "instruction": "Keep right",
+      "distance": "101 metres",
+      "duration": "1 minute",
+      "type": 13,
+      "name": "-"
+    },
+    {
+      "instruction": "Keep right",
+      "distance": "8 metres",
+      "duration": "less than a minute",
+      "type": 13,
+      "name": "-"
+    },
+    {
+      "instruction": "Keep right",
+      "distance": "91 metres",
+      "duration": "1 minute",
+      "type": 13,
+      "name": "-"
+    },
+    {
+      "instruction": "Keep right",
+      "distance": "18 metres",
+      "duration": "less than a minute",
+      "type": 13,
+      "name": "-"
+    },
+    {
+      "instruction": "Turn slight left",
+      "distance": "1 metres",
+      "duration": "less than a minute",
+      "type": 4,
+      "name": "-"
+    },
+    {
+      "instruction": "Keep right",
+      "distance": "57 metres",
+      "duration": "less than a minute",
+      "type": 13,
+      "name": "-"
+    },
+    {
+      "instruction": "Keep left",
+      "distance": "10 metres",
+      "duration": "less than a minute",
+      "type": 12,
+      "name": "-"
+    },
+    {
+      "instruction": "Keep left",
+      "distance": "25 metres",
+      "duration": "less than a minute",
+      "type": 12,
+      "name": "-"
+    },
+    {
+      "instruction": "Keep right",
+      "distance": "109 metres",
+      "duration": "1 minute",
+      "type": 13,
+      "name": "-"
+    },
+    {
+      "instruction": "Keep right",
+      "distance": "18 metres",
+      "duration": "less than a minute",
+      "type": 13,
+      "name": "-"
+    },
+    {
+      "instruction": "Keep right",
+      "distance": "100 metres",
+      "duration": "1 minute",
+      "type": 13,
+      "name": "-"
+    },
+    {
+      "instruction": "Keep right",
+      "distance": "29 metres",
+      "duration": "less than a minute",
+      "type": 13,
+      "name": "-"
+    },
+    {
+      "instruction": "Keep right onto Knickerbocker Avenue",
+      "distance": "23 metres",
+      "duration": "less than a minute",
+      "type": 13,
+      "name": "Knickerbocker Avenue"
+    },
+    {
+      "instruction": "Keep left",
+      "distance": "4 metres",
+      "duration": "less than a minute",
+      "type": 12,
+      "name": "-"
+    },
+    {
+      "instruction": "Turn slight right",
+      "distance": "2 metres",
+      "duration": "less than a minute",
+      "type": 5,
+      "name": "-"
+    },
+    {
+      "instruction": "Keep left",
+      "distance": "43 metres",
+      "duration": "less than a minute",
+      "type": 12,
+      "name": "-"
+    },
+    {
+      "instruction": "Keep right",
+      "distance": "9 metres",
+      "duration": "less than a minute",
+      "type": 13,
+      "name": "-"
+    },
+    {
+      "instruction": "Keep right",
+      "distance": "92 metres",
+      "duration": "1 minute",
+      "type": 13,
+      "name": "-"
+    },
+    {
+      "instruction": "Keep right",
+      "distance": "18 metres",
+      "duration": "less than a minute",
+      "type": 13,
+      "name": "-"
+    },
+    {
+      "instruction": "Keep right",
+      "distance": "90 metres",
+      "duration": "1 minute",
+      "type": 13,
+      "name": "-"
+    },
+    {
+      "instruction": "Keep right",
+      "distance": "2 metres",
+      "duration": "less than a minute",
+      "type": 13,
+      "name": "-"
+    },
+    {
+      "instruction": "Turn slight left",
+      "distance": "8 metres",
+      "duration": "less than a minute",
+      "type": 4,
+      "name": "-"
+    },
+    {
+      "instruction": "Keep right",
+      "distance": "36 metres",
+      "duration": "less than a minute",
+      "type": 13,
+      "name": "-"
+    },
+    {
+      "instruction": "Keep left",
+      "distance": "75 metres",
+      "duration": "less than a minute",
+      "type": 12,
+      "name": "-"
+    },
+    {
+      "instruction": "Keep right",
+      "distance": "112 metres",
+      "duration": "1 minute",
+      "type": 13,
+      "name": "-"
+    },
+    {
+      "instruction": "Keep right",
+      "distance": "98 metres",
+      "duration": "1 minute",
+      "type": 13,
+      "name": "-"
+    },
+    {
+      "instruction": "Turn right",
+      "distance": "1 metres",
+      "duration": "less than a minute",
+      "type": 1,
+      "name": "-"
+    },
+    {
+      "instruction": "Turn left",
+      "distance": "15 metres",
+      "duration": "less than a minute",
+      "type": 0,
+      "name": "-"
+    },
+    {
+      "instruction": "Turn left",
+      "distance": "23 metres",
+      "duration": "less than a minute",
+      "type": 0,
+      "name": "-"
+    },
+    {
+      "instruction": "Keep right",
+      "distance": "208 metres",
+      "duration": "2 minutes",
+      "type": 13,
+      "name": "-"
+    },
+    {
+      "instruction": "Keep right",
+      "distance": "119 metres",
+      "duration": "1 minute",
+      "type": 13,
+      "name": "-"
+    },
+    {
+      "instruction": "Keep right",
+      "distance": "78 metres",
+      "duration": "less than a minute",
+      "type": 13,
+      "name": "-"
+    },
+    {
+      "instruction": "Continue straight onto Clemens Triangle, Q056",
+      "distance": "27 metres",
+      "duration": "less than a minute",
+      "type": 6,
+      "name": "Clemens Triangle, Q056"
+    },
+    {
+      "instruction": "Turn slight left",
+      "distance": "4 metres",
+      "duration": "less than a minute",
+      "type": 4,
+      "name": "-"
+    },
+    {
+      "instruction": "Keep left",
+      "distance": "11 metres",
+      "duration": "less than a minute",
+      "type": 12,
+      "name": "-"
+    },
+    {
+      "instruction": "Turn right",
+      "distance": "10 metres",
+      "duration": "less than a minute",
+      "type": 1,
+      "name": "-"
+    },
+    {
+      "instruction": "Keep right",
+      "distance": "50 metres",
+      "duration": "less than a minute",
+      "type": 13,
+      "name": "-"
+    },
+    {
+      "instruction": "Keep right",
+      "distance": "8 metres",
+      "duration": "less than a minute",
+      "type": 13,
+      "name": "-"
+    },
+    {
+      "instruction": "Keep right",
+      "distance": "11 metres",
+      "duration": "less than a minute",
+      "type": 13,
+      "name": "-"
+    },
+    {
+      "instruction": "Keep right",
+      "distance": "260 metres",
+      "duration": "3 minutes",
+      "type": 13,
+      "name": "-"
+    },
+    {
+      "instruction": "Turn left",
+      "distance": "3 metres",
+      "duration": "less than a minute",
+      "type": 0,
+      "name": "-"
+    },
+    {
+      "instruction": "Turn right",
+      "distance": "153 metres",
+      "duration": "1 minute",
+      "type": 1,
+      "name": "-"
+    },
+    {
+      "instruction": "Keep right",
+      "distance": "521 metres",
+      "duration": "6 minutes",
+      "type": 13,
+      "name": "-"
+    },
+    {
+      "instruction": "Turn right",
+      "distance": "1 metres",
+      "duration": "less than a minute",
+      "type": 1,
+      "name": "-"
+    },
+    {
+      "instruction": "Turn left",
+      "distance": "221 metres",
+      "duration": "2 minutes",
+      "type": 0,
+      "name": "-"
+    },
+    {
+      "instruction": "Keep left",
+      "distance": "10 metres",
+      "duration": "less than a minute",
+      "type": 12,
+      "name": "-"
+    },
+    {
+      "instruction": "Keep left",
+      "distance": "882 metres",
+      "duration": "10 minutes",
+      "type": 12,
+      "name": "-"
+    },
+    {
+      "instruction": "Keep right",
+      "distance": "12 metres",
+      "duration": "less than a minute",
+      "type": 13,
+      "name": "-"
+    },
+    {
+      "instruction": "Keep right",
+      "distance": "13 metres",
+      "duration": "less than a minute",
+      "type": 13,
+      "name": "-"
+    },
+    {
+      "instruction": "Keep right",
+      "distance": "1.4 kilometres",
+      "duration": "17 minutes",
+      "type": 13,
+      "name": "-"
+    },
+    {
+      "instruction": "Keep right",
+      "distance": "14 metres",
+      "duration": "less than a minute",
+      "type": 13,
+      "name": "-"
+    },
+    {
+      "instruction": "Keep right",
+      "distance": "160 metres",
+      "duration": "1 minute",
+      "type": 13,
+      "name": "-"
+    },
+    {
+      "instruction": "Keep right",
+      "distance": "12 metres",
+      "duration": "less than a minute",
+      "type": 13,
+      "name": "-"
+    },
+    {
+      "instruction": "Keep right",
+      "distance": "113 metres",
+      "duration": "1 minute",
+      "type": 13,
+      "name": "-"
+    },
+    {
+      "instruction": "Keep right",
+      "distance": "11 metres",
+      "duration": "less than a minute",
+      "type": 13,
+      "name": "-"
+    },
+    {
+      "instruction": "Keep right",
+      "distance": "113 metres",
+      "duration": "1 minute",
+      "type": 13,
+      "name": "-"
+    },
+    {
+      "instruction": "Keep right",
+      "distance": "10 metres",
+      "duration": "less than a minute",
+      "type": 13,
+      "name": "-"
+    },
+    {
+      "instruction": "Keep right",
+      "distance": "1.6 kilometres",
+      "duration": "19 minutes",
+      "type": 13,
+      "name": "-"
+    },
+    {
+      "instruction": "Keep right",
+      "distance": "8 metres",
+      "duration": "less than a minute",
+      "type": 13,
+      "name": "-"
+    },
+    {
+      "instruction": "Keep left onto 85th Avenue",
+      "distance": "333 metres",
+      "duration": "4 minutes",
+      "type": 12,
+      "name": "85th Avenue"
+    },
+    {
+      "instruction": "Continue straight onto 85th Avenue",
+      "distance": "31 metres",
+      "duration": "less than a minute",
+      "type": 6,
+      "name": "85th Avenue"
+    },
+    {
+      "instruction": "Keep right onto Babbage Street",
+      "distance": "5 metres",
+      "duration": "less than a minute",
+      "type": 13,
+      "name": "Babbage Street"
+    },
+    {
+      "instruction": "Keep left",
+      "distance": "840 metres",
+      "duration": "10 minutes",
+      "type": 12,
+      "name": "-"
+    },
+    {
+      "instruction": "Turn slight right",
+      "distance": "241 metres",
+      "duration": "2 minutes",
+      "type": 5,
+      "name": "-"
+    },
+    {
+      "instruction": "Keep left",
+      "distance": "19 metres",
+      "duration": "less than a minute",
+      "type": 12,
+      "name": "-"
+    },
+    {
+      "instruction": "Keep left",
+      "distance": "236 metres",
+      "duration": "2 minutes",
+      "type": 12,
+      "name": "-"
+    },
+    {
+      "instruction": "Keep right",
+      "distance": "19 metres",
+      "duration": "less than a minute",
+      "type": 13,
+      "name": "-"
+    },
+    {
+      "instruction": "Keep right",
+      "distance": "19 metres",
+      "duration": "less than a minute",
+      "type": 13,
+      "name": "-"
+    },
+    {
+      "instruction": "Turn slight left onto Hillside Avenue",
+      "distance": "20 metres",
+      "duration": "less than a minute",
+      "type": 4,
+      "name": "Hillside Avenue"
+    },
+    {
+      "instruction": "Keep left",
+      "distance": "24 metres",
+      "duration": "less than a minute",
+      "type": 12,
+      "name": "-"
+    },
+    {
+      "instruction": "Keep left",
+      "distance": "67 metres",
+      "duration": "less than a minute",
+      "type": 12,
+      "name": "-"
+    },
+    {
+      "instruction": "Keep left",
+      "distance": "2.3 kilometres",
+      "duration": "27 minutes",
+      "type": 12,
+      "name": "-"
+    },
+    {
+      "instruction": "Turn slight left",
+      "distance": "265 metres",
+      "duration": "3 minutes",
+      "type": 4,
+      "name": "-"
+    },
+    {
+      "instruction": "Turn slight left",
+      "distance": "13 metres",
+      "duration": "less than a minute",
+      "type": 4,
+      "name": "-"
+    },
+    {
+      "instruction": "Turn right",
+      "distance": "62 metres",
+      "duration": "less than a minute",
+      "type": 1,
+      "name": "-"
+    },
+    {
+      "instruction": "Turn slight right",
+      "distance": "15 metres",
+      "duration": "less than a minute",
+      "type": 5,
+      "name": "-"
+    },
+    {
+      "instruction": "Keep left",
+      "distance": "112 metres",
+      "duration": "1 minute",
+      "type": 12,
+      "name": "-"
+    },
+    {
+      "instruction": "Turn slight right",
+      "distance": "24 metres",
+      "duration": "less than a minute",
+      "type": 5,
+      "name": "-"
+    },
+    {
+      "instruction": "Turn slight left",
+      "distance": "1.2 kilometres",
+      "duration": "14 minutes",
+      "type": 4,
+      "name": "-"
+    },
+    {
+      "instruction": "Turn slight left",
+      "distance": "3.1 kilometres",
+      "duration": "37 minutes",
+      "type": 4,
+      "name": "-"
+    },
+    {
+      "instruction": "Turn right",
+      "distance": "393 metres",
+      "duration": "4 minutes",
+      "type": 1,
+      "name": "-"
+    },
+    {
+      "instruction": "Turn left onto Billings Street",
+      "distance": "129 metres",
+      "duration": "1 minute",
+      "type": 0,
+      "name": "Billings Street"
+    },
+    {
+      "instruction": "Turn right onto 88th Avenue",
+      "distance": "167 metres",
+      "duration": "2 minutes",
+      "type": 1,
+      "name": "88th Avenue"
+    },
+    {
+      "instruction": "Turn left onto Winchester Boulevard",
+      "distance": "34 metres",
+      "duration": "less than a minute",
+      "type": 0,
+      "name": "Winchester Boulevard"
+    },
+    {
+      "instruction": "Turn right onto 88th Avenue",
+      "distance": "246 metres",
+      "duration": "2 minutes",
+      "type": 1,
+      "name": "88th Avenue"
+    },
+    {
+      "instruction": "Keep right onto 88th Avenue",
+      "distance": "727 metres",
+      "duration": "8 minutes",
+      "type": 13,
+      "name": "88th Avenue"
+    },
+    {
+      "instruction": "Turn right onto 242nd Street",
+      "distance": "53 metres",
+      "duration": "less than a minute",
+      "type": 1,
+      "name": "242nd Street"
+    },
+    {
+      "instruction": "Turn left onto 88th Road",
+      "distance": "103 metres",
+      "duration": "1 minute",
+      "type": 0,
+      "name": "88th Road"
+    },
+    {
+      "instruction": "Turn left onto Cross Island Parkway",
+      "distance": "7 metres",
+      "duration": "less than a minute",
+      "type": 0,
+      "name": "Cross Island Parkway"
+    },
+    {
+      "instruction": "Turn right",
+      "distance": "63 metres",
+      "duration": "less than a minute",
+      "type": 1,
+      "name": "-"
+    },
+    {
+      "instruction": "Turn left onto Cross Island Parkway",
+      "distance": "145 metres",
+      "duration": "1 minute",
+      "type": 0,
+      "name": "Cross Island Parkway"
+    },
+    {
+      "instruction": "Turn right onto 87th Avenue",
+      "distance": "1.1 kilometres",
+      "duration": "13 minutes",
+      "type": 1,
+      "name": "87th Avenue"
+    },
+    {
+      "instruction": "Turn right onto 256th Street",
+      "distance": "26 metres",
+      "duration": "less than a minute",
+      "type": 1,
+      "name": "256th Street"
+    },
+    {
+      "instruction": "Turn left onto 87th Avenue",
+      "distance": "1.2 kilometres",
+      "duration": "14 minutes",
+      "type": 0,
+      "name": "87th Avenue"
+    },
+    {
+      "instruction": "Turn right onto Cherry Lane",
+      "distance": "210 metres",
+      "duration": "2 minutes",
+      "type": 1,
+      "name": "Cherry Lane"
+    },
+    {
+      "instruction": "Turn left onto Lowell Avenue",
+      "distance": "1.0 kilometres",
+      "duration": "12 minutes",
+      "type": 0,
+      "name": "Lowell Avenue"
+    },
+    {
+      "instruction": "Turn right onto Ingraham Lane",
+      "distance": "56 metres",
+      "duration": "less than a minute",
+      "type": 1,
+      "name": "Ingraham Lane"
+    },
+    {
+      "instruction": "Turn left onto Belmont Avenue",
+      "distance": "1.1 kilometres",
+      "duration": "13 minutes",
+      "type": 0,
+      "name": "Belmont Avenue"
+    },
+    {
+      "instruction": "Turn left onto Denton Avenue",
+      "distance": "25 metres",
+      "duration": "less than a minute",
+      "type": 0,
+      "name": "Denton Avenue"
+    },
+    {
+      "instruction": "Turn right onto 2nd Street",
+      "distance": "179 metres",
+      "duration": "2 minutes",
+      "type": 1,
+      "name": "2nd Street"
+    },
+    {
+      "instruction": "Turn right onto Old Stewart Avenue",
+      "distance": "76 metres",
+      "duration": "less than a minute",
+      "type": 1,
+      "name": "Old Stewart Avenue"
+    },
+    {
+      "instruction": "Turn left onto 1st Street",
+      "distance": "228 metres",
+      "duration": "2 minutes",
+      "type": 0,
+      "name": "1st Street"
+    },
+    {
+      "instruction": "Turn right onto Central Avenue",
+      "distance": "78 metres",
+      "duration": "less than a minute",
+      "type": 1,
+      "name": "Central Avenue"
+    },
+    {
+      "instruction": "Turn left onto Jericho Turnpike, NY 25",
+      "distance": "38 metres",
+      "duration": "less than a minute",
+      "type": 0,
+      "name": "Jericho Turnpike, NY 25"
+    },
+    {
+      "instruction": "Turn sharp right onto 7th Avenue",
+      "distance": "199 metres",
+      "duration": "2 minutes",
+      "type": 3,
+      "name": "7th Avenue"
+    },
+    {
+      "instruction": "Turn left onto Bedford Avenue",
+      "distance": "972 metres",
+      "duration": "11 minutes",
+      "type": 0,
+      "name": "Bedford Avenue"
+    },
+    {
+      "instruction": "Turn right onto Herricks Road",
+      "distance": "28 metres",
+      "duration": "less than a minute",
+      "type": 1,
+      "name": "Herricks Road"
+    },
+    {
+      "instruction": "Turn left onto Garfield Avenue",
+      "distance": "78 metres",
+      "duration": "less than a minute",
+      "type": 0,
+      "name": "Garfield Avenue"
+    },
+    {
+      "instruction": "Turn right onto Wardwell Road",
+      "distance": "185 metres",
+      "duration": "2 minutes",
+      "type": 1,
+      "name": "Wardwell Road"
+    },
+    {
+      "instruction": "Turn right onto 1st Street",
+      "distance": "4 metres",
+      "duration": "less than a minute",
+      "type": 1,
+      "name": "1st Street"
+    },
+    {
+      "instruction": "Turn left",
+      "distance": "109 metres",
+      "duration": "1 minute",
+      "type": 0,
+      "name": "-"
+    },
+    {
+      "instruction": "Turn right",
+      "distance": "1 metres",
+      "duration": "less than a minute",
+      "type": 1,
+      "name": "-"
+    },
+    {
+      "instruction": "Turn left",
+      "distance": "196 metres",
+      "duration": "2 minutes",
+      "type": 0,
+      "name": "-"
+    },
+    {
+      "instruction": "Turn right",
+      "distance": "49 metres",
+      "duration": "less than a minute",
+      "type": 1,
+      "name": "-"
+    },
+    {
+      "instruction": "Turn left",
+      "distance": "795 metres",
+      "duration": "9 minutes",
+      "type": 0,
+      "name": "-"
+    },
+    {
+      "instruction": "Turn left",
+      "distance": "10 metres",
+      "duration": "less than a minute",
+      "type": 0,
+      "name": "-"
+    },
+    {
+      "instruction": "Turn left onto West Street",
+      "distance": "22 metres",
+      "duration": "less than a minute",
+      "type": 0,
+      "name": "West Street"
+    },
+    {
+      "instruction": "Turn right onto Old Country Road",
+      "distance": "65 metres",
+      "duration": "less than a minute",
+      "type": 1,
+      "name": "Old Country Road"
+    },
+    {
+      "instruction": "Turn right",
+      "distance": "10 metres",
+      "duration": "less than a minute",
+      "type": 1,
+      "name": "-"
+    },
+    {
+      "instruction": "Turn left",
+      "distance": "91 metres",
+      "duration": "1 minute",
+      "type": 0,
+      "name": "-"
+    },
+    {
+      "instruction": "Turn left",
+      "distance": "21 metres",
+      "duration": "less than a minute",
+      "type": 0,
+      "name": "-"
+    },
+    {
+      "instruction": "Turn left",
+      "distance": "252 metres",
+      "duration": "3 minutes",
+      "type": 0,
+      "name": "-"
+    },
+    {
+      "instruction": "Turn left",
+      "distance": "284 metres",
+      "duration": "3 minutes",
+      "type": 0,
+      "name": "-"
+    },
+    {
+      "instruction": "Turn right",
+      "distance": "192 metres",
+      "duration": "2 minutes",
+      "type": 1,
+      "name": "-"
+    },
+    {
+      "instruction": "Turn left onto Bayberry Avenue",
+      "distance": "795 metres",
+      "duration": "9 minutes",
+      "type": 0,
+      "name": "Bayberry Avenue"
+    },
+    {
+      "instruction": "Turn left onto Laurel Street",
+      "distance": "213 metres",
+      "duration": "2 minutes",
+      "type": 0,
+      "name": "Laurel Street"
+    },
+    {
+      "instruction": "Turn right onto Old Country Road",
+      "distance": "12 metres",
+      "duration": "less than a minute",
+      "type": 1,
+      "name": "Old Country Road"
+    },
+    {
+      "instruction": "Turn left onto Laurel Drive",
+      "distance": "10 metres",
+      "duration": "less than a minute",
+      "type": 0,
+      "name": "Laurel Drive"
+    },
+    {
+      "instruction": "Turn right",
+      "distance": "220 metres",
+      "duration": "2 minutes",
+      "type": 1,
+      "name": "-"
+    },
+    {
+      "instruction": "Turn right",
+      "distance": "12 metres",
+      "duration": "less than a minute",
+      "type": 1,
+      "name": "-"
+    },
+    {
+      "instruction": "Turn left onto Old Country Road",
+      "distance": "15 metres",
+      "duration": "less than a minute",
+      "type": 0,
+      "name": "Old Country Road"
+    },
+    {
+      "instruction": "Turn left",
+      "distance": "152 metres",
+      "duration": "1 minute",
+      "type": 0,
+      "name": "-"
+    },
+    {
+      "instruction": "Turn right",
+      "distance": "14 metres",
+      "duration": "less than a minute",
+      "type": 1,
+      "name": "-"
+    },
+    {
+      "instruction": "Turn right",
+      "distance": "22 metres",
+      "duration": "less than a minute",
+      "type": 1,
+      "name": "-"
+    },
+    {
+      "instruction": "Turn left",
+      "distance": "197 metres",
+      "duration": "2 minutes",
+      "type": 0,
+      "name": "-"
+    },
+    {
+      "instruction": "Turn right",
+      "distance": "11 metres",
+      "duration": "less than a minute",
+      "type": 1,
+      "name": "-"
+    },
+    {
+      "instruction": "Turn left",
+      "distance": "29 metres",
+      "duration": "less than a minute",
+      "type": 0,
+      "name": "-"
+    },
+    {
+      "instruction": "Turn slight left",
+      "distance": "18 metres",
+      "duration": "less than a minute",
+      "type": 4,
+      "name": "-"
+    },
+    {
+      "instruction": "Turn right",
+      "distance": "819 metres",
+      "duration": "9 minutes",
+      "type": 1,
+      "name": "-"
+    },
+    {
+      "instruction": "Turn left",
+      "distance": "88 metres",
+      "duration": "1 minute",
+      "type": 0,
+      "name": "-"
+    },
+    {
+      "instruction": "Turn left",
+      "distance": "80 metres",
+      "duration": "less than a minute",
+      "type": 0,
+      "name": "-"
+    },
+    {
+      "instruction": "Turn left",
+      "distance": "38 metres",
+      "duration": "less than a minute",
+      "type": 0,
+      "name": "-"
+    },
+    {
+      "instruction": "Turn right onto Lanie Place",
+      "distance": "5 metres",
+      "duration": "less than a minute",
+      "type": 1,
+      "name": "Lanie Place"
+    },
+    {
+      "instruction": "Turn left onto Roosevelt Court",
+      "distance": "265 metres",
+      "duration": "3 minutes",
+      "type": 0,
+      "name": "Roosevelt Court"
+    },
+    {
+      "instruction": "Keep right onto Roosevelt Court",
+      "distance": "310 metres",
+      "duration": "3 minutes",
+      "type": 13,
+      "name": "Roosevelt Court"
+    },
+    {
+      "instruction": "Turn right onto Carle Road",
+      "distance": "8 metres",
+      "duration": "less than a minute",
+      "type": 1,
+      "name": "Carle Road"
+    },
+    {
+      "instruction": "Turn left onto Morningside Drive",
+      "distance": "469 metres",
+      "duration": "5 minutes",
+      "type": 0,
+      "name": "Morningside Drive"
+    },
+    {
+      "instruction": "Turn right onto Manhattan Avenue",
+      "distance": "196 metres",
+      "duration": "2 minutes",
+      "type": 1,
+      "name": "Manhattan Avenue"
+    },
+    {
+      "instruction": "Turn left",
+      "distance": "101 metres",
+      "duration": "1 minute",
+      "type": 0,
+      "name": "-"
+    },
+    {
+      "instruction": "Turn right onto Ellison Avenue",
+      "distance": "3 metres",
+      "duration": "less than a minute",
+      "type": 1,
+      "name": "Ellison Avenue"
+    },
+    {
+      "instruction": "Turn left onto Lafayette Avenue",
+      "distance": "249 metres",
+      "duration": "2 minutes",
+      "type": 0,
+      "name": "Lafayette Avenue"
+    },
+    {
+      "instruction": "Turn right onto Grand Street South",
+      "distance": "75 metres",
+      "duration": "less than a minute",
+      "type": 1,
+      "name": "Grand Street South"
+    },
+    {
+      "instruction": "Turn left onto Myrtle Avenue",
+      "distance": "199 metres",
+      "duration": "2 minutes",
+      "type": 0,
+      "name": "Myrtle Avenue"
+    },
+    {
+      "instruction": "Turn right",
+      "distance": "6 metres",
+      "duration": "less than a minute",
+      "type": 1,
+      "name": "-"
+    },
+    {
+      "instruction": "Turn left",
+      "distance": "15 metres",
+      "duration": "less than a minute",
+      "type": 0,
+      "name": "-"
+    },
+    {
+      "instruction": "Turn right",
+      "distance": "13 metres",
+      "duration": "less than a minute",
+      "type": 1,
+      "name": "-"
+    },
+    {
+      "instruction": "Turn left",
+      "distance": "709 metres",
+      "duration": "8 minutes",
+      "type": 0,
+      "name": "-"
+    },
+    {
+      "instruction": "Keep right",
+      "distance": "15 metres",
+      "duration": "less than a minute",
+      "type": 13,
+      "name": "-"
+    },
+    {
+      "instruction": "Turn slight right",
+      "distance": "858 metres",
+      "duration": "10 minutes",
+      "type": 5,
+      "name": "-"
+    },
+    {
+      "instruction": "Continue straight",
+      "distance": "254 metres",
+      "duration": "3 minutes",
+      "type": 6,
+      "name": "-"
+    },
+    {
+      "instruction": "Turn right",
+      "distance": "23 metres",
+      "duration": "less than a minute",
+      "type": 1,
+      "name": "-"
+    },
+    {
+      "instruction": "Turn left",
+      "distance": "1.3 kilometres",
+      "duration": "16 minutes",
+      "type": 0,
+      "name": "-"
+    },
+    {
+      "instruction": "Keep left",
+      "distance": "31 metres",
+      "duration": "less than a minute",
+      "type": 12,
+      "name": "-"
+    },
+    {
+      "instruction": "Keep left",
+      "distance": "32 metres",
+      "duration": "less than a minute",
+      "type": 12,
+      "name": "-"
+    },
+    {
+      "instruction": "Keep right",
+      "distance": "360 metres",
+      "duration": "4 minutes",
+      "type": 13,
+      "name": "-"
+    },
+    {
+      "instruction": "Turn right",
+      "distance": "1 metres",
+      "duration": "less than a minute",
+      "type": 1,
+      "name": "-"
+    },
+    {
+      "instruction": "Turn left",
+      "distance": "331 metres",
+      "duration": "3 minutes",
+      "type": 0,
+      "name": "-"
+    },
+    {
+      "instruction": "Turn left",
+      "distance": "546 metres",
+      "duration": "6 minutes",
+      "type": 0,
+      "name": "-"
+    },
+    {
+      "instruction": "Turn left",
+      "distance": "764 metres",
+      "duration": "9 minutes",
+      "type": 0,
+      "name": "-"
+    },
+    {
+      "instruction": "Turn left",
+      "distance": "44 metres",
+      "duration": "less than a minute",
+      "type": 0,
+      "name": "-"
+    },
+    {
+      "instruction": "Turn left",
+      "distance": "2 metres",
+      "duration": "less than a minute",
+      "type": 0,
+      "name": "-"
+    },
+    {
+      "instruction": "Turn right",
+      "distance": "104 metres",
+      "duration": "1 minute",
+      "type": 1,
+      "name": "-"
+    },
+    {
+      "instruction": "Keep left",
+      "distance": "115 metres",
+      "duration": "1 minute",
+      "type": 12,
+      "name": "-"
+    },
+    {
+      "instruction": "Turn right",
+      "distance": "1 metres",
+      "duration": "less than a minute",
+      "type": 1,
+      "name": "-"
+    },
+    {
+      "instruction": "Turn left",
+      "distance": "143 metres",
+      "duration": "1 minute",
+      "type": 0,
+      "name": "-"
+    },
+    {
+      "instruction": "Keep left",
+      "distance": "91 metres",
+      "duration": "1 minute",
+      "type": 12,
+      "name": "-"
+    },
+    {
+      "instruction": "Turn left",
+      "distance": "12 metres",
+      "duration": "less than a minute",
+      "type": 0,
+      "name": "-"
+    },
+    {
+      "instruction": "Turn left",
+      "distance": "276 metres",
+      "duration": "3 minutes",
+      "type": 0,
+      "name": "-"
+    },
+    {
+      "instruction": "Turn left",
+      "distance": "1 metres",
+      "duration": "less than a minute",
+      "type": 0,
+      "name": "-"
+    },
+    {
+      "instruction": "Turn slight right",
+      "distance": "38 metres",
+      "duration": "less than a minute",
+      "type": 5,
+      "name": "-"
+    },
+    {
+      "instruction": "Turn left",
+      "distance": "390 metres",
+      "duration": "4 minutes",
+      "type": 0,
+      "name": "-"
+    },
+    {
+      "instruction": "Turn right",
+      "distance": "65 metres",
+      "duration": "less than a minute",
+      "type": 1,
+      "name": "-"
+    },
+    {
+      "instruction": "Turn left",
+      "distance": "106 metres",
+      "duration": "1 minute",
+      "type": 0,
+      "name": "-"
+    },
+    {
+      "instruction": "Turn left",
+      "distance": "33 metres",
+      "duration": "less than a minute",
+      "type": 0,
+      "name": "-"
+    },
+    {
+      "instruction": "Turn right",
+      "distance": "59 metres",
+      "duration": "less than a minute",
+      "type": 1,
+      "name": "-"
+    },
+    {
+      "instruction": "Turn left",
+      "distance": "90 metres",
+      "duration": "1 minute",
+      "type": 0,
+      "name": "-"
+    },
+    {
+      "instruction": "Keep right",
+      "distance": "392 metres",
+      "duration": "4 minutes",
+      "type": 13,
+      "name": "-"
+    },
+    {
+      "instruction": "Turn right onto New South Road",
+      "distance": "78 metres",
+      "duration": "less than a minute",
+      "type": 1,
+      "name": "New South Road"
+    },
+    {
+      "instruction": "Turn left onto Field Avenue",
+      "distance": "532 metres",
+      "duration": "6 minutes",
+      "type": 0,
+      "name": "Field Avenue"
+    },
+    {
+      "instruction": "Turn left",
+      "distance": "15 metres",
+      "duration": "less than a minute",
+      "type": 0,
+      "name": "-"
+    },
+    {
+      "instruction": "Turn right",
+      "distance": "209 metres",
+      "duration": "2 minutes",
+      "type": 1,
+      "name": "-"
+    },
+    {
+      "instruction": "Turn left",
+      "distance": "11 metres",
+      "duration": "less than a minute",
+      "type": 0,
+      "name": "-"
+    },
+    {
+      "instruction": "Turn right onto Stewart Avenue",
+      "distance": "44 metres",
+      "duration": "less than a minute",
+      "type": 1,
+      "name": "Stewart Avenue"
+    },
+    {
+      "instruction": "Turn left onto Buckingham Gate",
+      "distance": "11 metres",
+      "duration": "less than a minute",
+      "type": 0,
+      "name": "Buckingham Gate"
+    },
+    {
+      "instruction": "Turn right",
+      "distance": "305 metres",
+      "duration": "3 minutes",
+      "type": 1,
+      "name": "-"
+    },
+    {
+      "instruction": "Turn right",
+      "distance": "7 metres",
+      "duration": "less than a minute",
+      "type": 1,
+      "name": "-"
+    },
+    {
+      "instruction": "Turn left",
+      "distance": "791 metres",
+      "duration": "9 minutes",
+      "type": 0,
+      "name": "-"
+    },
+    {
+      "instruction": "Turn sharp right onto Farmers Avenue",
+      "distance": "24 metres",
+      "duration": "less than a minute",
+      "type": 3,
+      "name": "Farmers Avenue"
+    },
+    {
+      "instruction": "Turn left",
+      "distance": "646 metres",
+      "duration": "7 minutes",
+      "type": 0,
+      "name": "-"
+    },
+    {
+      "instruction": "Turn right",
+      "distance": "55 metres",
+      "duration": "less than a minute",
+      "type": 1,
+      "name": "-"
+    },
+    {
+      "instruction": "Turn left",
+      "distance": "149 metres",
+      "duration": "1 minute",
+      "type": 0,
+      "name": "-"
+    },
+    {
+      "instruction": "Turn right",
+      "distance": "4 metres",
+      "duration": "less than a minute",
+      "type": 1,
+      "name": "-"
+    },
+    {
+      "instruction": "Turn left onto North 3rd Street",
+      "distance": "12 metres",
+      "duration": "less than a minute",
+      "type": 0,
+      "name": "North 3rd Street"
+    },
+    {
+      "instruction": "Turn right",
+      "distance": "78 metres",
+      "duration": "less than a minute",
+      "type": 1,
+      "name": "-"
+    },
+    {
+      "instruction": "Turn left",
+      "distance": "35 metres",
+      "duration": "less than a minute",
+      "type": 0,
+      "name": "-"
+    },
+    {
+      "instruction": "Arrive at your destination, on the right",
+      "distance": "0 metres",
+      "duration": "less than a minute",
+      "type": 10,
+      "name": "-"
+    }
+  ],
+  "total_distance": "602.3 kilometres",
+  "total_duration": "119 hours 42 minutes",
+  "bbox": [
+    -78.143912,
+    40.697065,
+    -73.484031,
+    42.179644
+  ],
+  "origin": {
+    "lng": -78.143911,
+    "lat": 42.176943,
+    "label": "Times Square, Friendship, NY, USA"
+  },
+  "destination": {
+    "lng": -73.485888,
+    "lat": 40.751775,
+    "label": "Bethpage, NY, USA"
+  }
+}

@@ -22,7 +22,7 @@ import config
 
 def run_calibration():
     print("=" * 55)
-    print("  EcoSight — Focal Length Calibration")
+    print("  BlindSight — Focal Length Calibration")
     print("=" * 55)
     print()
     print("INSTRUCTIONS:")
@@ -73,7 +73,7 @@ def run_calibration():
                     (10, 30), cv2.FONT_HERSHEY_SIMPLEX, 0.7,
                     (255, 255, 0), 2)
 
-        cv2.imshow("EcoSight Calibration", annotated)
+        cv2.imshow("BlindSight Calibration", annotated)
         key = cv2.waitKey(1) & 0xFF
 
         if key == ord('q'):

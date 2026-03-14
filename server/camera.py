@@ -24,19 +24,24 @@ class CameraManager:
         self._frame_counter = 0
         self._last_yield_time = 0.0
 
+    def set_index(self, index: int) -> None:
+        """Set the camera device index before opening."""
+        self._camera_index = index
+
     def open(self) -> None:
         """Open and configure the webcam."""
-        self.cap = cv2.VideoCapture(config.CAMERA_INDEX)
+        index = getattr(self, "_camera_index", config.CAMERA_INDEX)
+        self.cap = cv2.VideoCapture(index)
         self.cap.set(cv2.CAP_PROP_FRAME_WIDTH, config.FRAME_WIDTH)
         self.cap.set(cv2.CAP_PROP_FRAME_HEIGHT, config.FRAME_HEIGHT)
         # Minimise internal buffer to reduce stale‑frame latency
         self.cap.set(cv2.CAP_PROP_BUFFERSIZE, 1)
         if not self.cap.isOpened():
             raise RuntimeError(
-                f"Cannot open webcam (index {config.CAMERA_INDEX}). "
+                f"Cannot open webcam (index {index}). "
                 "Check CAMERA_INDEX in config.py"
             )
-        print(f"[CAM] Camera opened (index={config.CAMERA_INDEX}, "
+        print(f"[CAM] Camera opened (index={index}, "
               f"skip={self.frame_skip})")
 
     def read(self):

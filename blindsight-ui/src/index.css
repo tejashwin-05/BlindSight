@@ -1,0 +1,90 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;1,9..40,400&display=swap');
+
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --bg:      #0A0C0F;
+  --bg2:     #111419;
+  --bg3:     #181C23;
+  --bg4:     #1E2330;
+
+  --cyan:    #1D9E75;
+  --cyan-l:  #5DCAA5;
+  --cyan-ll: #9FE1CB;
+  --cyan-dim: rgba(29,158,117,0.12);
+  --cyan-border: rgba(29,158,117,0.28);
+
+  --amber:   #EF9F27;
+  --amber-l: #FAC775;
+  --amber-dim: rgba(239,159,39,0.12);
+  --amber-border: rgba(239,159,39,0.28);
+
+  --red:     #E24B4A;
+  --red-l:   #F09595;
+  --red-dim: rgba(226,75,74,0.10);
+  --red-border: rgba(226,75,74,0.25);
+  --green:   #639922;
+  --green-l: #97C459;
+  --blue:    #378ADD;
+  --blue-dim: rgba(55,138,221,0.12);
+
+  --text:    #E8EAF0;
+  --text2:   #9198A8;
+  --muted:   #4A4E5A;
+
+  --border:  rgba(255,255,255,0.07);
+  --border2: rgba(255,255,255,0.13);
+
+  --font-mono: 'Space Mono', monospace;
+  --font-body: 'DM Sans', sans-serif;
+
+  --nav-height: 70px;
+  --safe-bottom: env(safe-area-inset-bottom, 0px);
+}
+
+html, body {
+  height: 100%;
+  background: var(--bg);
+  color: var(--text);
+  font-family: var(--font-body);
+  -webkit-font-smoothing: antialiased;
+  overflow: hidden;
+}
+
+#root {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+button { font-family: var(--font-body); cursor: pointer; border: none; background: none; color: inherit; }
+input, textarea, select { font-family: var(--font-body); }
+
+::-webkit-scrollbar { width: 3px; }
+::-webkit-scrollbar-track { background: transparent; }
+::-webkit-scrollbar-thumb { background: var(--muted); border-radius: 2px; }
+
+@keyframes pulse-dot {
+  0%, 100% { opacity: 1; }
+  50%       { opacity: 0.25; }
+}
+@keyframes hazard-flicker {
+  0%, 100% { box-shadow: 0 0 8px rgba(239,159,39,0.35); border-color: var(--amber); }
+  50%       { box-shadow: 0 0 18px rgba(239,159,39,0.6); border-color: var(--amber-l); }
+}
+@keyframes wave {
+  0%, 100% { transform: scaleY(1); }
+  50%       { transform: scaleY(0.2); }
+}
+@keyframes slide-up {
+  from { opacity: 0; transform: translateY(12px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+@keyframes fade-in {
+  from { opacity: 0; }
+  to   { opacity: 1; }
+}

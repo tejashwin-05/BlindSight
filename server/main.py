@@ -23,13 +23,25 @@ import numpy as np
 import websockets
 import pyttsx3
 
+# Load environment variables from .env file
+from pathlib import Path
+env_path = Path(__file__).parent / '.env'
+if env_path.exists():
+    with open(env_path) as f:
+        for line in f:
+            line = line.strip()
+            if line and not line.startswith('#') and '=' in line:
+                key, value = line.split('=', 1)
+                os.environ.setdefault(key.strip(), value.strip())
+
 import config
 from camera import CameraManager
 from phase1_reflex import ReflexLayer
 from phase2_context import ContextLayer
 from debounce import HazardDebouncer
-from schema import build_phase1_payload, build_phase2_payload, build_pong
+from schema import build_phase1_payload, build_phase2_payload, build_pong, build_frame_payload
 from connection_watchdog import ConnectionWatchdog
+from mcp_client import mcp_client
 
 HEADLESS_MODE = os.getenv("ECOSIGHT_HEADLESS", "0") == "1"
 SERVER_ONLY_MODE = os.getenv("ECOSIGHT_SERVER_ONLY", "0") == "1"
@@ -116,7 +128,11 @@ _tts_thread.start()
 
 def speak_alert(text: str):
     """Queue text for the TTS worker thread."""
-    _tts_queue.put(text)
+    if config.SERVER_SIDE_TTS_ENABLED:
+        _tts_queue.put(text)
+    else:
+        # Just log it, client will handle speech
+        print(f"[ALERT] {text}")
 
 
 def _box_center(box: list[int]) -> tuple[float, float]:
@@ -270,6 +286,64 @@ async def ws_handler(websocket):
                     longitude=data.get("longitude"),
                 )
 
+            elif msg_type == "mcp_request":
+                # Handle MCP tool requests
+                print(f"[WS] MCP request received: {data.get('tool')}")
+                tool_name = data.get("tool", "")
+                tool_input = data.get("input", "")
+                
+                # Parse input into parameters
+                params = {}
+                should_call_mcp = True  # Flag to control whether to call MCP
+                
+                if tool_name == "navigate":
+                    # Input format: "from X to Y" or just "Y" (destination only)
+                    if " to " in tool_input:
+                        parts = tool_input.split(" to ")
+                        if parts[0].startswith("from "):
+                            params['origin'] = parts[0].replace("from ", "").strip()
+                        else:
+                            params['origin'] = parts[0].strip()
+                        params['destination'] = parts[1].strip()
+                    else:
+                        # Only destination provided - send error
+                        should_call_mcp = False
+                        error_response = {
+                            "type": "mcp_response",
+                            "tool": tool_name,
+                            "result": {
+                                "error": "Please provide both origin and destination in format: from [origin] to [destination]",
+                                "spoken_summary": "Please provide both starting point and destination. For example: from India Gate to Red Fort"
+                            },
+                            "spoken_summary": "Please provide both starting point and destination. For example: from India Gate to Red Fort"
+                        }
+                        await websocket.send(json.dumps(error_response))
+                        
+                elif tool_name in ["weather", "forecast"]:
+                    params['location'] = tool_input if tool_input else "London"
+                elif tool_name == "headlines":
+                    params['country'] = tool_input if tool_input else "us"
+                elif tool_name == "search_news":
+                    params['query'] = tool_input
+                elif tool_name == "safety_tips":
+                    params['context'] = tool_input if tool_input else "walking"
+                elif tool_name == "emergency":
+                    params['location'] = tool_input
+                
+                # Only call MCP if validation passed
+                if should_call_mcp:
+                    # Call MCP tool
+                    result = await mcp_client.call_tool(tool_name, params)
+                    
+                    # Send response back to client
+                    response = {
+                        "type": "mcp_response",
+                        "tool": tool_name,
+                        "result": result,
+                        "spoken_summary": result.get("spoken_summary", "")
+                    }
+                    await websocket.send(json.dumps(response))
+
     except websockets.exceptions.ConnectionClosed:
         pass
     finally:
@@ -323,7 +397,9 @@ async def phase1_loop():
             loop_start = time.perf_counter()
 
             # ── Read frame (with skip logic inside CameraManager) ─
-            should_process, frame = camera.read()
+            # Run camera.read() in thread executor to avoid blocking event loop
+            loop = asyncio.get_event_loop()
+            should_process, frame = await loop.run_in_executor(None, camera.read)
 
             if frame is None:
                 await asyncio.sleep(0.01)
@@ -453,6 +529,7 @@ async def phase1_loop():
                             distance=active_target["distance"],
                             confidence=active_target["confidence"],
                             total_hazards=len(path_detections),
+                            guidance=active_target.get("guidance"),
                         )
                     
                     # If we found an alert, broadcast it
@@ -484,24 +561,26 @@ async def phase1_loop():
                     # No hazards
                     await broadcast(build_phase1_payload(None, None, None, None, 0))
 
+            # ── Build annotated frame for browser streaming ───────────
+            # Always draw boxes on a copy regardless of HEADLESS_MODE
+            vis_frame = frame.copy()
+            for det in last_detections:
+                x1, y1, x2, y2 = det.get("box", [0, 0, 0, 0])
+                label = f"{det['hazard']} {det['distance']}m"
+                color = (0, 0, 255)
+                cv2.rectangle(vis_frame, (x1, y1), (x2, y2), color, 2)
+                (tw, th), _ = cv2.getTextSize(label, cv2.FONT_HERSHEY_SIMPLEX, 0.55, 1)
+                cv2.rectangle(vis_frame, (x1, max(0, y1 - 20)), (x1 + tw, y1), color, -1)
+                cv2.putText(vis_frame, label, (x1, y1 - 5),
+                            cv2.FONT_HERSHEY_SIMPLEX, 0.55, (255, 255, 255), 1)
+
+            # Stream annotated frame to browser every 6th processed frame (~1-2 fps to browser)
+            if should_process and frames_processed % 6 == 0 and state.clients:
+                frame_payload = build_frame_payload(vis_frame)
+                if frame_payload:
+                    await broadcast(frame_payload)
+
             if not HEADLESS_MODE:
-                # ── DRAW JUDGE VIEW (On Every Frame) ─────────────────
-                vis_frame = frame.copy()
-                for det in last_detections:
-                    x1, y1, x2, y2 = det.get("box", [0, 0, 0, 0])
-                    label = f"{det['hazard']} {det['distance']}m"
-                    color = (0, 0, 255) # Red for danger
-
-                    cv2.rectangle(vis_frame, (x1, y1), (x2, y2), color, 2)
-                    (w, h), _ = cv2.getTextSize(label, cv2.FONT_HERSHEY_SIMPLEX, 0.6, 1)
-                    cv2.rectangle(vis_frame, (x1, y1 - 20), (x1 + w, y1), color, -1)
-                    cv2.putText(vis_frame, label, (x1, y1 - 5), 
-                               cv2.FONT_HERSHEY_SIMPLEX, 0.6, (255, 255, 255), 1)
-
-                status_text = f"Phase 1: Active | Hazards: {len(last_detections)}"
-                cv2.putText(vis_frame, status_text, (10, 30), 
-                           cv2.FONT_HERSHEY_SIMPLEX, 0.7, (0, 255, 0), 2)
-
                 cv2.imshow("Judge View", vis_frame)
                 if cv2.waitKey(1) & 0xFF == ord('q'):
                     state.running = False
@@ -562,16 +641,35 @@ async def handle_phase2(frame: np.ndarray):
 # ─── Main Entry ──────────────────────────────────────────────────
 async def main():
     print("=" * 55)
-    print("  EcoSight Server — Starting Up")
+    print("  BlindSight Server — Starting Up")
     print("=" * 55)
+
+    # Start WebSocket server FIRST (before camera)
+    server = await websockets.serve(
+        ws_handler,
+        config.WEBSOCKET_HOST,
+        config.WEBSOCKET_PORT,
+    )
+    
+    # Print local IP for easy connection
+    import socket
+    hostname = socket.gethostname()
+    local_ip = socket.gethostbyname(hostname)
+    print(f"[WS] Server listening on ws://{config.WEBSOCKET_HOST}:{config.WEBSOCKET_PORT}")
+    print(f"[WS] Connect app to: {local_ip} : {config.WEBSOCKET_PORT}")
 
     if SERVER_ONLY_MODE:
         print("[Server] Running in server-only mode (no camera, no OpenCV output)")
     else:
+        # Open camera AFTER WebSocket server is ready
         global camera
         if camera is None:
             camera = CameraManager()
-        camera.open()
+        try:
+            camera.open()
+        except Exception as e:
+            print(f"[CAM] Warning: Camera failed to open: {e}")
+            print("[CAM] Continuing in server-only mode...")
 
     # Optional Phase-2 preload (disabled by default to protect Phase-1 latency)
     if config.PHASE2_PRELOAD_ON_START:
@@ -590,30 +688,26 @@ async def main():
 
         preload_future.add_done_callback(_on_phase2_preload_done)
 
-    # Start WebSocket server
-    server = await websockets.serve(
-        ws_handler,
-        config.WEBSOCKET_HOST,
-        config.WEBSOCKET_PORT,
-    )
-    
-    # Print local IP for easy connection
-    import socket
-    hostname = socket.gethostname()
-    local_ip = socket.gethostbyname(hostname)
-    print(f"[WS] Server listening on ws://{config.WEBSOCKET_HOST}:{config.WEBSOCKET_PORT}")
-    print(f"[WS] Connect app to: {local_ip} : {config.WEBSOCKET_PORT}")
-
     try:
-        if SERVER_ONLY_MODE:
+        if SERVER_ONLY_MODE or camera is None or not camera.cap or not camera.cap.isOpened():
+            # Run in server-only mode if no camera available
+            print("[Server] WebSocket server ready. Waiting for connections...")
             while state.running:
                 await asyncio.sleep(0.2)
         else:
-            await phase1_loop()
+            # Give WebSocket server a moment to be fully ready
+            await asyncio.sleep(0.1)
+            print("[Server] WebSocket server ready. Starting camera loop...")
+            # Run phase1_loop as a background task
+            phase1_task = asyncio.create_task(phase1_loop())
+            try:
+                await phase1_task
+            except asyncio.CancelledError:
+                pass
     except KeyboardInterrupt:
         print("\n[Server] Shutting down...")
     finally:
-        if not SERVER_ONLY_MODE:
+        if camera and camera.cap:
             camera.release()
         if not HEADLESS_MODE:
             cv2.destroyAllWindows()

@@ -7,6 +7,9 @@ import os
 WEBSOCKET_HOST = "0.0.0.0"
 WEBSOCKET_PORT = 8765
 
+# Server-side TTS (set to False to only use client-side speech)
+SERVER_SIDE_TTS_ENABLED = False
+
 # ─── Camera ──────────────────────────────────────────────────────
 CAMERA_INDEX = 0         # Try 1 if 0 fails
 FRAME_WIDTH = 640
@@ -48,9 +51,9 @@ GUIDANCE_MOVE_WORD = "slightly"
 FRAME_SKIP = 3
 
 # Debounce / Anti‑Spam — prevents TTS from talking over itself
-DEBOUNCE_COOLDOWN_SEC = 3.0           # seconds before re-alerting same hazard
-DEBOUNCE_GLOBAL_MIN_SEC = 1.0         # minimum gap between ANY two alerts
-DEBOUNCE_DISTANCE_CHANGE = 0.5        # re-alert if distance changes by >0.5m
+DEBOUNCE_COOLDOWN_SEC = 5.0           # seconds before re-alerting same hazard
+DEBOUNCE_GLOBAL_MIN_SEC = 2.5         # minimum gap between ANY two alerts
+DEBOUNCE_DISTANCE_CHANGE = 0.8        # re-alert if distance changes by >0.8m
 
 # Hazard classes we care about (COCO class names + custom)
 # COCO IDs: person=0, bicycle=1, car=2, ...
