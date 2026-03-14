@@ -43,6 +43,25 @@ from schema import build_phase1_payload, build_phase2_payload, build_pong, build
 from connection_watchdog import ConnectionWatchdog
 from mcp_client import mcp_client
 
+async def _reverse_geocode_country(lat: float, lng: float, full_name: bool = False) -> str:
+    """Reverse geocode lat/lng to country code or name via Nominatim."""
+    import httpx as _httpx
+    try:
+        async with _httpx.AsyncClient(timeout=8, headers={"User-Agent": "BlindSight/1.0"}) as client:
+            resp = await client.get(
+                "https://nominatim.openstreetmap.org/reverse",
+                params={"lat": lat, "lon": lng, "format": "json", "zoom": 3},
+            )
+            resp.raise_for_status()
+            data = resp.json()
+            addr = data.get("address", {})
+            if full_name:
+                return addr.get("country", "India")
+            return addr.get("country_code", "in").lower()
+    except Exception as e:
+        print(f"[GEO] Reverse geocode failed: {e}")
+        return "in" if not full_name else "India"
+
 HEADLESS_MODE = os.getenv("ECOSIGHT_HEADLESS", "0") == "1"
 SERVER_ONLY_MODE = os.getenv("ECOSIGHT_SERVER_ONLY", "0") == "1"
 
@@ -322,13 +341,33 @@ async def ws_handler(websocket):
                 elif tool_name in ["weather", "forecast"]:
                     params['location'] = tool_input if tool_input else "London"
                 elif tool_name == "headlines":
-                    params['country'] = tool_input if tool_input else "us"
+                    # Accept "lat,lng" — reverse geocode to country code
+                    if tool_input and "," in tool_input:
+                        parts_ll = tool_input.split(",")
+                        try:
+                            lat_v, lng_v = float(parts_ll[0].strip()), float(parts_ll[1].strip())
+                            country_code = await _reverse_geocode_country(lat_v, lng_v)
+                            params['country'] = country_code
+                        except ValueError:
+                            params['country'] = tool_input if tool_input else "us"
+                    else:
+                        params['country'] = tool_input if tool_input else "us"
                 elif tool_name == "search_news":
                     params['query'] = tool_input
                 elif tool_name == "safety_tips":
                     params['context'] = tool_input if tool_input else "walking"
                 elif tool_name == "emergency":
-                    params['location'] = tool_input
+                    # Accept "lat,lng" — reverse geocode to country name
+                    if tool_input and "," in tool_input:
+                        parts_ll = tool_input.split(",")
+                        try:
+                            lat_v, lng_v = float(parts_ll[0].strip()), float(parts_ll[1].strip())
+                            country_name = await _reverse_geocode_country(lat_v, lng_v, full_name=True)
+                            params['location'] = country_name
+                        except ValueError:
+                            params['location'] = tool_input
+                    else:
+                        params['location'] = tool_input
                 
                 # Only call MCP if validation passed
                 if should_call_mcp:

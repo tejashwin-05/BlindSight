@@ -156,3 +156,24 @@
   border-color: var(--border);
   font-size: 12px;
 }
+
+.auto-loc-section { display: flex; flex-direction: column; gap: 8px; }
+
+.auto-loc-btn {
+  width: 100%; padding: 13px;
+  background: var(--cyan-dim); border: 1px solid var(--cyan-border);
+  border-radius: 12px; color: var(--cyan-ll);
+  font-size: 14px; font-weight: 500; cursor: pointer;
+  transition: opacity 0.15s;
+}
+.auto-loc-btn:disabled { opacity: 0.4; cursor: not-allowed; }
+.auto-loc-btn:not(:disabled):hover { opacity: 0.85; }
+
+.auto-loc-divider {
+  display: flex; align-items: center; gap: 8px;
+  color: var(--muted); font-size: 11px;
+}
+.auto-loc-divider::before,
+.auto-loc-divider::after {
+  content: ''; flex: 1; height: 1px; background: var(--border);
+}

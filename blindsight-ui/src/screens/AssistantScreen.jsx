@@ -5,14 +5,17 @@ import RouteMap from '../components/RouteMap';
 import useNavigation from '../hooks/useNavigation';
 import './AssistantScreen.css';
 
+// Tools that can use live location automatically
+const LOCATION_AUTO_TOOLS = new Set(['weather', 'forecast', 'emergency', 'headlines']);
+
 // Tool IDs must match the server's mcp_request handler in server/main.py
 const TOOLS = [
-  { id: 'navigate',     name: 'Navigation', desc: 'Turn-by-turn walking directions', icon: '🧭', color: 'cyan',   placeholder: 'Destination, e.g. Red Fort' },
-  { id: 'weather',      name: 'Weather',    desc: 'Current conditions & forecast',   icon: '🌤', color: 'blue',   placeholder: 'e.g. New Delhi' },
-  { id: 'headlines',    name: 'Headlines',  desc: 'Top news by country',             icon: '📰', color: 'amber',  placeholder: 'Country code, e.g. in' },
-  { id: 'emergency',    name: 'Emergency',  desc: 'Local emergency numbers',         icon: '🆘', color: 'red',    placeholder: 'e.g. Delhi, India' },
-  { id: 'safety_tips',  name: 'Safety Tips',desc: 'Context-specific walking advice', icon: '🛡️', color: 'green',  placeholder: 'walking / crossing / night' },
-  { id: 'search_news',  name: 'Search News',desc: 'Search news by keyword',          icon: '🔍', color: 'purple', placeholder: 'e.g. traffic accidents Delhi' },
+  { id: 'navigate',     name: 'Navigation',  desc: 'Turn-by-turn walking directions', icon: '🧭', color: 'cyan',   placeholder: 'Destination, e.g. Red Fort',          needsInput: true  },
+  { id: 'weather',      name: 'Weather',      desc: 'Current conditions & forecast',   icon: '🌤', color: 'blue',   placeholder: 'City name (auto from GPS)',            needsInput: false },
+  { id: 'headlines',    name: 'Headlines',    desc: 'Top news by country',             icon: '📰', color: 'amber',  placeholder: 'Country code (auto from GPS)',         needsInput: false },
+  { id: 'emergency',    name: 'Emergency',    desc: 'Local emergency numbers',         icon: '🆘', color: 'red',    placeholder: 'Location (auto from GPS)',             needsInput: false },
+  { id: 'safety_tips',  name: 'Safety Tips',  desc: 'Context-specific walking advice', icon: '🛡️', color: 'green',  placeholder: 'walking / crossing / night',           needsInput: true  },
+  { id: 'search_news',  name: 'Search News',  desc: 'Search news by keyword',          icon: '🔍', color: 'purple', placeholder: 'e.g. traffic accidents Delhi',         needsInput: true  },
 ];
 
 function ToolGrid({ activeTool, onSelect }) {
@@ -127,58 +130,56 @@ export default function AssistantScreen() {
   const [listening, setListening] = useState(false);
   const recognitionRef = useRef(null);
 
-  const tool = TOOLS.find(t => t.id === activeTool) || TOOLS[0];
+  const tool       = TOOLS.find(t => t.id === activeTool) || TOOLS[0];
   const isNavigate = activeTool === 'navigate';
+  const isAutoLoc  = LOCATION_AUTO_TOOLS.has(activeTool);
+  const hasGPS     = !!userLocation;
+
+  // Build the input string to send for location-aware tools
+  const buildInput = () => {
+    if (isNavigate) {
+      return `${userLocation.lat},${userLocation.lng} to ${query.trim()}`;
+    }
+    if (isAutoLoc && hasGPS) {
+      // Send lat,lng — server will reverse geocode as needed
+      return `${userLocation.lat},${userLocation.lng}`;
+    }
+    return query.trim();
+  };
+
+  const canSend = () => {
+    if (mcpLoading) return false;
+    if (isNavigate) return !!query.trim() && hasGPS;
+    if (isAutoLoc)  return hasGPS || !!query.trim(); // GPS preferred, manual fallback
+    return !!query.trim();
+  };
 
   const handleSend = () => {
-    if (!query.trim()) return;
-    if (isNavigate) {
-      // Pass "lat,lng to destination" so server knows origin is GPS
-      const origin = userLocation
-        ? `${userLocation.lat},${userLocation.lng}`
-        : null;
-      if (!origin) {
-        alert('Waiting for GPS location. Please allow location access and try again.');
-        return;
-      }
-      callMCPTool('navigate', `${origin} to ${query.trim()}`);
-    } else {
-      callMCPTool(activeTool, query.trim());
+    if (!canSend()) return;
+    if (isNavigate && !hasGPS) {
+      alert('Waiting for GPS location. Please allow location access and try again.');
+      return;
     }
+    callMCPTool(activeTool, buildInput());
   };
 
   const handleKeyDown = (e) => {
-    if (e.key === 'Enter' && !e.shiftKey) {
-      e.preventDefault();
-      handleSend();
-    }
+    if (e.key === 'Enter' && !e.shiftKey) { e.preventDefault(); handleSend(); }
   };
 
-  const handleSelectTool = (id) => {
-    setActiveTool(id);
-    setQuery('');
-  };
+  const handleSelectTool = (id) => { setActiveTool(id); setQuery(''); };
 
   const handleVoice = () => {
-    const SpeechRecognition = window.SpeechRecognition || window.webkitSpeechRecognition;
-    if (!SpeechRecognition) {
-      alert('Speech recognition not supported. Try Chrome.');
-      return;
-    }
-    if (listening) {
-      recognitionRef.current?.stop();
-      setListening(false);
-      return;
-    }
-    const recognition = new SpeechRecognition();
-    recognition.lang = 'en-IN';
-    recognition.continuous = false;
-    recognition.interimResults = false;
-    recognition.onresult = (e) => setQuery(e.results[0][0].transcript);
-    recognition.onend  = () => setListening(false);
-    recognition.onerror = () => setListening(false);
-    recognition.start();
-    recognitionRef.current = recognition;
+    const SR = window.SpeechRecognition || window.webkitSpeechRecognition;
+    if (!SR) { alert('Speech recognition not supported. Try Chrome.'); return; }
+    if (listening) { recognitionRef.current?.stop(); setListening(false); return; }
+    const r = new SR();
+    r.lang = 'en-IN'; r.continuous = false; r.interimResults = false;
+    r.onresult = (e) => setQuery(e.results[0][0].transcript);
+    r.onend    = () => setListening(false);
+    r.onerror  = () => setListening(false);
+    r.start();
+    recognitionRef.current = r;
     setListening(true);
   };
 
@@ -197,38 +198,62 @@ export default function AssistantScreen() {
           <span className="input-hint">Enter key sends</span>
         </div>
 
-        {/* GPS origin badge — only shown for navigation */}
-        {isNavigate && (
-          <div className={`gps-origin-badge ${userLocation ? 'active' : 'waiting'}`}>
-            <span>{userLocation ? '📍' : '⏳'}</span>
+        {/* GPS badge — shown for all location-aware tools */}
+        {(isNavigate || isAutoLoc) && (
+          <div className={`gps-origin-badge ${hasGPS ? 'active' : 'waiting'}`}>
+            <span>{hasGPS ? '📍' : '⏳'}</span>
             <span>
-              {userLocation
-                ? `From: ${userLocation.lat.toFixed(5)}, ${userLocation.lng.toFixed(5)} (±${Math.round(userLocation.accuracy)}m)`
-                : 'Waiting for GPS location…'}
+              {hasGPS
+                ? `GPS: ${userLocation.lat.toFixed(4)}, ${userLocation.lng.toFixed(4)} (±${Math.round(userLocation.accuracy)}m)`
+                : 'Waiting for GPS…'}
             </span>
           </div>
         )}
 
-        <textarea
-          className="asst-input"
-          rows={2}
-          placeholder={isNavigate ? 'Enter destination, e.g. Red Fort, Delhi' : tool.placeholder}
-          value={query}
-          onChange={e => setQuery(e.target.value)}
-          onKeyDown={handleKeyDown}
-        />
-        <div className="send-row">
-          <button className={`mic-btn ${listening ? 'active' : ''}`} onClick={handleVoice} aria-label="Voice input">
-            🎙
-          </button>
-          <button
-            className="send-btn"
-            onClick={handleSend}
-            disabled={!query.trim() || mcpLoading || (isNavigate && !userLocation)}
-          >
-            {mcpLoading ? 'Sending…' : 'Send →'}
-          </button>
-        </div>
+        {/* Auto-location tools: show one-tap send button, optional manual override */}
+        {isAutoLoc && !isNavigate ? (
+          <div className="auto-loc-section">
+            <button
+              className="auto-loc-btn"
+              onClick={handleSend}
+              disabled={!hasGPS || mcpLoading}
+            >
+              {mcpLoading ? 'Loading…' : `Use my location →`}
+            </button>
+            <div className="auto-loc-divider"><span>or enter manually</span></div>
+            <textarea
+              className="asst-input"
+              rows={2}
+              placeholder={tool.placeholder}
+              value={query}
+              onChange={e => setQuery(e.target.value)}
+              onKeyDown={handleKeyDown}
+            />
+            <div className="send-row">
+              <button className={`mic-btn ${listening ? 'active' : ''}`} onClick={handleVoice} aria-label="Voice input">🎙</button>
+              <button className="send-btn" onClick={() => { if (query.trim()) callMCPTool(activeTool, query.trim()); }} disabled={!query.trim() || mcpLoading}>
+                Send →
+              </button>
+            </div>
+          </div>
+        ) : (
+          <>
+            <textarea
+              className="asst-input"
+              rows={2}
+              placeholder={isNavigate ? 'Enter destination, e.g. Red Fort, Delhi' : tool.placeholder}
+              value={query}
+              onChange={e => setQuery(e.target.value)}
+              onKeyDown={handleKeyDown}
+            />
+            <div className="send-row">
+              <button className={`mic-btn ${listening ? 'active' : ''}`} onClick={handleVoice} aria-label="Voice input">🎙</button>
+              <button className="send-btn" onClick={handleSend} disabled={!canSend()}>
+                {mcpLoading ? 'Sending…' : 'Send →'}
+              </button>
+            </div>
+          </>
+        )}
       </div>
 
       <ResultCard result={mcpResult} loading={mcpLoading} speaking={speaking} userLocation={userLocation} />
