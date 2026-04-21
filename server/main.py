@@ -65,6 +65,15 @@ async def _reverse_geocode_country(lat: float, lng: float, full_name: bool = Fal
 HEADLESS_MODE = os.getenv("ECOSIGHT_HEADLESS", "0") == "1"
 SERVER_ONLY_MODE = os.getenv("ECOSIGHT_SERVER_ONLY", "0") == "1"
 
+# Auto-detect headless OpenCV (opencv-python-headless has no GUI support)
+if not HEADLESS_MODE:
+    try:
+        cv2.namedWindow("_test", cv2.WINDOW_NORMAL)
+        cv2.destroyWindow("_test")
+    except cv2.error:
+        print("[Server] Headless OpenCV detected — disabling Judge View window")
+        HEADLESS_MODE = True
+
 
 # ─── Shared State ────────────────────────────────────────────────
 class ServerState:
@@ -749,7 +758,10 @@ async def main():
         if camera and camera.cap:
             camera.release()
         if not HEADLESS_MODE:
-            cv2.destroyAllWindows()
+            try:
+                cv2.destroyAllWindows()
+            except cv2.error:
+                pass
         server.close()
         await server.wait_closed()
         print("[Server] Stopped.")
